@@ -11,7 +11,7 @@ export default function CaseStudies() {
   // Images for each case study (by index)
   const caseImages: (string | null)[] = [
     "/case-accounting.png", // Case 1: Accounting
-    null,                   // Case 2: Proposal (no image yet)
+    "/case-proposal.png",   // Case 2: Proposal Flowchart
     null,                   // Case 3: Email (no image yet)
   ];
 
