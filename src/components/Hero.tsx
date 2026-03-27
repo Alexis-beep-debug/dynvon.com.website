@@ -27,8 +27,8 @@ export default function Hero() {
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-surface/60 backdrop-blur-sm text-sm text-muted mb-8">
-          <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-          {locale === "en" ? "Available for new projects" : "Verfügbar für neue Projekte"}
+          <span className="w-2 h-2 rounded-full bg-accent-light animate-pulse" />
+          Business Process Automation Engineer
         </div>
 
         {/* Title */}
