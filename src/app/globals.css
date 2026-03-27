@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a0f;
-  --foreground: #e5e5e5;
+  --background: #09090f;
+  --foreground: #f0f0f5;
   --accent: #6366f1;
   --accent-light: #818cf8;
-  --surface: #141420;
-  --surface-light: #1e1e2e;
-  --border: #2a2a3e;
-  --muted: #9ca3af;
+  --surface: #12121e;
+  --surface-light: #1a1a2e;
+  --border: #252540;
+  --muted: #a1a1b5;
 }
 
 @theme inline {
@@ -37,4 +37,32 @@ html {
 ::selection {
   background: var(--accent);
   color: white;
+}
+
+/* Subtle grid background */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(99, 102, 241, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Animated gradient border */
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.gradient-border {
+  background: linear-gradient(135deg, var(--accent), #a855f7, var(--accent));
+  background-size: 200% 200%;
+  animation: gradient-shift 6s ease infinite;
+}
+
+/* Stat counter highlight */
+.stat-highlight {
+  background: linear-gradient(135deg, var(--accent-light), #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }

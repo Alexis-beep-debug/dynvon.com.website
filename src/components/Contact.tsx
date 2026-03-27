@@ -6,8 +6,11 @@ export default function Contact() {
   const { t } = useLanguage();
 
   return (
-    <section id="contact" className="py-24 sm:py-32">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <section id="contact" className="py-24 sm:py-32 relative overflow-hidden">
+      {/* Background Glow */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-accent/8 rounded-full blur-[120px]" />
+
+      <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Decorative */}
         <div className="w-16 h-16 mx-auto mb-8 rounded-2xl bg-accent/10 text-accent-light flex items-center justify-center">
           <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -29,7 +32,7 @@ export default function Contact() {
 
         {/* CTA Button */}
         <a
-          href="https://calendly.com"
+          href="https://calendar.app.google/hnhhsonYaR6LrChw7"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent hover:bg-accent-light text-white font-semibold rounded-lg transition-all hover:shadow-lg hover:shadow-accent/25 text-lg"
@@ -44,7 +47,6 @@ export default function Contact() {
             />
           </svg>
         </a>
-
       </div>
     </section>
   );
