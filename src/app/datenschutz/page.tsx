@@ -52,19 +52,15 @@ function DatenschutzContent() {
             <p className="mt-2">
               Alexis Bethke-Pittadakis
               <br />
-              [Straße + Hausnummer]
+              Bethke &amp; Partner
               <br />
-              [PLZ] Nürnberg
+              Ostendstraße 111
+              <br />
+              90482 Nürnberg
               <br />
               {en ? "Germany" : "Deutschland"}
               <br />
-              E-Mail:{" "}
-              <a
-                href="mailto:alexis@dynvon.com"
-                className="text-accent-light hover:text-accent transition-colors"
-              >
-                alexis@dynvon.com
-              </a>
+              {en ? "Phone" : "Telefon"}: 0176 75726791
             </p>
           </section>
 
@@ -208,8 +204,8 @@ function DatenschutzContent() {
             </ul>
             <p className="mt-3">
               {en
-                ? "To exercise these rights, please contact us at: alexis@dynvon.com"
-                : "Zur Ausübung dieser Rechte kontaktieren Sie uns bitte unter: alexis@dynvon.com"}
+                ? "To exercise these rights, please contact us at: 0176 75726791"
+                : "Zur Ausübung dieser Rechte kontaktieren Sie uns bitte unter: 0176 75726791"}
             </p>
             <p className="mt-2">
               {en
@@ -218,14 +214,6 @@ function DatenschutzContent() {
             </p>
           </section>
 
-          {/* Hinweis */}
-          <section className="p-4 rounded-lg border border-border bg-surface/50">
-            <p className="text-xs text-muted">
-              {en
-                ? "Note: Please replace the placeholder values [in brackets] with your actual data before going live. This privacy policy is a template and may need to be reviewed by a legal professional."
-                : "Hinweis: Bitte ersetze die Platzhalter [in Klammern] mit deinen echten Daten, bevor die Seite live geht. Diese Datenschutzerklärung ist ein Muster und sollte ggf. von einem Rechtsanwalt geprüft werden."}
-            </p>
-          </section>
         </div>
       </div>
     </main>

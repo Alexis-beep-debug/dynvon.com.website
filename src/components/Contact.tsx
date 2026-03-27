@@ -45,16 +45,6 @@ export default function Contact() {
           </svg>
         </a>
 
-        {/* Email Alternative */}
-        <p className="mt-6 text-sm text-muted">
-          {t.contact.email}:{" "}
-          <a
-            href="mailto:alexis@dynvon.com"
-            className="text-accent-light hover:text-accent transition-colors underline underline-offset-4"
-          >
-            alexis@dynvon.com
-          </a>
-        </p>
       </div>
     </section>
   );

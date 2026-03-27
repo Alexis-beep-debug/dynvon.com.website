@@ -32,12 +32,11 @@ function ImpressumContent() {
             <p>
               Alexis Bethke-Pittadakis
               <br />
-              dynvon — Business Process Automation
+              Bethke &amp; Partner
               <br />
-              {/* TODO: Straße + Hausnummer eintragen */}
-              [Straße + Hausnummer]
+              Ostendstraße 111
               <br />
-              [PLZ] Nürnberg
+              90482 Nürnberg
               <br />
               {locale === "en" ? "Germany" : "Deutschland"}
             </p>
@@ -49,32 +48,16 @@ function ImpressumContent() {
               {locale === "en" ? "Contact" : "Kontakt"}
             </h2>
             <p>
-              E-Mail:{" "}
-              <a
-                href="mailto:alexis@dynvon.com"
-                className="text-accent-light hover:text-accent transition-colors"
-              >
-                alexis@dynvon.com
-              </a>
-              <br />
-              {/* TODO: Telefonnummer optional eintragen */}
-              {locale === "en" ? "Phone" : "Telefon"}: [Telefonnummer]
+              {locale === "en" ? "Phone" : "Telefon"}: 0176 75726791
             </p>
           </section>
 
-          {/* Umsatzsteuer-ID */}
+          {/* Steuernummer */}
           <section>
             <h2 className="text-lg font-semibold text-foreground mb-3">
-              {locale === "en" ? "VAT ID" : "Umsatzsteuer-ID"}
+              {locale === "en" ? "Tax Number" : "Steuernummer"}
             </h2>
-            <p>
-              {locale === "en"
-                ? "VAT identification number according to § 27a UStG:"
-                : "Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:"}
-              <br />
-              {/* TODO: USt-IdNr. eintragen */}
-              [USt-IdNr.]
-            </p>
+            <p>240/204/71197</p>
           </section>
 
           {/* Berufsbezeichnung */}
@@ -103,9 +86,9 @@ function ImpressumContent() {
             <p>
               Alexis Bethke-Pittadakis
               <br />
-              [Straße + Hausnummer]
+              Ostendstraße 111
               <br />
-              [PLZ] Nürnberg
+              90482 Nürnberg
             </p>
           </section>
 
@@ -137,14 +120,6 @@ function ImpressumContent() {
             </p>
           </section>
 
-          {/* Hinweis */}
-          <section className="p-4 rounded-lg border border-border bg-surface/50">
-            <p className="text-xs text-muted">
-              {locale === "en"
-                ? "Note: Please replace the placeholder values [in brackets] with your actual data before going live."
-                : "Hinweis: Bitte ersetze die Platzhalter [in Klammern] mit deinen echten Daten, bevor die Seite live geht."}
-            </p>
-          </section>
         </div>
       </div>
     </main>
