@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import InteractiveGrid from "@/components/InteractiveGrid";
 
 export const metadata: Metadata = {
   title:
@@ -86,7 +87,12 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <meta name="theme-color" content="#0a0a0f" />
       </head>
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+      <body className="min-h-full flex flex-col font-sans">
+        <div className="fixed inset-0 z-0 pointer-events-auto">
+          <InteractiveGrid />
+        </div>
+        <div className="relative z-10 pointer-events-auto">{children}</div>
+      </body>
     </html>
   );
 }
