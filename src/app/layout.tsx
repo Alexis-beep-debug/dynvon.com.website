@@ -88,10 +88,8 @@ export default function RootLayout({
         <meta name="theme-color" content="#0a0a0f" />
       </head>
       <body className="min-h-full flex flex-col font-sans">
-        <div className="fixed inset-0 z-0 pointer-events-auto">
-          <InteractiveGrid />
-        </div>
-        <div className="relative z-10 pointer-events-auto">{children}</div>
+        <InteractiveGrid />
+        <div className="relative z-10">{children}</div>
       </body>
     </html>
   );
