@@ -7,44 +7,33 @@ export default function About() {
 
   const credentials = [
     {
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342" />
-        </svg>
-      ),
       title: "Vanderbilt University",
-      detail: "Generative AI Automation",
+      detail: locale === "en" ? "AI & Automation" : "KI & Automatisierung",
     },
     {
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342" />
-        </svg>
-      ),
       title: "Emory University",
       detail: "Management Consulting",
     },
     {
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
-        </svg>
-      ),
       title: "Microsoft",
       detail: "Business Analytics",
+    },
+    {
+      title: locale === "en" ? "Software Scale-up Experience" : "Software-Scale-up-Erfahrung",
+      detail: locale === "en" ? "Developer & Process Engineer" : "Entwickler & Prozessingenieur",
     },
   ];
 
   const metrics = locale === "en"
     ? [
-        { value: "15+", label: "Automations deployed" },
-        { value: "50k+", label: "Lines of production code" },
+        { value: "15+", label: "Businesses automated" },
         { value: "100%", label: "Client satisfaction" },
+        { value: "24/7", label: "Systems running non-stop" },
       ]
     : [
-        { value: "15+", label: "Automatisierungen im Einsatz" },
-        { value: "50k+", label: "Zeilen Produktionscode" },
+        { value: "15+", label: "Unternehmen automatisiert" },
         { value: "100%", label: "Kundenzufriedenheit" },
+        { value: "24/7", label: "Systeme laufen non-stop" },
       ];
 
   return (
@@ -53,7 +42,7 @@ export default function About() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left: Text & Photo placeholder */}
+          {/* Left: Photo + Text */}
           <div>
             <span className="text-xs font-mono text-accent-light uppercase tracking-widest mb-4 block">
               {locale === "en" ? "About Me" : "Über mich"}
@@ -73,27 +62,27 @@ export default function About() {
 
             <p className="text-[15px] text-muted leading-relaxed mb-4">
               {locale === "en"
-                ? "I'm an Automation Engineer based in Nuremberg, Germany. With hands-on experience in software scale-ups and as a developer, I understand both the business and technical side of automation."
-                : "Ich bin Automation Engineer aus Nürnberg. Mit Erfahrung in Software-Scale-ups und als Entwickler verstehe ich sowohl die geschäftliche als auch die technische Seite der Automatisierung."}
+                ? "I'm based in Nuremberg, Germany. I've worked in software scale-ups as a developer and process engineer — so I understand both the day-to-day challenges of running a business and how to solve them with technology."
+                : "Ich komme aus Nürnberg. Ich habe in Software-Scale-ups als Entwickler und Prozessingenieur gearbeitet — ich verstehe also sowohl die täglichen Herausforderungen eines Unternehmens als auch die technischen Lösungswege."}
             </p>
             <p className="text-[15px] text-muted leading-relaxed mb-4">
               {locale === "en"
-                ? "I help small businesses (1–25 employees) eliminate manual, repetitive work by building custom Python automation systems that integrate directly into their existing tools."
-                : "Ich helfe kleinen Unternehmen (1–25 Mitarbeiter), manuelle und repetitive Arbeit zu eliminieren — mit maßgeschneiderten Python-Systemen, die sich nahtlos in bestehende Tools integrieren."}
+                ? "I help small businesses (1–25 employees) get rid of time-consuming manual tasks. Whether it's bookkeeping, proposals, emails, or data entry — I build systems that handle it automatically."
+                : "Ich helfe kleinen Unternehmen (1–25 Mitarbeiter), zeitfressende manuelle Aufgaben loszuwerden. Ob Buchhaltung, Angebote, E-Mails oder Dateneingabe — ich baue Systeme, die das automatisch erledigen."}
             </p>
             <p className="text-[15px] text-muted leading-relaxed">
               {locale === "en"
-                ? "Unlike typical no-code freelancers, I write production-grade Python code deployed on Railway — version-controlled, testable, and built to run 24/7 without breaking."
-                : "Im Gegensatz zu typischen No-Code-Freelancern schreibe ich produktionsreifen Python-Code, der auf Railway deployed wird — versionskontrolliert, testbar und gebaut, um 24/7 fehlerfrei zu laufen."}
+                ? "My systems run 24/7, don't make mistakes, and grow with your business. No duct-tape solutions — real automation that just works."
+                : "Meine Systeme laufen 24/7, machen keine Fehler und wachsen mit Ihrem Unternehmen mit. Keine Notlösungen — echte Automatisierung, die einfach funktioniert."}
             </p>
           </div>
 
           {/* Right: Credentials & Metrics */}
           <div className="space-y-8">
-            {/* Certifications */}
+            {/* Background */}
             <div>
               <h3 className="text-sm font-bold uppercase tracking-wider text-muted mb-4">
-                {locale === "en" ? "Education & Certifications" : "Ausbildung & Zertifikate"}
+                {locale === "en" ? "Background" : "Hintergrund"}
               </h3>
               <div className="space-y-3">
                 {credentials.map((cred, i) => (
@@ -102,7 +91,9 @@ export default function About() {
                     className="flex items-center gap-4 p-4 rounded-xl border border-border bg-surface/30 hover:border-accent/20 transition-colors"
                   >
                     <div className="w-10 h-10 rounded-lg bg-accent/10 text-accent-light flex items-center justify-center shrink-0">
-                      {cred.icon}
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                      </svg>
                     </div>
                     <div>
                       <div className="font-semibold text-[15px]">{cred.title}</div>
@@ -116,7 +107,7 @@ export default function About() {
             {/* Metrics */}
             <div>
               <h3 className="text-sm font-bold uppercase tracking-wider text-muted mb-4">
-                {locale === "en" ? "By the Numbers" : "In Zahlen"}
+                {locale === "en" ? "Track Record" : "Erfolgsbilanz"}
               </h3>
               <div className="grid grid-cols-3 gap-4">
                 {metrics.map((metric, i) => (
@@ -128,31 +119,27 @@ export default function About() {
               </div>
             </div>
 
-            {/* Skills */}
+            {/* What I work with — business-friendly names */}
             <div>
               <h3 className="text-sm font-bold uppercase tracking-wider text-muted mb-4">
-                {locale === "en" ? "Core Skills" : "Kernkompetenzen"}
+                {locale === "en" ? "Tools I Work With" : "Tools mit denen ich arbeite"}
               </h3>
               <div className="flex flex-wrap gap-2">
                 {[
-                  "Python",
-                  "API Integration",
-                  "Business Process Automation",
-                  "Data Migration",
                   "Pipedrive",
                   "Lexoffice",
                   "Brevo",
+                  "HubSpot",
                   "Airtable",
                   "Make.com",
-                  "n8n",
-                  "HubSpot",
-                  "JavaScript",
-                ].map((skill) => (
+                  "Google Workspace",
+                  "Excel / Sheets",
+                ].map((tool) => (
                   <span
-                    key={skill}
-                    className="px-3 py-1.5 text-xs font-mono text-muted border border-border rounded-lg bg-surface/30"
+                    key={tool}
+                    className="px-3 py-1.5 text-xs text-muted border border-border rounded-lg bg-surface/30"
                   >
-                    {skill}
+                    {tool}
                   </span>
                 ))}
               </div>

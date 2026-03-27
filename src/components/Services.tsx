@@ -20,57 +20,29 @@ const icons: Record<string, React.ReactNode> = {
   ),
   code: (
     <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
     </svg>
   ),
 };
 
-// Visual flow diagrams for each service
-const flowDiagrams: Record<string, React.ReactNode> = {
-  receipt: (
-    <div className="flex items-center gap-2 text-xs font-mono text-muted mt-4 overflow-x-auto pb-1">
-      <span className="px-2 py-1 bg-green-500/10 text-green-400 rounded border border-green-500/20 whitespace-nowrap">Bank API</span>
-      <span className="text-border">&rarr;</span>
-      <span className="px-2 py-1 bg-accent/10 text-accent-light rounded border border-accent/20 whitespace-nowrap">Python</span>
-      <span className="text-border">&rarr;</span>
-      <span className="px-2 py-1 bg-purple-500/10 text-purple-400 rounded border border-purple-500/20 whitespace-nowrap">Lexoffice</span>
-      <span className="text-border">&rarr;</span>
-      <span className="px-2 py-1 bg-amber-500/10 text-amber-400 rounded border border-amber-500/20 whitespace-nowrap">Invoice</span>
-    </div>
-  ),
-  users: (
-    <div className="flex items-center gap-2 text-xs font-mono text-muted mt-4 overflow-x-auto pb-1">
-      <span className="px-2 py-1 bg-green-500/10 text-green-400 rounded border border-green-500/20 whitespace-nowrap">Lead Form</span>
-      <span className="text-border">&rarr;</span>
-      <span className="px-2 py-1 bg-accent/10 text-accent-light rounded border border-accent/20 whitespace-nowrap">Pipedrive</span>
-      <span className="text-border">&rarr;</span>
-      <span className="px-2 py-1 bg-purple-500/10 text-purple-400 rounded border border-purple-500/20 whitespace-nowrap">Proposal</span>
-      <span className="text-border">&rarr;</span>
-      <span className="px-2 py-1 bg-amber-500/10 text-amber-400 rounded border border-amber-500/20 whitespace-nowrap">Brevo</span>
-    </div>
-  ),
-  mail: (
-    <div className="flex items-center gap-2 text-xs font-mono text-muted mt-4 overflow-x-auto pb-1">
-      <span className="px-2 py-1 bg-green-500/10 text-green-400 rounded border border-green-500/20 whitespace-nowrap">Brevo</span>
-      <span className="text-border">&harr;</span>
-      <span className="px-2 py-1 bg-accent/10 text-accent-light rounded border border-accent/20 whitespace-nowrap">Python</span>
-      <span className="text-border">&harr;</span>
-      <span className="px-2 py-1 bg-purple-500/10 text-purple-400 rounded border border-purple-500/20 whitespace-nowrap">CRM</span>
-      <span className="text-border">&rarr;</span>
-      <span className="px-2 py-1 bg-amber-500/10 text-amber-400 rounded border border-amber-500/20 whitespace-nowrap">Dashboard</span>
-    </div>
-  ),
-  code: (
-    <div className="flex items-center gap-2 text-xs font-mono text-muted mt-4 overflow-x-auto pb-1">
-      <span className="px-2 py-1 bg-green-500/10 text-green-400 rounded border border-green-500/20 whitespace-nowrap">Webhook</span>
-      <span className="text-border">&rarr;</span>
-      <span className="px-2 py-1 bg-accent/10 text-accent-light rounded border border-accent/20 whitespace-nowrap">FastAPI</span>
-      <span className="text-border">&rarr;</span>
-      <span className="px-2 py-1 bg-purple-500/10 text-purple-400 rounded border border-purple-500/20 whitespace-nowrap">Cron Job</span>
-      <span className="text-border">&rarr;</span>
-      <span className="px-2 py-1 bg-amber-500/10 text-amber-400 rounded border border-amber-500/20 whitespace-nowrap">Railway</span>
-    </div>
-  ),
+// How it works — small, subtle flow for the tech-curious
+const howItWorks: Record<string, { en: string; de: string }> = {
+  receipt: {
+    en: "Bank account → automatic sorting → invoice creation → payment reminders",
+    de: "Bankkonto → automatische Sortierung → Rechnungserstellung → Zahlungserinnerungen",
+  },
+  users: {
+    en: "Intake form → price calculation → proposal PDF → email to client",
+    de: "Aufnahmeformular → Preisberechnung → Angebots-PDF → E-Mail an Kunden",
+  },
+  mail: {
+    en: "New lead → welcome email → follow-up sequence → CRM updated",
+    de: "Neuer Lead → Willkommens-E-Mail → Nachfass-Sequenz → CRM aktualisiert",
+  },
+  code: {
+    en: "Tool A changes → all connected tools update automatically",
+    de: "Tool A ändert sich → alle verbundenen Tools aktualisieren sich automatisch",
+  },
 };
 
 export default function Services() {
@@ -111,32 +83,36 @@ export default function Services() {
                 {icons[card.icon]}
               </div>
               <h3 className="text-xl font-bold mb-3">{card.title}</h3>
-              <p className="text-muted text-[15px] leading-relaxed">
+              <p className="text-muted text-[15px] leading-relaxed mb-4">
                 {card.description}
               </p>
 
-              {/* Visual flow diagram */}
-              {flowDiagrams[card.icon]}
+              {/* How it works — subtle, for the curious */}
+              <div className="pt-3 border-t border-border/50">
+                <p className="text-xs text-muted/60 italic">
+                  {howItWorks[card.icon]?.[locale]}
+                </p>
+              </div>
             </div>
           ))}
         </div>
 
-        {/* Bottom differentiator */}
+        {/* Bottom differentiator — business language */}
         <div className="mt-12 p-6 sm:p-8 rounded-2xl border border-accent/20 bg-accent/5 text-center">
           <p className="text-[15px] text-muted leading-relaxed max-w-2xl mx-auto">
             {locale === "en" ? (
               <>
-                <strong className="text-foreground">Not just no-code.</strong>{" "}
-                While tools like Zapier and Make work for simple tasks, I build{" "}
-                <strong className="text-accent-light">robust Python backends</strong>{" "}
-                that handle complex business logic, error recovery, and scale with your business.
+                <strong className="text-foreground">Why it works better than DIY tools:</strong>{" "}
+                Simple automation tools break when things get complex. I build{" "}
+                <strong className="text-accent-light">custom systems</strong>{" "}
+                that handle edge cases, recover from errors automatically, and grow with your business.
               </>
             ) : (
               <>
-                <strong className="text-foreground">Nicht nur No-Code.</strong>{" "}
-                Während Tools wie Zapier und Make für einfache Aufgaben funktionieren, baue ich{" "}
-                <strong className="text-accent-light">robuste Python-Backends</strong>,{" "}
-                die komplexe Geschäftslogik, Fehlerbehandlung und Skalierung mit Ihrem Unternehmen bewältigen.
+                <strong className="text-foreground">Warum das besser funktioniert als Standardtools:</strong>{" "}
+                Einfache Automatisierungstools versagen bei Komplexität. Ich baue{" "}
+                <strong className="text-accent-light">maßgeschneiderte Systeme</strong>,{" "}
+                die Sonderfälle abfangen, Fehler automatisch beheben und mit Ihrem Unternehmen mitwachsen.
               </>
             )}
           </p>

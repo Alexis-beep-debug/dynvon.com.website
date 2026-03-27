@@ -4,120 +4,100 @@ export const translations: Record<Locale, Translations> = {
   en: {
     nav: {
       services: "Services",
-      projects: "Projects",
+      projects: "Results",
       blog: "Blog",
       contact: "Contact",
     },
     hero: {
-      title: "I Automate Your Business Processes",
+      title: "Stop Wasting Hours on Repetitive Tasks",
       subtitle:
-        "Custom Python backends, API integrations & AI workflows — so your team can stop doing repetitive work and focus on what matters.",
+        "I build automation systems that handle your bookkeeping, proposals, emails, and data entry — so you and your team can focus on growing the business.",
       cta: "Book a Free Call",
-      ctaSecondary: "See My Work",
+      ctaSecondary: "See Real Results",
     },
     services: {
-      title: "What I Do",
+      title: "What I Automate For You",
       subtitle:
-        "I build robust automation systems that replace manual workflows with reliable, scalable Python backends — not just no-code band-aids.",
+        "You tell me what eats up your time. I build a system that does it automatically — reliably, 24/7, without errors.",
       cards: [
         {
-          title: "Accounting & Finance Automation",
+          title: "Bookkeeping & Invoicing",
           description:
-            "Automated transaction categorization, invoice generation, dunning processes, and bank account reconciliation. Connected to your existing tools.",
+            "Transactions sorted automatically, invoices created and sent on time, payment reminders going out without you lifting a finger. No more spreadsheet chaos.",
           icon: "receipt",
         },
         {
-          title: "CRM & Sales Automation",
+          title: "Proposals & Quotes",
           description:
-            "Pipedrive, HubSpot, Lexoffice — synced and automated. From lead capture to proposal generation, all running on autopilot.",
+            "Customer fills out a form, your proposal is ready in minutes — with correct pricing, professional formatting, and sent directly to the client.",
           icon: "users",
         },
         {
-          title: "Email & Outreach Automation",
+          title: "Email & Follow-ups",
           description:
-            "Brevo, Lemlist, marketing campaigns, outbound sequences — fully connected with your CRM. Live dashboards, zero manual exports.",
+            "New leads get the right emails at the right time. Follow-ups happen automatically. Your CRM stays up to date — no copy-pasting between tools.",
           icon: "mail",
         },
         {
-          title: "Custom API Integrations",
+          title: "Connect Your Tools",
           description:
-            "Connecting any tool via REST APIs, webhooks, and scheduled cron jobs. Python on Railway with GitHub auto-deploy for maximum reliability.",
+            "Your accounting software, CRM, email tool, and spreadsheets — all talking to each other automatically. One update, everywhere synced.",
           icon: "code",
         },
       ],
     },
     projects: {
-      title: "Case Studies",
+      title: "Real Results for Real Businesses",
       subtitle:
-        "Real automation systems running in production — built for small businesses that needed to scale without hiring.",
+        "These are automation systems I built for small businesses like yours — saving them hours every week and eliminating costly mistakes.",
       cases: [
         {
-          title: "Automated Accounting & Dunning System",
-          role: "Automation Engineer & Python Developer",
+          title: "Bookkeeping on Autopilot",
+          role: "Automation Engineer",
           problem:
-            "A small business was spending 8+ hours/week on manual bookkeeping — reconciling transactions, creating invoices, and chasing payments by hand. Errors were frequent.",
+            "A small business owner was spending 8+ hours every week on bookkeeping — sorting transactions, creating invoices, chasing late payments. Mistakes happened regularly.",
           solution:
-            "I built a fully automated accounting pipeline connecting the client's bank account (Enable Banking) with Google Workspace via Python on Railway. Transactions are categorized automatically, invoices generated and sent without human input, and the dunning process runs entirely on its own.",
+            "I built a system that connects directly to the bank account, sorts every transaction automatically, creates and sends invoices, and follows up on overdue payments — all without any manual work.",
           result:
-            "8+ hours/week saved, zero errors, dedicated bookkeeping role eliminated.",
-          tech: ["Python", "Railway", "Enable Banking", "Google Workspace"],
-          skills: [
-            "Python",
-            "API Integration",
-            "Business Process Automation",
-            "Accounting",
-          ],
+            "8+ hours/week freed up, zero errors, no more need for a dedicated bookkeeper.",
+          tech: ["Bank Integration", "Invoicing", "Payment Reminders", "Reporting"],
+          skills: [],
         },
         {
-          title: "Automated Proposal Generation",
-          role: "Automation Engineer & Python Developer",
+          title: "Proposals in 5 Minutes Instead of 2 Hours",
+          role: "Automation Engineer",
           problem:
-            "A building cleaning company was spending ~2 hours per proposal — manually calculating surfaces, adjusting pricing, and formatting documents. A major bottleneck with dozens of potential clients per month.",
+            "A cleaning company was spending ~2 hours on every proposal — calculating areas, adjusting prices, formatting documents. With dozens of leads per month, this was a massive bottleneck.",
           solution:
-            "I built an automated proposal system triggered by a simple on-site property intake form. The system calculates scope and pricing automatically, generates a fully formatted proposal via Lexoffice, and updates it dynamically if parameters change — zero manual work.",
+            "Now an employee fills out a simple form on-site. The system calculates everything automatically, creates a professional proposal, and sends it to the client — all in under 5 minutes.",
           result:
-            "Proposal creation reduced from 2 hours to under 5 minutes. Sales capacity doubled without adding headcount.",
-          tech: [
-            "Python",
-            "Pipedrive",
-            "Lexoffice",
-            "Google Drive",
-            "Brevo",
-          ],
-          skills: [
-            "Business Process Automation",
-            "API Integration",
-            "Python",
-          ],
+            "Proposal time reduced by 95%. Sales capacity doubled without hiring anyone.",
+          tech: ["Online Forms", "Auto-Calculation", "PDF Generation", "Email Delivery"],
+          skills: [],
         },
         {
-          title: "Email Automation & CRM Integration",
-          role: "Automation Engineer & Python Developer",
+          title: "No More Manual Email & CRM Work",
+          role: "Automation Engineer",
           problem:
-            "A client was managing email marketing, outbound outreach, and CRM updates manually across three separate platforms — causing data gaps, duplicate work, and zero visibility on results.",
+            "A business was managing emails, outreach, and customer data manually across three different tools — leading to missed follow-ups, duplicate data, and no overview of what's working.",
           solution:
-            "I connected and automated the entire communication stack: outbound sequences, marketing campaigns, CRM updates, and cross-platform data sync all run automatically. A live reporting dashboard provides full visibility at any time — no manual exports needed.",
+            "I connected all tools into one automated system: new leads get the right emails automatically, customer data stays in sync everywhere, and a live dashboard shows results at a glance.",
           result:
-            "Hours of manual work eliminated daily, consistent data across all systems, and a fully automated outbound engine running 24/7.",
-          tech: ["Python", "Brevo", "Lemlist", "Pipedrive"],
-          skills: [
-            "Python",
-            "Email Automation",
-            "API Integration",
-            "CRM Development",
-          ],
+            "Hours of daily manual work eliminated. Consistent data everywhere. Leads are followed up 24/7 automatically.",
+          tech: ["Email Marketing", "CRM Sync", "Lead Tracking", "Live Dashboard"],
+          skills: [],
         },
       ],
     },
     contact: {
-      title: "Let's Talk",
+      title: "Let's Talk About Your Time-Wasters",
       subtitle:
-        "Ready to automate your manual processes? Book a free 30-minute discovery call — I'll show you exactly where automation can save you time and money.",
-      cta: "Book a Free Discovery Call",
+        "Book a free 30-minute call. Tell me what tasks eat up your week — I'll show you exactly what can be automated and how much time you'll get back.",
+      cta: "Book a Free Call",
       email: "Or email me directly",
     },
     footer: {
-      tagline: "Business Process Automation Engineer",
+      tagline: "I automate your business processes",
       location: "Nuremberg, Germany",
       rights: "All rights reserved.",
     },
@@ -125,120 +105,100 @@ export const translations: Record<Locale, Translations> = {
   de: {
     nav: {
       services: "Leistungen",
-      projects: "Projekte",
+      projects: "Ergebnisse",
       blog: "Blog",
       contact: "Kontakt",
     },
     hero: {
-      title: "Ich automatisiere Ihre Geschäftsprozesse",
+      title: "Schluss mit Stundenverschwendung für Routinearbeit",
       subtitle:
-        "Maßgeschneiderte Python-Backends, API-Integrationen & KI-Workflows — damit Ihr Team aufhören kann, repetitive Arbeit zu erledigen, und sich auf das Wesentliche konzentrieren kann.",
+        "Ich baue Automatisierungssysteme, die Ihre Buchhaltung, Angebote, E-Mails und Dateneingabe übernehmen — damit Sie und Ihr Team sich aufs Wachstum konzentrieren können.",
       cta: "Kostenloses Gespräch buchen",
-      ctaSecondary: "Meine Arbeit ansehen",
+      ctaSecondary: "Echte Ergebnisse sehen",
     },
     services: {
-      title: "Was ich mache",
+      title: "Was ich für Sie automatisiere",
       subtitle:
-        "Ich baue robuste Automatisierungssysteme, die manuelle Workflows durch zuverlässige, skalierbare Python-Backends ersetzen — nicht nur No-Code-Notlösungen.",
+        "Sagen Sie mir, was Ihre Zeit frisst. Ich baue ein System, das es automatisch erledigt — zuverlässig, 24/7, ohne Fehler.",
       cards: [
         {
-          title: "Buchhaltungs- & Finanzautomatisierung",
+          title: "Buchhaltung & Rechnungen",
           description:
-            "Automatisierte Transaktionskategorisierung, Rechnungserstellung, Mahnprozesse und Bankkontenabstimmung. Verbunden mit Ihren bestehenden Tools.",
+            "Transaktionen werden automatisch sortiert, Rechnungen pünktlich erstellt und versendet, Zahlungserinnerungen gehen raus — ohne dass Sie einen Finger rühren müssen.",
           icon: "receipt",
         },
         {
-          title: "CRM- & Vertriebsautomatisierung",
+          title: "Angebote & Kostenvoranschläge",
           description:
-            "Pipedrive, HubSpot, Lexoffice — synchronisiert und automatisiert. Von der Lead-Erfassung bis zur Angebotserstellung, alles auf Autopilot.",
+            "Kunde füllt ein Formular aus, Ihr Angebot ist in Minuten fertig — mit korrekten Preisen, professioneller Formatierung, direkt an den Kunden versendet.",
           icon: "users",
         },
         {
-          title: "E-Mail- & Outreach-Automatisierung",
+          title: "E-Mails & Nachfassen",
           description:
-            "Brevo, Lemlist, Marketingkampagnen, Outbound-Sequenzen — vollständig mit Ihrem CRM verbunden. Live-Dashboards, keine manuellen Exporte.",
+            "Neue Leads bekommen die richtigen E-Mails zur richtigen Zeit. Nachfassen passiert automatisch. Ihr CRM bleibt aktuell — kein Hin-und-Her-Kopieren zwischen Tools.",
           icon: "mail",
         },
         {
-          title: "Individuelle API-Integrationen",
+          title: "Ihre Tools verbinden",
           description:
-            "Verbindung beliebiger Tools über REST-APIs, Webhooks und geplante Cron-Jobs. Python auf Railway mit GitHub Auto-Deploy für maximale Zuverlässigkeit.",
+            "Buchhaltungssoftware, CRM, E-Mail-Tool und Tabellen — alles spricht automatisch miteinander. Eine Änderung, überall synchronisiert.",
           icon: "code",
         },
       ],
     },
     projects: {
-      title: "Fallstudien",
+      title: "Echte Ergebnisse für echte Unternehmen",
       subtitle:
-        "Echte Automatisierungssysteme im Produktivbetrieb — gebaut für kleine Unternehmen, die skalieren mussten, ohne einzustellen.",
+        "Diese Automatisierungssysteme habe ich für kleine Unternehmen wie Ihres gebaut — sie sparen jede Woche Stunden und eliminieren kostspielige Fehler.",
       cases: [
         {
-          title: "Automatisierte Buchhaltung & Mahnwesen",
-          role: "Automation Engineer & Python Developer",
+          title: "Buchhaltung auf Autopilot",
+          role: "Automation Engineer",
           problem:
-            "Ein kleines Unternehmen verbrachte 8+ Stunden/Woche mit manueller Buchhaltung — Transaktionen abstimmen, Rechnungen erstellen und Zahlungen per Hand nachverfolgen. Fehler waren häufig.",
+            "Ein Unternehmer verbrachte jede Woche 8+ Stunden mit Buchhaltung — Transaktionen sortieren, Rechnungen erstellen, Zahlungen hinterherlaufen. Fehler passierten regelmäßig.",
           solution:
-            "Ich habe eine vollautomatisierte Buchhaltungs-Pipeline aufgebaut, die das Bankkonto des Kunden (Enable Banking) mit Google Workspace über Python auf Railway verbindet. Transaktionen werden automatisch kategorisiert, Rechnungen ohne menschliches Zutun erstellt und versendet, und der Mahnprozess läuft komplett eigenständig.",
+            "Ich habe ein System gebaut, das sich direkt mit dem Bankkonto verbindet, jede Transaktion automatisch sortiert, Rechnungen erstellt und versendet, und überfällige Zahlungen selbstständig anmahnt.",
           result:
-            "8+ Stunden/Woche gespart, null Fehler, dedizierte Buchhaltungsstelle eingespart.",
-          tech: ["Python", "Railway", "Enable Banking", "Google Workspace"],
-          skills: [
-            "Python",
-            "API Integration",
-            "Business Process Automation",
-            "Accounting",
-          ],
+            "8+ Stunden/Woche freigesetzt, null Fehler, kein separater Buchhalter mehr nötig.",
+          tech: ["Bankanbindung", "Rechnungsstellung", "Zahlungserinnerungen", "Reporting"],
+          skills: [],
         },
         {
-          title: "Automatisierte Angebotserstellung",
-          role: "Automation Engineer & Python Developer",
+          title: "Angebote in 5 Minuten statt 2 Stunden",
+          role: "Automation Engineer",
           problem:
-            "Ein Gebäudereinigungsunternehmen brauchte ~2 Stunden pro Angebot — manuelles Berechnen von Flächen, Preisanpassung und Dokumentenformatierung. Ein großer Engpass bei Dutzenden potenzieller Kunden pro Monat.",
+            "Ein Reinigungsunternehmen brauchte ~2 Stunden pro Angebot — Flächen berechnen, Preise anpassen, Dokumente formatieren. Bei Dutzenden Anfragen pro Monat ein massiver Engpass.",
           solution:
-            "Ich habe ein automatisiertes Angebotssystem aufgebaut, das durch ein einfaches Vor-Ort-Aufnahmeformular ausgelöst wird. Das System berechnet Umfang und Preise automatisch, erstellt ein vollständig formatiertes Angebot über Lexoffice und aktualisiert es dynamisch bei Parameteränderungen — null manuelle Arbeit.",
+            "Jetzt füllt ein Mitarbeiter vor Ort ein einfaches Formular aus. Das System rechnet alles automatisch, erstellt ein professionelles Angebot und sendet es an den Kunden — alles in unter 5 Minuten.",
           result:
-            "Angebotserstellung von 2 Stunden auf unter 5 Minuten reduziert. Vertriebskapazität verdoppelt ohne zusätzliches Personal.",
-          tech: [
-            "Python",
-            "Pipedrive",
-            "Lexoffice",
-            "Google Drive",
-            "Brevo",
-          ],
-          skills: [
-            "Business Process Automation",
-            "API Integration",
-            "Python",
-          ],
+            "Angebotszeit um 95% reduziert. Vertriebskapazität verdoppelt — ohne neue Mitarbeiter.",
+          tech: ["Online-Formulare", "Auto-Berechnung", "PDF-Erstellung", "E-Mail-Versand"],
+          skills: [],
         },
         {
-          title: "E-Mail-Automatisierung & CRM-Integration",
-          role: "Automation Engineer & Python Developer",
+          title: "Schluss mit manueller E-Mail- & CRM-Arbeit",
+          role: "Automation Engineer",
           problem:
-            "Ein Kunde verwaltete E-Mail-Marketing, Outbound-Outreach und CRM-Updates manuell über drei separate Plattformen — mit Datenlücken, doppelter Arbeit und null Ergebnistransparenz.",
+            "Ein Unternehmen verwaltete E-Mails, Outreach und Kundendaten manuell über drei verschiedene Tools — verpasste Nachfassaktionen, doppelte Daten und kein Überblick über Ergebnisse.",
           solution:
-            "Ich habe den gesamten Kommunikations-Stack verbunden und automatisiert: Outbound-Sequenzen, Marketingkampagnen, CRM-Updates und plattformübergreifende Datensynchronisation laufen vollautomatisch. Ein Live-Reporting-Dashboard bietet jederzeit volle Transparenz — keine manuellen Exporte nötig.",
+            "Ich habe alle Tools zu einem automatisierten System verbunden: Neue Leads bekommen automatisch die richtigen E-Mails, Kundendaten bleiben überall synchron, und ein Live-Dashboard zeigt Ergebnisse auf einen Blick.",
           result:
-            "Stunden manueller Arbeit täglich eliminiert, konsistente Daten über alle Systeme, und eine vollautomatisierte Outbound-Engine die 24/7 läuft.",
-          tech: ["Python", "Brevo", "Lemlist", "Pipedrive"],
-          skills: [
-            "Python",
-            "Email Automation",
-            "API Integration",
-            "CRM Development",
-          ],
+            "Stunden täglicher Handarbeit eliminiert. Konsistente Daten überall. Leads werden rund um die Uhr automatisch nachgefasst.",
+          tech: ["E-Mail-Marketing", "CRM-Sync", "Lead-Tracking", "Live-Dashboard"],
+          skills: [],
         },
       ],
     },
     contact: {
-      title: "Lass uns reden",
+      title: "Erzählen Sie mir von Ihren Zeitfressern",
       subtitle:
-        "Bereit, Ihre manuellen Prozesse zu automatisieren? Buchen Sie ein kostenloses 30-minütiges Kennenlerngespräch — ich zeige Ihnen genau, wo Automatisierung Ihnen Zeit und Geld sparen kann.",
-      cta: "Kostenloses Kennenlerngespräch buchen",
+        "Buchen Sie ein kostenloses 30-Minuten-Gespräch. Erzählen Sie mir, welche Aufgaben Ihre Woche auffressen — ich zeige Ihnen genau, was automatisiert werden kann und wie viel Zeit Sie zurückgewinnen.",
+      cta: "Kostenloses Gespräch buchen",
       email: "Oder schreiben Sie mir direkt",
     },
     footer: {
-      tagline: "Business Process Automation Engineer",
+      tagline: "Ich automatisiere Ihre Geschäftsprozesse",
       location: "Nürnberg, Deutschland",
       rights: "Alle Rechte vorbehalten.",
     },

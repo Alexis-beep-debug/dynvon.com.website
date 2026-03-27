@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #09090f;
-  --foreground: #f0f0f5;
+  --background: #0f1117;
+  --foreground: #f4f4f8;
   --accent: #6366f1;
   --accent-light: #818cf8;
-  --surface: #12121e;
-  --surface-light: #1a1a2e;
-  --border: #252540;
-  --muted: #a1a1b5;
+  --surface: #181b25;
+  --surface-light: #222639;
+  --border: #2d3148;
+  --muted: #b0b3c5;
 }
 
 @theme inline {
@@ -42,8 +42,8 @@ html {
 /* Subtle grid background */
 .grid-bg {
   background-image:
-    linear-gradient(rgba(99, 102, 241, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(99, 102, 241, 0.03) 1px, transparent 1px);
+    linear-gradient(rgba(99, 102, 241, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 102, 241, 0.04) 1px, transparent 1px);
   background-size: 60px 60px;
 }
 

@@ -8,13 +8,13 @@ export default function Hero() {
   const stats = locale === "en"
     ? [
         { value: "10+", label: "Hours saved per week" },
-        { value: "100%", label: "Error-free automation" },
-        { value: "< 5 min", label: "Instead of 2 hours" },
+        { value: "0", label: "Errors in bookkeeping" },
+        { value: "95%", label: "Faster proposals" },
       ]
     : [
         { value: "10+", label: "Stunden gespart pro Woche" },
-        { value: "100%", label: "Fehlerfreie Automatisierung" },
-        { value: "< 5 Min", label: "Statt 2 Stunden" },
+        { value: "0", label: "Fehler in der Buchhaltung" },
+        { value: "95%", label: "Schnellere Angebote" },
       ];
 
   return (
@@ -28,22 +28,22 @@ export default function Hero() {
         {/* Badge */}
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-surface/60 backdrop-blur-sm text-sm text-muted mb-8">
           <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
-          Business Process Automation Engineer
+          {locale === "en" ? "Available for new projects" : "Verfügbar für neue Projekte"}
         </div>
 
         {/* Title */}
         <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-8">
           {locale === "en" ? (
             <>
-              I <span className="stat-highlight">Automate</span> Your
+              Stop <span className="stat-highlight">Wasting Hours</span> on
               <br className="hidden sm:block" />{" "}
-              Business Processes
+              Repetitive Tasks
             </>
           ) : (
             <>
-              Ich <span className="stat-highlight">automatisiere</span> Ihre
+              Schluss mit <span className="stat-highlight">Stundenverschwendung</span>
               <br className="hidden sm:block" />{" "}
-              Geschäftsprozesse
+              für Routinearbeit
             </>
           )}
         </h1>
@@ -74,28 +74,14 @@ export default function Hero() {
           </a>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto mb-16">
+        {/* Stats — business results, not tech */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
           {stats.map((stat, i) => (
             <div key={i} className="p-5 rounded-xl border border-border bg-surface/40 backdrop-blur-sm">
               <div className="text-3xl font-bold stat-highlight mb-1">{stat.value}</div>
               <div className="text-sm text-muted">{stat.label}</div>
             </div>
           ))}
-        </div>
-
-        {/* Tech Stack Pills */}
-        <div className="flex flex-wrap items-center justify-center gap-3">
-          {["Python", "Railway", "Pipedrive", "Lexoffice", "Brevo", "Airtable", "Make.com", "LLM APIs"].map(
-            (tech) => (
-              <span
-                key={tech}
-                className="px-4 py-1.5 text-xs font-mono text-muted border border-border rounded-full bg-surface/30"
-              >
-                {tech}
-              </span>
-            )
-          )}
         </div>
       </div>
     </section>
