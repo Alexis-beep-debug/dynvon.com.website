@@ -8,10 +8,10 @@ export default function Navigation() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const navLinks = [
-    { href: "#services", label: t.nav.services },
-    { href: "#projects", label: t.nav.projects },
+    { href: "/#services", label: t.nav.services },
+    { href: "/#projects", label: t.nav.projects },
     { href: "/blog", label: t.nav.blog },
-    { href: "#contact", label: t.nav.contact },
+    { href: "/#contact", label: t.nav.contact },
   ];
 
   return (
@@ -19,7 +19,7 @@ export default function Navigation() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#" className="text-xl font-bold tracking-tight">
+          <a href="/" className="text-xl font-bold tracking-tight">
             <span className="text-accent-light">dyn</span>
             <span className="text-foreground">von</span>
           </a>
