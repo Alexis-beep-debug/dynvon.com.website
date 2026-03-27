@@ -62,20 +62,24 @@ export default function About() {
               Alexis Bethke-Pittadakis
             </h2>
 
-            {/* Photo placeholder */}
-            <div className="w-full aspect-[4/3] rounded-2xl border border-border bg-surface/30 flex items-center justify-center mb-6 overflow-hidden">
-              <div className="text-center text-muted">
-                <svg className="w-16 h-16 mx-auto mb-2 opacity-30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                </svg>
-                <p className="text-xs">{locale === "en" ? "Photo coming soon" : "Foto folgt"}</p>
-              </div>
+            {/* Profile Photo */}
+            <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full border-2 border-accent/30 overflow-hidden mb-6 shadow-lg shadow-accent/10">
+              <img
+                src="/alexis.png"
+                alt="Alexis Bethke-Pittadakis"
+                className="w-full h-full object-cover"
+              />
             </div>
 
             <p className="text-[15px] text-muted leading-relaxed mb-4">
               {locale === "en"
-                ? "I'm an Automation Engineer based in Nuremberg, Germany. I help small businesses (1–25 employees) eliminate manual, repetitive work by building custom Python automation systems."
-                : "Ich bin Automation Engineer aus Nürnberg. Ich helfe kleinen Unternehmen (1–25 Mitarbeiter), manuelle und repetitive Arbeit zu eliminieren, indem ich maßgeschneiderte Python-Automatisierungssysteme baue."}
+                ? "I'm an Automation Engineer based in Nuremberg, Germany. With hands-on experience in software scale-ups and as a developer, I understand both the business and technical side of automation."
+                : "Ich bin Automation Engineer aus Nürnberg. Mit Erfahrung in Software-Scale-ups und als Entwickler verstehe ich sowohl die geschäftliche als auch die technische Seite der Automatisierung."}
+            </p>
+            <p className="text-[15px] text-muted leading-relaxed mb-4">
+              {locale === "en"
+                ? "I help small businesses (1–25 employees) eliminate manual, repetitive work by building custom Python automation systems that integrate directly into their existing tools."
+                : "Ich helfe kleinen Unternehmen (1–25 Mitarbeiter), manuelle und repetitive Arbeit zu eliminieren — mit maßgeschneiderten Python-Systemen, die sich nahtlos in bestehende Tools integrieren."}
             </p>
             <p className="text-[15px] text-muted leading-relaxed">
               {locale === "en"

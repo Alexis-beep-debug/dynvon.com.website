@@ -8,6 +8,13 @@ export default function CaseStudies() {
   const solutionLabel = locale === "en" ? "Solution" : "Lösung";
   const resultLabel = locale === "en" ? "Result" : "Ergebnis";
 
+  // Images for each case study (by index)
+  const caseImages: (string | null)[] = [
+    "/case-accounting.png", // Case 1: Accounting
+    null,                   // Case 2: Proposal (no image yet)
+    null,                   // Case 3: Email (no image yet)
+  ];
+
   return (
     <section id="projects" className="py-24 sm:py-32 relative">
       {/* Background */}
@@ -91,6 +98,17 @@ export default function CaseStudies() {
                     </p>
                   </div>
                 </div>
+
+                {/* Screenshot */}
+                {caseImages[index] && (
+                  <div className="mt-8 rounded-xl border border-border overflow-hidden bg-surface/20">
+                    <img
+                      src={caseImages[index]!}
+                      alt={caseStudy.title}
+                      className="w-full h-auto"
+                    />
+                  </div>
+                )}
 
                 {/* Tech Tags */}
                 <div className="mt-6 pt-6 border-t border-border flex flex-wrap gap-2">
