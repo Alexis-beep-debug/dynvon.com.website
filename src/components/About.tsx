@@ -8,19 +8,15 @@ export default function About() {
   const credentials = [
     {
       title: "Vanderbilt University",
-      detail: locale === "en" ? "AI & Automation" : "KI & Automatisierung",
+      detail: locale === "en" ? "Certification: AI & Automation" : "Zertifizierung: KI & Automatisierung",
     },
     {
       title: "Emory University",
-      detail: "Management Consulting",
+      detail: locale === "en" ? "Certification: Management Consulting" : "Zertifizierung: Management Consulting",
     },
     {
       title: "Microsoft",
-      detail: "Business Analytics",
-    },
-    {
-      title: locale === "en" ? "Software Scale-up Experience" : "Software-Scale-up-Erfahrung",
-      detail: locale === "en" ? "Developer & Process Engineer" : "Entwickler & Prozessingenieur",
+      detail: locale === "en" ? "Certification: Business Analytics" : "Zertifizierung: Business Analytics",
     },
   ];
 
@@ -62,8 +58,8 @@ export default function About() {
 
             <p className="text-[15px] text-muted leading-relaxed mb-4">
               {locale === "en"
-                ? "I'm based in Nuremberg, Germany. I've worked in software scale-ups as a developer and process engineer — so I understand both the day-to-day challenges of running a business and how to solve them with technology."
-                : "Ich komme aus Nürnberg. Ich habe in Software-Scale-ups als Entwickler und Prozessingenieur gearbeitet — ich verstehe also sowohl die täglichen Herausforderungen eines Unternehmens als auch die technischen Lösungswege."}
+                ? "I'm based in Nuremberg, Germany. As an automation engineer, I combine business understanding with technical expertise to solve real problems for small businesses."
+                : "Ich komme aus Nürnberg. Als Automation Engineer verbinde ich Geschäftsverständnis mit technischem Know-how, um echte Probleme kleiner Unternehmen zu lösen."}
             </p>
             <p className="text-[15px] text-muted leading-relaxed mb-4">
               {locale === "en"
@@ -82,7 +78,7 @@ export default function About() {
             {/* Background */}
             <div>
               <h3 className="text-sm font-bold uppercase tracking-wider text-muted mb-4">
-                {locale === "en" ? "Background" : "Hintergrund"}
+                {locale === "en" ? "Certifications" : "Zertifizierungen"}
               </h3>
               <div className="space-y-3">
                 {credentials.map((cred, i) => (
