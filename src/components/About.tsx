@@ -74,8 +74,8 @@ export default function About() {
 
             <p className="text-[15px] text-muted leading-relaxed mb-4">
               {locale === "en"
-                ? "I'm an Automation Engineer based in Nuremberg, Germany. I help small businesses (1-10 employees) eliminate manual, repetitive work by building custom Python automation systems."
-                : "Ich bin Automation Engineer aus Nürnberg. Ich helfe kleinen Unternehmen (1-10 Mitarbeiter), manuelle und repetitive Arbeit zu eliminieren, indem ich maßgeschneiderte Python-Automatisierungssysteme baue."}
+                ? "I'm an Automation Engineer based in Nuremberg, Germany. I help small businesses (1–25 employees) eliminate manual, repetitive work by building custom Python automation systems."
+                : "Ich bin Automation Engineer aus Nürnberg. Ich helfe kleinen Unternehmen (1–25 Mitarbeiter), manuelle und repetitive Arbeit zu eliminieren, indem ich maßgeschneiderte Python-Automatisierungssysteme baue."}
             </p>
             <p className="text-[15px] text-muted leading-relaxed">
               {locale === "en"

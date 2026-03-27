@@ -30,7 +30,7 @@ export const blogPosts: BlogPost[] = [
     content: {
       en: `## The Problem: Manual Bookkeeping Is Killing Your Productivity
 
-If you're running a small business with 1-10 employees, chances are someone on your team spends **8+ hours per week** on manual bookkeeping tasks:
+If you're running a small business with 1–25 employees, chances are someone on your team spends **8+ hours per week** on manual bookkeeping tasks:
 
 - Reconciling bank transactions
 - Categorizing expenses
@@ -92,7 +92,7 @@ If your team spends more than 5 hours per week on manual accounting tasks, autom
 
       de: `## Das Problem: Manuelle Buchhaltung frisst Ihre Produktivität
 
-Wenn Sie ein kleines Unternehmen mit 1-10 Mitarbeitern führen, verbringt wahrscheinlich jemand in Ihrem Team **8+ Stunden pro Woche** mit manuellen Buchhaltungsaufgaben:
+Wenn Sie ein kleines Unternehmen mit 1–25 Mitarbeitern führen, verbringt wahrscheinlich jemand in Ihrem Team **8+ Stunden pro Woche** mit manuellen Buchhaltungsaufgaben:
 
 - Banktransaktionen abstimmen
 - Ausgaben kategorisieren
