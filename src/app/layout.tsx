@@ -85,7 +85,7 @@ export default function RootLayout({
     <html lang="en" className="h-full antialiased">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <meta name="theme-color" content="#0a0a0f" />
+        <meta name="theme-color" content="#f8f9fb" />
       </head>
       <body className="min-h-full flex flex-col font-sans">
         <InteractiveGrid />

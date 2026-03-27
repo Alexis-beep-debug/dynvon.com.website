@@ -43,16 +43,16 @@ export default function InteractiveGrid() {
           const dist = Math.sqrt(dx * dx + dy * dy);
           const influence = Math.max(0, 1 - dist / radius);
 
-          const opacity = 0.06 + influence * 0.35;
+          const opacity = 0.1 + influence * 0.4;
           const size = 1 + influence * 2.5;
 
           if (influence > 0) {
-            const r = 99 + influence * 30;
-            const g = 102 + influence * 50;
-            const b = 241;
+            const r = 79 - influence * 10;
+            const g = 70 - influence * 10;
+            const b = 229;
             ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${opacity})`;
           } else {
-            ctx.fillStyle = `rgba(140, 150, 200, ${opacity})`;
+            ctx.fillStyle = `rgba(160, 165, 190, ${opacity})`;
           }
 
           ctx.beginPath();
@@ -70,7 +70,7 @@ export default function InteractiveGrid() {
             const influence = Math.max(0, 1 - dist / radius);
 
             if (influence > 0.1) {
-              ctx.strokeStyle = `rgba(99, 102, 241, ${influence * 0.08})`;
+              ctx.strokeStyle = `rgba(79, 70, 229, ${influence * 0.12})`;
               ctx.lineWidth = 0.5;
 
               if (x + gridSize < w) {
