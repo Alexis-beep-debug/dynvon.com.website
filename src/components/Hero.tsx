@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/lib/LanguageContext";
+import InteractiveGrid from "./InteractiveGrid";
 
 export default function Hero() {
   const { t, locale } = useLanguage();
@@ -18,11 +19,13 @@ export default function Hero() {
       ];
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden grid-bg">
-      {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-accent/6 via-background to-background" />
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-accent/8 rounded-full blur-[150px]" />
-      <div className="absolute top-1/3 left-1/4 w-[300px] h-[300px] bg-purple-500/5 rounded-full blur-[100px]" />
+    <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+      {/* Interactive Grid Background */}
+      <InteractiveGrid />
+      {/* Gradient overlays */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/30 to-background pointer-events-none" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-accent/8 rounded-full blur-[150px] pointer-events-none" />
+      <div className="absolute top-1/3 left-1/4 w-[300px] h-[300px] bg-purple-500/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Badge */}
