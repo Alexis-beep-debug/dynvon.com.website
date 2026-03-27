@@ -2,17 +2,44 @@
 
 import { useLanguage } from "@/lib/LanguageContext";
 
+// Tool logos as inline SVGs for each case study
+const caseToolLogos: { name: string; color: string }[][] = [
+  // Case 1: Accounting & Dunning
+  [
+    { name: "Python", color: "#3776AB" },
+    { name: "Railway", color: "#0B0D0E" },
+    { name: "Enable Banking", color: "#00B4D8" },
+    { name: "Google Workspace", color: "#4285F4" },
+    { name: "Lexoffice", color: "#E85D04" },
+  ],
+  // Case 2: Proposal Generation
+  [
+    { name: "Python", color: "#3776AB" },
+    { name: "Pipedrive", color: "#25292C" },
+    { name: "Lexoffice", color: "#E85D04" },
+    { name: "Google Drive", color: "#0F9D58" },
+    { name: "Brevo", color: "#0B996E" },
+  ],
+  // Case 3: Email & CRM
+  [
+    { name: "Brevo", color: "#0B996E" },
+    { name: "Lemlist", color: "#6C5CE7" },
+    { name: "Pipedrive", color: "#25292C" },
+    { name: "Python", color: "#3776AB" },
+  ],
+];
+
 export default function CaseStudies() {
   const { t, locale } = useLanguage();
   const problemLabel = locale === "en" ? "Challenge" : "Herausforderung";
   const solutionLabel = locale === "en" ? "Solution" : "Lösung";
   const resultLabel = locale === "en" ? "Result" : "Ergebnis";
 
-  // Images for each case study (by index)
+  // Flowchart image only for Case 2 (Proposal), smaller
   const caseImages: (string | null)[] = [
-    "/case-accounting.png", // Case 1: Accounting
+    null,                   // Case 1: no screenshot
     "/case-proposal.png",   // Case 2: Proposal Flowchart
-    null,                   // Case 3: Email (no image yet)
+    null,                   // Case 3: no screenshot
   ];
 
   return (
@@ -56,8 +83,9 @@ export default function CaseStudies() {
                 </div>
               </div>
 
-              {/* Case Body — 3 columns */}
+              {/* Case Body */}
               <div className="p-6 sm:p-8">
+                {/* 3 columns: Problem / Solution / Result */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                   {/* Problem */}
                   <div className="relative pl-5 border-l-2 border-red-500/30">
@@ -99,27 +127,40 @@ export default function CaseStudies() {
                   </div>
                 </div>
 
-                {/* Screenshot */}
+                {/* Flowchart image (smaller, max-width limited) */}
                 {caseImages[index] && (
-                  <div className="mt-8 rounded-xl border border-border overflow-hidden bg-surface/20">
-                    <img
-                      src={caseImages[index]!}
-                      alt={caseStudy.title}
-                      className="w-full h-auto"
-                    />
+                  <div className="mt-6 flex justify-center">
+                    <div className="max-w-md rounded-xl border border-border overflow-hidden bg-surface/20">
+                      <img
+                        src={caseImages[index]!}
+                        alt={caseStudy.title}
+                        className="w-full h-auto"
+                      />
+                    </div>
                   </div>
                 )}
 
-                {/* Tech Tags */}
-                <div className="mt-6 pt-6 border-t border-border flex flex-wrap gap-2">
-                  {caseStudy.tech.map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-3 py-1.5 text-xs font-mono text-accent-light bg-accent/8 border border-accent/15 rounded-lg"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                {/* Tool Logos + Tech Tags */}
+                <div className="mt-6 pt-6 border-t border-border">
+                  <span className="text-xs font-mono text-muted uppercase tracking-wider mb-3 block">
+                    {locale === "en" ? "Tools Used" : "Eingesetzte Tools"}
+                  </span>
+                  <div className="flex flex-wrap gap-3">
+                    {caseToolLogos[index]?.map((tool) => (
+                      <div
+                        key={tool.name}
+                        className="flex items-center gap-2 px-4 py-2 rounded-lg border border-border bg-surface/30 hover:border-accent/20 transition-colors"
+                      >
+                        <span
+                          className="w-3 h-3 rounded-full shrink-0"
+                          style={{ backgroundColor: tool.color }}
+                        />
+                        <span className="text-sm font-medium text-foreground">
+                          {tool.name}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
