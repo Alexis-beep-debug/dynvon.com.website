@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/lib/LanguageContext";
+import ProposalFlowchart from "./ProposalFlowchart";
 
 // Tool logos as inline SVGs for each case study
 const caseToolLogos: { name: string; color: string }[][] = [
@@ -35,12 +36,8 @@ export default function CaseStudies() {
   const solutionLabel = locale === "en" ? "Solution" : "Lösung";
   const resultLabel = locale === "en" ? "Result" : "Ergebnis";
 
-  // Flowchart image only for Case 2 (Proposal), smaller
-  const caseImages: (string | null)[] = [
-    null,                   // Case 1: no screenshot
-    "/case-proposal.png",   // Case 2: Proposal Flowchart
-    null,                   // Case 3: no screenshot
-  ];
+  // Interactive flowchart only for Case 2
+  const hasFlowchart = [false, true, false];
 
   return (
     <section id="projects" className="py-24 sm:py-32 relative">
@@ -127,18 +124,8 @@ export default function CaseStudies() {
                   </div>
                 </div>
 
-                {/* Flowchart image (smaller, max-width limited) */}
-                {caseImages[index] && (
-                  <div className="mt-6 flex justify-center">
-                    <div className="max-w-md rounded-xl border border-border overflow-hidden bg-surface/20">
-                      <img
-                        src={caseImages[index]!}
-                        alt={caseStudy.title}
-                        className="w-full h-auto"
-                      />
-                    </div>
-                  </div>
-                )}
+                {/* Interactive Flowchart for Case 2 */}
+                {hasFlowchart[index] && <ProposalFlowchart />}
 
                 {/* Tool Logos + Tech Tags */}
                 <div className="mt-6 pt-6 border-t border-border">
