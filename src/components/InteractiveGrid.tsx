@@ -36,19 +36,36 @@ export default function InteractiveGrid() {
       const mx = mouseRef.current.x;
       const my = mouseRef.current.y;
 
+      // Center of viewport — grid fades out near center, visible at edges
+      const cx = w / 2;
+      const cy = h / 2;
+      const maxDist = Math.sqrt(cx * cx + cy * cy);
+
       for (let x = gridSize; x < w; x += gridSize) {
         for (let y = gridSize; y < h; y += gridSize) {
+          // Distance from viewport center (0 = center, 1 = corner)
+          const dcx = x - cx;
+          const dcy = y - cy;
+          const centerDist = Math.sqrt(dcx * dcx + dcy * dcy) / maxDist;
+          // Edge factor: 0 at center, 1 at edges/corners
+          const edgeFactor = Math.pow(Math.max(0, centerDist - 0.2) / 0.8, 1.5);
+
+          // Mouse influence
           const dx = x - mx;
           const dy = y - my;
           const dist = Math.sqrt(dx * dx + dy * dy);
-          const influence = Math.max(0, 1 - dist / radius);
+          const mouseInfluence = Math.max(0, 1 - dist / radius);
 
-          const opacity = 0.1 + influence * 0.4;
-          const size = 1 + influence * 2.5;
+          // Only show dots where edgeFactor or mouseInfluence is significant
+          const visibility = Math.max(edgeFactor, mouseInfluence * 0.7);
+          if (visibility < 0.02) continue;
 
-          if (influence > 0) {
-            const r = 79 - influence * 10;
-            const g = 70 - influence * 10;
+          const opacity = visibility * (0.12 + mouseInfluence * 0.35);
+          const size = 0.8 + edgeFactor * 0.5 + mouseInfluence * 2.5;
+
+          if (mouseInfluence > 0) {
+            const r = 79 - mouseInfluence * 10;
+            const g = 70 - mouseInfluence * 10;
             const b = 229;
             ctx.fillStyle = `rgba(${r}, ${g}, ${b}, ${opacity})`;
           } else {
@@ -61,16 +78,17 @@ export default function InteractiveGrid() {
         }
       }
 
+      // Grid lines only near mouse and only at edges
       if (mx > 0 && my > 0) {
         for (let x = gridSize; x < w; x += gridSize) {
           for (let y = gridSize; y < h; y += gridSize) {
             const dx = x - mx;
             const dy = y - my;
             const dist = Math.sqrt(dx * dx + dy * dy);
-            const influence = Math.max(0, 1 - dist / radius);
+            const mouseInfluence = Math.max(0, 1 - dist / radius);
 
-            if (influence > 0.1) {
-              ctx.strokeStyle = `rgba(79, 70, 229, ${influence * 0.12})`;
+            if (mouseInfluence > 0.1) {
+              ctx.strokeStyle = `rgba(79, 70, 229, ${mouseInfluence * 0.1})`;
               ctx.lineWidth = 0.5;
 
               if (x + gridSize < w) {
