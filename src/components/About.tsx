@@ -63,8 +63,8 @@ export default function About() {
             </p>
             <p className="text-[15px] text-muted leading-relaxed mb-4">
               {locale === "en"
-                ? "I help small businesses (1–25 employees) get rid of time-consuming manual tasks. Whether it's bookkeeping, proposals, emails, or data entry — I build systems that handle it automatically."
-                : "Ich helfe kleinen Unternehmen (1–25 Mitarbeiter), zeitfressende manuelle Aufgaben loszuwerden. Ob Buchhaltung, Angebote, E-Mails oder Dateneingabe — ich baue Systeme, die das automatisch erledigen."}
+                ? "I help small businesses (1–50 employees) get rid of time-consuming manual tasks. Whether it's bookkeeping, proposals, emails, or data entry — I build systems that handle it automatically."
+                : "Ich helfe kleinen Unternehmen (1–50 Mitarbeiter), zeitfressende manuelle Aufgaben loszuwerden. Ob Buchhaltung, Angebote, E-Mails oder Dateneingabe — ich baue Systeme, die das automatisch erledigen."}
             </p>
             <p className="text-[15px] text-muted leading-relaxed">
               {locale === "en"
