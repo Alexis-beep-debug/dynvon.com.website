@@ -84,7 +84,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <meta name="theme-color" content="#f8f9fb" />
         <script src="https://email-outreach-dynvon-production.up.railway.app/analytics/script.js" defer></script>
       </head>
