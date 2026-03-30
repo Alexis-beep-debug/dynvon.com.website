@@ -262,7 +262,7 @@ function ReinigungContent() {
           <div className="flex flex-col sm:flex-row items-center gap-8">
             <div className="w-36 h-36 rounded-full border-2 border-accent/30 overflow-hidden shrink-0 shadow-lg shadow-accent/10">
               <img
-                src="/alexis.png"
+                src="/alexis-opt.webp"
                 alt="Alexis Bethke-Pittadakis"
                 className="w-full h-full object-cover"
               />

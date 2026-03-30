@@ -50,7 +50,7 @@ export default function About() {
             {/* Profile Photo */}
             <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-full border-2 border-accent/30 overflow-hidden mb-6 shadow-lg shadow-accent/10">
               <img
-                src="/alexis.png"
+                src="/alexis-opt.webp"
                 alt="Alexis Bethke-Pittadakis"
                 className="w-full h-full object-cover"
               />
