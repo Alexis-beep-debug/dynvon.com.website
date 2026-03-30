@@ -210,7 +210,7 @@ function ReinigungContent() {
             Das Ergebnis: Angebotszeit von 2 Stunden auf unter 5 Minuten reduziert.
           </p>
 
-          <ProposalFlowchart />
+          <ProposalFlowchart forceLocale="de" />
         </div>
       </section>
 

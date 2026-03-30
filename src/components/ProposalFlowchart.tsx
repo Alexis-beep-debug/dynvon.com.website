@@ -9,9 +9,9 @@ interface FlowNode {
   borderColor: string;
 }
 
-export default function ProposalFlowchart() {
+export default function ProposalFlowchart({ forceLocale }: { forceLocale?: "en" | "de" } = {}) {
   const { locale } = useLanguage();
-  const en = locale === "en";
+  const en = (forceLocale || locale) === "en";
 
   const intake: FlowNode = {
     label: en ? "Property intake form" : "Objekt-Aufnahmeformular",
