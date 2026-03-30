@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="120" viewBox="0 0 400 120">
+  <rect width="400" height="120" fill="transparent"/>
+  <text x="200" y="82" text-anchor="middle" font-family="Inter, SF Pro Display, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="72" font-weight="700" letter-spacing="-2">
+    <tspan fill="#4f46e5">dyn</tspan><tspan fill="#1a1a2e">von</tspan>
+  </text>
+</svg>
