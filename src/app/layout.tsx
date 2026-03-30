@@ -86,6 +86,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <meta name="theme-color" content="#f8f9fb" />
+        <script src="https://email-outreach-dynvon-production.up.railway.app/analytics/script.js" defer></script>
       </head>
       <body className="min-h-full flex flex-col font-sans">
         <InteractiveGrid />
