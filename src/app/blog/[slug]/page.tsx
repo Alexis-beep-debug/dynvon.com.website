@@ -115,7 +115,7 @@ function BlogContent({ slug }: { slug: string }) {
               return (
                 <div
                   key={i}
-                  className="grid grid-cols-3 gap-4 text-sm py-2 border-b border-border"
+                  className="grid grid-cols-1 sm:grid-cols-3 gap-1 sm:gap-4 text-sm py-2 border-b border-border"
                 >
                   {cells.map((cell, j) => (
                     <span

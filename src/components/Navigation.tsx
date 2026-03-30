@@ -52,14 +52,14 @@ export default function Navigation() {
           <div className="flex md:hidden items-center gap-3">
             <button
               onClick={toggleLocale}
-              className="text-sm font-medium px-2.5 py-1 rounded-full border border-border hover:border-accent/50 transition-all"
+              className="text-sm font-medium px-3 py-2 rounded-full border border-border hover:border-accent/50 transition-all min-w-[44px] min-h-[44px] flex items-center justify-center"
               aria-label="Toggle language"
             >
               {locale === "en" ? "DE" : "EN"}
             </button>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="p-2 text-muted hover:text-foreground transition-colors"
+              className="p-2.5 text-muted hover:text-foreground transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
               aria-label="Toggle menu"
             >
               <svg

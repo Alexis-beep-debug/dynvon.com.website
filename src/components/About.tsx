@@ -105,7 +105,7 @@ export default function About() {
               <h3 className="text-sm font-bold uppercase tracking-wider text-muted mb-4">
                 {locale === "en" ? "Track Record" : "Erfolgsbilanz"}
               </h3>
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {metrics.map((metric, i) => (
                   <div key={i} className="text-center p-4 rounded-xl border border-border bg-surface/30">
                     <div className="text-2xl font-bold stat-highlight">{metric.value}</div>

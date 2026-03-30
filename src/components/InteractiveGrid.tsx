@@ -116,6 +116,13 @@ export default function InteractiveGrid() {
       mouseRef.current = { x: e.clientX, y: e.clientY };
     }
 
+    function handleTouchMove(e: TouchEvent) {
+      const touch = e.touches[0];
+      if (touch) {
+        mouseRef.current = { x: touch.clientX, y: touch.clientY };
+      }
+    }
+
     function handleMouseLeave() {
       mouseRef.current = { x: -1000, y: -1000 };
     }
@@ -125,12 +132,16 @@ export default function InteractiveGrid() {
 
     window.addEventListener("resize", resize);
     window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("touchmove", handleTouchMove, { passive: true });
+    window.addEventListener("touchend", handleMouseLeave);
     document.addEventListener("mouseleave", handleMouseLeave);
 
     return () => {
       cancelAnimationFrame(animationId);
       window.removeEventListener("resize", resize);
       window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("touchmove", handleTouchMove);
+      window.removeEventListener("touchend", handleMouseLeave);
       document.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, []);
