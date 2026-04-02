@@ -110,7 +110,7 @@ export const translations: Record<Locale, Translations> = {
       contact: "Kontakt",
     },
     hero: {
-      title: "Schluss mit Stundenverschwendung für Routinearbeit",
+      title: "Schluss mit Zeitverschwendung für Routinearbeit",
       subtitle:
         "Ich baue Automatisierungssysteme, die Ihre Buchhaltung, Angebote, E-Mails und Dateneingabe übernehmen — damit Sie und Ihr Team sich aufs Wachstum konzentrieren können.",
       cta: "Kostenloses Gespräch buchen",

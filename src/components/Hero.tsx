@@ -32,7 +32,7 @@ export default function Hero() {
         </div>
 
         {/* Title */}
-        <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-8">
+        <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-8 break-words">
           {locale === "en" ? (
             <>
               Stop <span className="stat-highlight">Wasting Hours</span> on
@@ -41,7 +41,9 @@ export default function Hero() {
             </>
           ) : (
             <>
-              Schluss mit <span className="stat-highlight">Stundenverschwendung</span>
+              Schluss mit
+              <br className="sm:hidden" />{" "}
+              <span className="stat-highlight">Zeitverschwendung</span>
               <br className="hidden sm:block" />{" "}
               für Routinearbeit
             </>
