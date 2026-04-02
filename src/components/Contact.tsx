@@ -32,7 +32,7 @@ export default function Contact() {
 
         {/* CTA Button */}
         <a
-          href="https://calendar.app.google/hnhhsonYaR6LrChw7"
+          href="https://calendar.app.google/qJnC2hS15NJ1XxVcA"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent hover:bg-accent-light text-white font-semibold rounded-lg transition-all hover:shadow-lg hover:shadow-accent/25 text-lg"

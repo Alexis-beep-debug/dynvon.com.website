@@ -31,7 +31,7 @@ function ReinigungContent() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <a
-              href="https://calendar.app.google/hnhhsonYaR6LrChw7"
+              href="https://calendar.app.google/qJnC2hS15NJ1XxVcA"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent hover:bg-accent-light text-white font-semibold rounded-xl transition-all hover:shadow-lg hover:shadow-accent/25 text-lg"
@@ -296,7 +296,7 @@ function ReinigungContent() {
           </p>
 
           <a
-            href="https://calendar.app.google/hnhhsonYaR6LrChw7"
+            href="https://calendar.app.google/qJnC2hS15NJ1XxVcA"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-accent hover:bg-accent-light text-white font-semibold rounded-xl transition-all hover:shadow-lg hover:shadow-accent/25 text-lg"
