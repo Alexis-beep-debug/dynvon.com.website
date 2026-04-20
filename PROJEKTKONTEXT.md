@@ -22,27 +22,27 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `c978030` chore: update PROJEKTKONTEXT.md via stop hook
-2. `1bdbe92` chore: update PROJEKTKONTEXT.md via stop hook
-3. `60d7e34` feat: refocus /reinigung hero to Buchhaltung + add project context file
-4. `8a03c01` fix: update booking link to new Google Calendar URL
-5. `c58c895` fix: Hero text overflow on mobile (German)
-6. `1284716` fix: force ProposalFlowchart to German on /reinigung page
-7. `1cd3f30` feat: add signature logo (triangle icon + dynvon wordmark)
-8. `804aaf0` feat: switch to triangle logo (dynvon branded)
-9. `77a22c3` feat: add logo JPEGs with white background for email signatures
-10. `97cde56` feat: replace Vercel favicon with dynvon "d" icon
+1. `cce762b` chore: update PROJEKTKONTEXT.md
+2. `c978030` chore: update PROJEKTKONTEXT.md via stop hook
+3. `1bdbe92` chore: update PROJEKTKONTEXT.md via stop hook
+4. `60d7e34` feat: refocus /reinigung hero to Buchhaltung + add project context file
+5. `8a03c01` fix: update booking link to new Google Calendar URL
+6. `c58c895` fix: Hero text overflow on mobile (German)
+7. `1284716` fix: force ProposalFlowchart to German on /reinigung page
+8. `1cd3f30` feat: add signature logo (triangle icon + dynvon wordmark)
+9. `804aaf0` feat: switch to triangle logo (dynvon branded)
+10. `77a22c3` feat: add logo JPEGs with white background for email signatures
 
 ## Aktuell in Arbeit
-- Task: Stop-Hook-Zyklus überprüft und PROJEKTKONTEXT.md aktualisiert — keine uncommitted changes mehr.
-- Status: Alle Änderungen committed, Projekt in stabilem Zustand.
+- Task: Stop-Hook-Zyklus stabilisiert — PROJEKTKONTEXT.md wird jetzt korrekt am Ende aktualisiert und committed.
+- Status: Projekt stabil, alle Änderungen committed, keine uncommitted changes.
 
 ## Offene Punkte / nächste Schritte
-- PR #2 abonniert — auf Reviews/CI-Feedback warten.
-- Stop-Hook-Zyklus stabilisieren (siehe letzte Assistant-Message: Option A/B/C für saubere Lösung erwägen).
+- Stop-Hook-Zyklus auf Stabilität prüfen — beim nächsten Turn sollte alles sauber durchlaufen.
+- Ggf. weitere Features/Bugfixes für `/reinigung` oder andere Routen.
 
 ## Wichtige Entscheidungen / Konventionen
 - Hero-Pattern auf `/reinigung`: knappe Headline nach Schema `<Thema> in <Zeit> statt <längere Zeit>`, gefolgt von Subtitle + 3 Stats + CTA
 - ProposalFlowchart auf `/reinigung` immer DE (`forceLocale="de"`)
 - Sprache persistiert über Seitenwechsel via LanguageContext
-- Stop-Hook dokumentiert Projekt-Stand automatisch — dokumentiert aktuelle Commits, Branches, uncommitted changes
+- Stop-Hook dokumentiert Projekt-Stand automatisch — committet und pusht PROJEKTKONTEXT.md am Ende jedes Turns
