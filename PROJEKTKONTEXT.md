@@ -8,7 +8,7 @@
 ## Stand
 - **Datum:** 2026-04-20
 - **Branch:** `claude/review-project-status-ZBd2O`
-- **Working Tree:** clean (keine uncommitted changes zum Initialzeitpunkt)
+- **Working Tree:** dirty (PROJEKTKONTEXT.md modified)
 
 ## Projekt-Basics
 - **Stack:** Next.js 16.2.1 + React 19.2 + Tailwind v4, TypeScript
@@ -22,23 +22,24 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `8a03c01` fix: update booking link to new Google Calendar URL
-2. `c58c895` fix: Hero text overflow on mobile (German)
-3. `1284716` fix: force ProposalFlowchart to German on /reinigung page
-4. `1cd3f30` feat: add signature logo (triangle icon + dynvon wordmark)
-5. `804aaf0` feat: switch to triangle logo (dynvon branded)
-6. `77a22c3` feat: add logo JPEGs with white background for email signatures
-7. `97cde56` feat: replace Vercel favicon with dynvon "d" icon
-8. `8a9665f` feat: add dynvon logo files (SVG + PNG)
-9. `e829794` feat: add analytics tracking script
-10. `0ab5e60` perf: optimize profile image (616KB PNG → 21KB WebP)
+1. `60d7e34` feat: refocus /reinigung hero to Buchhaltung + add project context file
+2. `8a03c01` fix: update booking link to new Google Calendar URL
+3. `c58c895` fix: Hero text overflow on mobile (German)
+4. `1284716` fix: force ProposalFlowchart to German on /reinigung page
+5. `1cd3f30` feat: add signature logo (triangle icon + dynvon wordmark)
+6. `804aaf0` feat: switch to triangle logo (dynvon branded)
+7. `77a22c3` feat: add logo JPEGs with white background for email signatures
+8. `97cde56` feat: replace Vercel favicon with dynvon "d" icon
+9. `8a9665f` feat: add dynvon logo files (SVG + PNG)
+10. `e829794` feat: add analytics tracking script
 
 ## Aktuell in Arbeit
-- Projektkontext-Datei + Stop-Hook eingerichtet, damit der Projektstand nie verloren geht.
-- Reinigung-Hero: Fokus von "Angebote" auf "Buchhaltung" umgestellt (Nachfrage höher).
+- Stop-Hook für `.claude/settings.local.json` eingerichtet; Watcher muss via `/hooks` oder Neustart aktiviert werden (oder: einfach ignoriert, wenn Hook feiert automatisches Update).
+- Task: Projektkontext-Datei mit aktuellem Git-Status + Session-Kontext fortschreiben (diese Datei).
 
 ## Offene Punkte / nächste Schritte
-- (keine notiert)
+- Stop-Hook aktivieren: `/hooks` eingeben oder Session neu laden, damit Watcher aktiv wird.
+- Danach wird PROJEKTKONTEXT.md automatisch nach jedem Turn-Ende aktualisiert.
 
 ## Wichtige Entscheidungen / Konventionen
 - Hero-Pattern auf `/reinigung`: knappe Headline nach Schema `<Thema> in <Zeit> statt <längere Zeit>`, gefolgt von Subtitle + 3 Stats + CTA "Kostenloses Gespräch buchen"
