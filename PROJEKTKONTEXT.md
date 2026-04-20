@@ -22,26 +22,25 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `1294c72` feat(reinigung): add topic chooser (Angebote vs Buchhaltung)
-2. `7b70091` chore: auto-update PROJEKTKONTEXT.md
-3. `47e5457` chore: auto-update PROJEKTKONTEXT.md
-4. `cce762b` chore: update PROJEKTKONTEXT.md
-5. `c978030` chore: update PROJEKTKONTEXT.md via stop hook
-6. `1bdbe92` chore: update PROJEKTKONTEXT.md via stop hook
-7. `60d7e34` feat: refocus /reinigung hero to Buchhaltung + add project context file
-8. `8a03c01` fix: update booking link to new Google Calendar URL
-9. `c58c895` fix: Hero text overflow on mobile (German)
-10. `1284716` fix: force ProposalFlowchart to German on /reinigung page
+1. `502be80` chore: auto-update PROJEKTKONTEXT.md
+2. `ea94e66` docs: add BRAND.md — design tokens, components, voice & tone
+3. `3dbfd5a` chore: auto-update PROJEKTKONTEXT.md
+4. `3207d3f` chore: auto-update PROJEKTKONTEXT.md
+5. `97d7405` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+6. `34bb78d` chore: auto-update PROJEKTKONTEXT.md
+7. `1294c72` feat(reinigung): add topic chooser (Angebote vs Buchhaltung)
+8. `7b70091` chore: auto-update PROJEKTKONTEXT.md
+9. `a1e13f1` Reinigung-Hero auf Buchhaltung + Projektkontext-Tracking (#2)
+10. `47e5457` chore: auto-update PROJEKTKONTEXT.md
 
 ## Aktuell in Arbeit
-- Task: Topic-Chooser (Angebote vs Buchhaltung) für `/reinigung` implementiert + gemergt auf `main`.
-- Status: Projekt sauber, PR #3 wartet auf Merge (keine CI-Checks konfiguriert).
-- Next: PR #3 mergen, damit Topic-Chooser live geht.
+- **Task:** BRAND.md erstellt + gepusht (`ea94e66`), Stop-Hook in `settings.local.json` konfiguriert; Working Tree clean
+- **Nächster Schritt:** Frage offensichtlich ob BRAND.md auf `main` gemergt werden soll oder weitere Arbeit ansteht
 
 ## Offene Punkte / nächste Schritte
-- PR #3 mergen (topic-chooser mit Angebote/Buchhaltung-Split).
-- Vercel-Deployment prüfen nach Merge.
-- Ggf. weitere Kampagnen-Varianten oder UI-Optimierungen für `/reinigung`.
+- BRAND.md auf `main` mergen und Vercel-Deployment triggern (stabilere GitHub-URLs)
+- Topic-Chooser live verifizieren (Mobile + Desktop, beide Tracks, CTA-Links)
+- Ggf. weitere Kampagnen-Varianten oder UI-Optimierungen für `/reinigung` basierend auf Live-Tests
 
 ## Wichtige Entscheidungen / Konventionen
 - Hero-Pattern auf `/reinigung`: knappe Headline nach Schema `<Thema> in <Zeit> statt <längere Zeit>`, gefolgt von Subtitle + 3 Stats + CTA
