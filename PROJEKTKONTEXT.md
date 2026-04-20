@@ -22,25 +22,25 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `ea94e66` docs: add BRAND.md — design tokens, components, voice & tone
-2. `3dbfd5a` chore: auto-update PROJEKTKONTEXT.md
-3. `3207d3f` chore: auto-update PROJEKTKONTEXT.md
-4. `97d7405` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-5. `34bb78d` chore: auto-update PROJEKTKONTEXT.md
-6. `1294c72` feat(reinigung): add topic chooser (Angebote vs Buchhaltung)
-7. `7b70091` chore: auto-update PROJEKTKONTEXT.md
-8. `a1e13f1` Reinigung-Hero auf Buchhaltung + Projektkontext-Tracking (#2)
-9. `47e5457` chore: auto-update PROJEKTKONTEXT.md
-10. `cce762b` chore: update PROJEKTKONTEXT.md
+1. `502be80` chore: auto-update PROJEKTKONTEXT.md
+2. `ea94e66` docs: add BRAND.md — design tokens, components, voice & tone
+3. `3dbfd5a` chore: auto-update PROJEKTKONTEXT.md
+4. `3207d3f` chore: auto-update PROJEKTKONTEXT.md
+5. `97d7405` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+6. `34bb78d` chore: auto-update PROJEKTKONTEXT.md
+7. `1294c72` feat(reinigung): add topic chooser (Angebote vs Buchhaltung)
+8. `7b70091` chore: auto-update PROJEKTKONTEXT.md
+9. `a1e13f1` Reinigung-Hero auf Buchhaltung + Projektkontext-Tracking (#2)
+10. `47e5457` chore: auto-update PROJEKTKONTEXT.md
 
 ## Aktuell in Arbeit
-- Task: `BRAND.md` erstellt und gepusht (`ea94e66`) — 10 Abschnitte mit Design Tokens, Komponenten, Voice & Tone direkt aus `globals.css` und Komponenten extrahiert.
-- Status: Working Tree clean, bereit für nächste Phase (z.B. Merge auf `main`).
+- **Task:** BRAND.md erstellt + gepusht (`ea94e66`), Stop-Hook in `settings.local.json` konfiguriert; Working Tree clean
+- **Nächster Schritt:** Frage offensichtlich ob BRAND.md auf `main` gemergt werden soll oder weitere Arbeit ansteht
 
 ## Offene Punkte / nächste Schritte
-- `BRAND.md` auf `main` mergen und Vervel-Deployment triggern.
-- Topic-Chooser live verifizieren (Mobile + Desktop, beide Tracks, CTA-Links).
-- Ggf. weitere Kampagnen-Varianten oder UI-Optimierungen für `/reinigung` basierend auf Live-Tests.
+- BRAND.md auf `main` mergen und Vercel-Deployment triggern (stabilere GitHub-URLs)
+- Topic-Chooser live verifizieren (Mobile + Desktop, beide Tracks, CTA-Links)
+- Ggf. weitere Kampagnen-Varianten oder UI-Optimierungen für `/reinigung` basierend auf Live-Tests
 
 ## Wichtige Entscheidungen / Konventionen
 - Hero-Pattern auf `/reinigung`: knappe Headline nach Schema `<Thema> in <Zeit> statt <längere Zeit>`, gefolgt von Subtitle + 3 Stats + CTA
