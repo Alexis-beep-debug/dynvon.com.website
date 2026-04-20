@@ -22,23 +22,24 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `3207d3f` chore: auto-update PROJEKTKONTEXT.md
-2. `97d7405` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-3. `34bb78d` chore: auto-update PROJEKTKONTEXT.md
-4. `1294c72` feat(reinigung): add topic chooser (Angebote vs Buchhaltung)
-5. `7b70091` chore: auto-update PROJEKTKONTEXT.md
-6. `a1e13f1` Reinigung-Hero auf Buchhaltung + Projektkontext-Tracking (#2)
-7. `47e5457` chore: auto-update PROJEKTKONTEXT.md
-8. `cce762b` chore: update PROJEKTKONTEXT.md
-9. `c978030` chore: update PROJEKTKONTEXT.md via stop hook
-10. `1bdbe92` chore: update PROJEKTKONTEXT.md via stop hook
+1. `ea94e66` docs: add BRAND.md — design tokens, components, voice & tone
+2. `3dbfd5a` chore: auto-update PROJEKTKONTEXT.md
+3. `3207d3f` chore: auto-update PROJEKTKONTEXT.md
+4. `97d7405` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+5. `34bb78d` chore: auto-update PROJEKTKONTEXT.md
+6. `1294c72` feat(reinigung): add topic chooser (Angebote vs Buchhaltung)
+7. `7b70091` chore: auto-update PROJEKTKONTEXT.md
+8. `a1e13f1` Reinigung-Hero auf Buchhaltung + Projektkontext-Tracking (#2)
+9. `47e5457` chore: auto-update PROJEKTKONTEXT.md
+10. `cce762b` chore: update PROJEKTKONTEXT.md
 
 ## Aktuell in Arbeit
-- Task: Topic-Chooser (Angebote vs Buchhaltung) für `/reinigung` ist auf `main` (commit `b4fca82`), Vercel-Deployment läuft.
-- Status: Working Tree clean, Review des Projektstands abgeschlossen auf `claude/review-project-status-ZBd2O`.
+- Task: `BRAND.md` erstellt und gepusht (`ea94e66`) — 10 Abschnitte mit Design Tokens, Komponenten, Voice & Tone direkt aus `globals.css` und Komponenten extrahiert.
+- Status: Working Tree clean, bereit für nächste Phase (z.B. Merge auf `main`).
 
 ## Offene Punkte / nächste Schritte
-- Vercel-Deployment abwarten und Topic-Chooser live verifizieren (Mobile + Desktop, beide Tracks, CTA-Links).
+- `BRAND.md` auf `main` mergen und Vervel-Deployment triggern.
+- Topic-Chooser live verifizieren (Mobile + Desktop, beide Tracks, CTA-Links).
 - Ggf. weitere Kampagnen-Varianten oder UI-Optimierungen für `/reinigung` basierend auf Live-Tests.
 
 ## Wichtige Entscheidungen / Konventionen
