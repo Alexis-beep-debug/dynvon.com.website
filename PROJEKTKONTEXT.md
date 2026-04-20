@@ -7,7 +7,7 @@
 
 ## Stand
 - **Datum:** 2026-04-20
-- **Branch:** `claude/review-project-status-ZBd2O`
+- **Branch:** `claude/review-project-status-ZBd2O` (lokal) / `main` (remote, mit PITCH-BUCHHALTUNG.md gemergt)
 - **Working Tree:** clean
 
 ## Projekt-Basics
@@ -22,26 +22,26 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `7eedf72` docs: add PITCH-BUCHHALTUNG.md — sales deck outline
-2. `1ecdbe8` chore: auto-update PROJEKTKONTEXT.md
-3. `a156f46` chore: auto-update PROJEKTKONTEXT.md
-4. `3f8f976` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-5. `27a2eb7` chore: auto-update PROJEKTKONTEXT.md
-6. `502be80` chore: auto-update PROJEKTKONTEXT.md
-7. `ea94e66` docs: add BRAND.md — design tokens, components, voice & tone
-8. `3dbfd5a` chore: auto-update PROJEKTKONTEXT.md
-9. `3207d3f` chore: auto-update PROJEKTKONTEXT.md
-10. `b4fca82` Reinigung: Topic-Chooser (Angebote vs Buchhaltung) (#3)
+1. `4a836ee` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+2. `da5adfa` chore: auto-update PROJEKTKONTEXT.md
+3. `7eedf72` docs: add PITCH-BUCHHALTUNG.md — sales deck outline
+4. `1ecdbe8` chore: auto-update PROJEKTKONTEXT.md
+5. `a156f46` chore: auto-update PROJEKTKONTEXT.md
+6. `1a211a8` docs: add BRAND.md (#4)
+7. `3f8f976` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+8. `27a2eb7` chore: auto-update PROJEKTKONTEXT.md
+9. `502be80` chore: auto-update PROJEKTKONTEXT.md
+10. `ea94e66` docs: add BRAND.md — design tokens, components, voice & tone
 
 ## Aktuell in Arbeit
-- **Task:** PITCH-BUCHHALTUNG.md erstellt (17 Folien: Cover → Wer ich bin → Problem → Kosten → Vision → 3 Systeme → Fallstudie → Ergebnisse → Integration → Prozess → Preise → Warum-ich → CTA → FAQ → Demo + 2 Backup-Slides) mit Titel, Inhalt, Speaker Notes pro Folie.
-- **Nächstes:** PITCH-BUCHHALTUNG.md auf `main` mergen für curl-Download-Zugriff.
+- **Task:** PITCH-BUCHHALTUNG.md auf `main` gemergt (17 Folien mit Speaker Notes). Download-Zugriff via curl: `curl -O https://raw.githubusercontent.com/alexis-beep-debug/dynvon.com.website/main/PITCH-BUCHHALTUNG.md`
+- **Status:** Branch aktualisiert mit `main`, alle Commits dokumentiert, Session abgeschlossen.
 
 ## Offene Punkte / nächste Schritte
-- PITCH-BUCHHALTUNG.md auf `main` mergen und via Raw GitHub URL bereitstellen
 - Topic-Chooser + ProposalFlowchart auf `/reinigung` verifizieren (Mobile + Desktop)
 - Repository-Dokumentation (README, Contributing Guide) falls nötig
 - Deploy-Status und Live-Performance der neuen Features überprüfen
+- Branch `claude/review-project-status-ZBd2O` bei Bedarf aufräumen oder auf main zurückkehren
 
 ## Wichtige Entscheidungen / Konventionen
 - Hero-Pattern auf `/reinigung`: knappe Headline nach Schema `<Thema> in <Zeit> statt <längere Zeit>`, gefolgt von Subtitle + 3 Stats + CTA
@@ -50,4 +50,4 @@
 - Sprache persistiert über Seitenwechsel via LanguageContext
 - Stop-Hook dokumentiert Projekt-Stand automatisch — committet und pusht PROJEKTKONTEXT.md am Ende jedes Turns
 - BRAND.md zentral für Design-Tokens, Komponenten-Konventionen und Voice & Tone
-- PITCH-BUCHHALTUNG.md ist zentrale Sales-Deck-Dokumentation (Struktur: Cover → Wer ich bin → Problem → 3 Systeme → Fallstudie → Integration → Preise → CTA → FAQ)
+- PITCH-BUCHHALTUNG.md zentrale Sales-Deck-Dokumentation (17 Folien: Cover → Wer ich bin → Problem → Kosten → Vision → 3 Systeme → Fallstudie → Integration → Preise → Warum-ich → CTA → FAQ + Backup-Slides)
