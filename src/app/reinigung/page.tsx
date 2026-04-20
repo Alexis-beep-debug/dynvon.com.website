@@ -1,32 +1,196 @@
 "use client";
 
+import { useState, type ReactNode } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { LanguageProvider } from "@/lib/LanguageContext";
 import ProposalFlowchart from "@/components/ProposalFlowchart";
 
+type Topic = "angebote" | "buchhaltung";
+
+type TopicContent = {
+  heroHeadline: ReactNode;
+  heroSubtitle: string;
+  heroStats: { value: string; label: string }[];
+  problems: { title: string; desc: string }[];
+  solutionIntro: string;
+  solutions: { title: string; desc: string; flow: string[] }[];
+  showFlowchart: boolean;
+  results: { value: string; before: string; label: string }[];
+};
+
+const CONTENT: Record<Topic, TopicContent> = {
+  angebote: {
+    heroHeadline: (
+      <>
+        Angebote in <span className="stat-highlight">5 Minuten</span> statt 2 Stunden
+      </>
+    ),
+    heroSubtitle:
+      "Ich automatisiere die Angebotserstellung und das Nachfassen für Gebäudereinigungsunternehmen — damit Sie sich auf Aufträge konzentrieren können, nicht auf Papierkram.",
+    heroStats: [
+      { value: "95%", label: "Schnellere Angebotserstellung" },
+      { value: "0", label: "Fehler bei Flächenberechnung" },
+      { value: "2x", label: "Mehr Aufträge pro Monat" },
+    ],
+    problems: [
+      {
+        title: "Angebote dauern ewig",
+        desc: "Flächen berechnen, Preise nachschlagen, Word-Dokument formatieren — 1-2 Stunden pro Angebot. Bei 20+ Anfragen im Monat ein enormer Zeitfresser.",
+      },
+      {
+        title: "Fehler kosten Geld",
+        desc: "Falsche Quadratmeter, vergessene Positionen, veraltete Preise — manuelle Fehler in Angeboten kosten Sie bares Geld oder den Auftrag.",
+      },
+      {
+        title: "Nachfassen geht unter",
+        desc: "Angebot verschickt und dann? Ohne System vergessen Sie nachzufassen. Potenzielle Kunden gehen zur Konkurrenz.",
+      },
+      {
+        title: "Keine Übersicht über Leads",
+        desc: "Welches Angebot steht noch offen? Wer hat schon zugesagt? Ohne zentrale Übersicht verlieren Sie den Überblick — und Umsatz.",
+      },
+    ],
+    solutionIntro: "Drei Systeme, die Ihren Vertrieb komplett verändern:",
+    solutions: [
+      {
+        title: "Automatische Angebotserstellung",
+        desc: "Ihr Mitarbeiter füllt vor Ort ein einfaches Formular aus — Objektgröße, Reinigungsart, Frequenz. Das System berechnet sofort den Preis, erstellt ein professionelles PDF-Angebot und sendet es direkt an den Kunden. Fertig in unter 5 Minuten.",
+        flow: ["Formular", "Berechnung", "PDF-Angebot", "E-Mail an Kunden"],
+      },
+      {
+        title: "Automatisches Nachfassen",
+        desc: "Kein Angebot wird mehr vergessen. Das System verfolgt, ob der Kunde das Angebot geöffnet hat, und schickt automatisch eine Erinnerung nach 3, 7 und 14 Tagen. Sie sehen auf einen Blick, welche Leads heiß sind.",
+        flow: ["Angebot gesendet", "E-Mail-Tracking", "Auto-Erinnerung", "Lead markiert"],
+      },
+      {
+        title: "Zentrales Lead-Dashboard",
+        desc: "Alle Anfragen, offenen Angebote und Abschlüsse zentral an einem Ort. Sie sehen auf einen Blick, welche Kunden nachgefasst werden müssen und welche bereits Umsatz bringen.",
+        flow: ["Anfrage", "Angebot offen", "Nachgefasst", "Abschluss"],
+      },
+    ],
+    showFlowchart: true,
+    results: [
+      { value: "5 Min", before: "vorher: 2 Stunden", label: "Angebotszeit pro Kunde" },
+      { value: "2x", before: "vorher: am Limit", label: "Vertriebskapazität verdoppelt" },
+      { value: "0", before: "vorher: regelmäßig", label: "Fehler in Angeboten" },
+    ],
+  },
+  buchhaltung: {
+    heroHeadline: (
+      <>
+        Buchhaltung in <span className="stat-highlight">Minuten</span> statt Tagen
+      </>
+    ),
+    heroSubtitle:
+      "Ich automatisiere Rechnungsstellung, Mahnwesen und Zahlungsverfolgung für Gebäudereinigungsunternehmen — damit Sie sich auf Aufträge konzentrieren können, nicht auf Papierkram.",
+    heroStats: [
+      { value: "10h", label: "Gesparte Buchhaltung pro Woche" },
+      { value: "0", label: "Vergessene Mahnungen" },
+      { value: "100%", label: "Pünktliche Rechnungen" },
+    ],
+    problems: [
+      {
+        title: "Rechnungen schreiben raubt Zeit",
+        desc: "Jeden Monat stundenlang Rechnungen zusammenklicken, Positionen kontrollieren, PDFs versenden. Zeit, die an anderer Stelle fehlt.",
+      },
+      {
+        title: "Zahlungseingänge prüfen nervt",
+        desc: "Ständig ins Konto schauen, Beträge abgleichen, Rechnungen manuell abhaken — reine Fleißarbeit ohne Mehrwert.",
+      },
+      {
+        title: "Mahnungen gehen unter",
+        desc: "Überfällige Rechnungen bleiben liegen, weil niemand den Überblick hat. Jede vergessene Mahnung ist Geld, das Sie verschenken.",
+      },
+      {
+        title: "Steuerberater wartet ewig",
+        desc: "Belege sortieren, Exports erstellen, Chaos zusammentragen. Der Steuerberater bekommt alles verspätet — und Sie zahlen für seine Mehrarbeit.",
+      },
+    ],
+    solutionIntro: "Drei Systeme, die Ihre Buchhaltung komplett übernehmen:",
+    solutions: [
+      {
+        title: "Automatische Rechnungsstellung",
+        desc: "Auftrag erledigt → Rechnung fertig. Das System erstellt die Rechnung aus dem Angebot, nummeriert sie korrekt, versendet sie per E-Mail und legt sie revisionssicher ab. Ganz ohne Ihr Zutun.",
+        flow: ["Auftrag erledigt", "Rechnung erstellt", "E-Mail an Kunden", "Archiviert"],
+      },
+      {
+        title: "Zahlungsverfolgung auf Autopilot",
+        desc: "Bankkonto wird automatisch ausgelesen, Zahlungen werden Rechnungen zugeordnet, offene Posten sauber angezeigt. Sie sehen auf einen Blick, wer noch zahlen muss.",
+        flow: ["Kontobewegung", "Abgleich", "Rechnung verbucht", "Offene Posten"],
+      },
+      {
+        title: "Automatisches Mahnwesen",
+        desc: "Überfällige Rechnungen werden automatisch erkannt und in freundlicher, gestufter Form angemahnt — ohne dass Sie manuell nachhaken müssen. Ihre Zahlungsquote steigt messbar.",
+        flow: ["Fällig-Datum", "Freundliche Erinnerung", "1. Mahnung", "2. Mahnung"],
+      },
+    ],
+    showFlowchart: false,
+    results: [
+      { value: "10h", before: "vorher: am Wochenende", label: "Gesparte Zeit pro Woche" },
+      { value: "100%", before: "vorher: 60-70%", label: "Pünktliche Zahlungsquote" },
+      { value: "0", before: "vorher: regelmäßig", label: "Vergessene Mahnungen" },
+    ],
+  },
+};
+
 function ReinigungContent() {
+  const [topic, setTopic] = useState<Topic>("buchhaltung");
+  const c = CONTENT[topic];
+
   return (
     <main>
+      {/* Topic Chooser */}
+      <section className="pt-28 pb-4 sm:pt-32">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-surface/60 backdrop-blur-sm text-sm text-muted mb-6">
+            <span className="w-2 h-2 rounded-full bg-accent-light animate-pulse" />
+            Speziell für Reinigungsunternehmen
+          </div>
+          <p className="text-xs font-mono text-accent-light uppercase tracking-widest mb-4">
+            Was ist für Sie interessanter?
+          </p>
+          <div className="inline-flex flex-col sm:flex-row items-stretch sm:items-center gap-2 p-1.5 rounded-2xl border border-border bg-surface/60 backdrop-blur-sm">
+            <button
+              type="button"
+              onClick={() => setTopic("angebote")}
+              aria-pressed={topic === "angebote"}
+              className={`px-6 py-3 rounded-xl text-sm sm:text-base font-semibold transition-all ${
+                topic === "angebote"
+                  ? "bg-accent text-white shadow-md shadow-accent/25"
+                  : "text-muted hover:text-foreground hover:bg-surface"
+              }`}
+            >
+              Angebote automatisieren
+            </button>
+            <button
+              type="button"
+              onClick={() => setTopic("buchhaltung")}
+              aria-pressed={topic === "buchhaltung"}
+              className={`px-6 py-3 rounded-xl text-sm sm:text-base font-semibold transition-all ${
+                topic === "buchhaltung"
+                  ? "bg-accent text-white shadow-md shadow-accent/25"
+                  : "text-muted hover:text-foreground hover:bg-surface"
+              }`}
+            >
+              Buchhaltung automatisieren
+            </button>
+          </div>
+        </div>
+      </section>
+
       {/* Hero */}
-      <section className="relative pt-28 pb-20 sm:pt-36 sm:pb-28 overflow-hidden">
+      <section className="relative pt-8 pb-20 sm:pt-12 sm:pb-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-accent/4 via-transparent to-background pointer-events-none" />
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-accent/5 rounded-full blur-[150px] pointer-events-none" />
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-surface/60 backdrop-blur-sm text-sm text-muted mb-8">
-            <span className="w-2 h-2 rounded-full bg-accent-light animate-pulse" />
-            Speziell für Reinigungsunternehmen
-          </div>
-
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-8">
-            Buchhaltung in <span className="stat-highlight">Minuten</span> statt Tagen
+            {c.heroHeadline}
           </h1>
 
           <p className="text-lg sm:text-xl text-muted max-w-2xl mx-auto mb-12 leading-relaxed">
-            Ich automatisiere Rechnungsstellung, Mahnwesen und Zahlungsverfolgung
-            für Gebäudereinigungsunternehmen — damit Sie sich auf Aufträge konzentrieren
-            können, nicht auf Papierkram.
+            {c.heroSubtitle}
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
@@ -45,11 +209,7 @@ function ReinigungContent() {
 
           {/* Stats */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
-            {[
-              { value: "10h", label: "Gesparte Buchhaltung pro Woche" },
-              { value: "0", label: "Vergessene Mahnungen" },
-              { value: "100%", label: "Pünktliche Rechnungen" },
-            ].map((stat, i) => (
+            {c.heroStats.map((stat, i) => (
               <div key={i} className="p-5 rounded-xl border border-border bg-surface/60 backdrop-blur-sm">
                 <div className="text-3xl font-bold stat-highlight mb-1">{stat.value}</div>
                 <div className="text-sm text-muted">{stat.label}</div>
@@ -70,24 +230,7 @@ function ReinigungContent() {
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {[
-              {
-                title: "Angebote dauern ewig",
-                desc: "Flächen berechnen, Preise nachschlagen, Word-Dokument formatieren — 1-2 Stunden pro Angebot. Bei 20+ Anfragen im Monat ein enormer Zeitfresser.",
-              },
-              {
-                title: "Fehler kosten Geld",
-                desc: "Falsche Quadratmeter, vergessene Positionen, veraltete Preise — manuelle Fehler in Angeboten kosten Sie bares Geld oder den Auftrag.",
-              },
-              {
-                title: "Nachfassen geht unter",
-                desc: "Angebot verschickt und dann? Ohne System vergessen Sie nachzufassen. Potenzielle Kunden gehen zur Konkurrenz.",
-              },
-              {
-                title: "Papierkram statt Aufträge",
-                desc: "Rechnungen schreiben, Zahlungen prüfen, Mahnungen verschicken — Zeit, die Sie besser für die Akquise neuer Kunden nutzen sollten.",
-              },
-            ].map((item, i) => (
+            {c.problems.map((item, i) => (
               <div
                 key={i}
                 className="p-6 rounded-2xl border border-border bg-surface/60"
@@ -121,98 +264,64 @@ function ReinigungContent() {
             Was ich für Sie automatisiere
           </h2>
           <p className="text-muted text-lg max-w-2xl mx-auto leading-relaxed mb-12 text-center">
-            Drei Systeme, die Ihren Arbeitsalltag komplett verändern:
+            {c.solutionIntro}
           </p>
 
           <div className="space-y-6">
-            {/* 1. Angebote */}
-            <div className="p-6 sm:p-8 rounded-2xl border border-border bg-surface/60">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="w-10 h-10 rounded-xl bg-accent/10 text-accent-light flex items-center justify-center font-bold">1</span>
-                <h3 className="text-xl font-bold">Automatische Angebotserstellung</h3>
+            {c.solutions.map((sol, idx) => (
+              <div key={idx} className="p-6 sm:p-8 rounded-2xl border border-border bg-surface/60">
+                <div className="flex items-center gap-3 mb-4">
+                  <span className="w-10 h-10 rounded-xl bg-accent/10 text-accent-light flex items-center justify-center font-bold">
+                    {idx + 1}
+                  </span>
+                  <h3 className="text-xl font-bold">{sol.title}</h3>
+                </div>
+                <p className="text-muted text-[15px] leading-relaxed mb-4">{sol.desc}</p>
+                <div className="flex items-center gap-2 text-xs font-mono text-muted overflow-x-auto pb-1">
+                  {sol.flow.map((step, stepIdx) => {
+                    const colorClasses = [
+                      "bg-green-500/10 text-green-600 border-green-500/20",
+                      "bg-accent/10 text-accent border-accent/20",
+                      "bg-purple-500/10 text-purple-600 border-purple-500/20",
+                      "bg-amber-500/10 text-amber-600 border-amber-500/20",
+                    ];
+                    return (
+                      <span key={stepIdx} className="flex items-center gap-2">
+                        <span className={`px-2 py-1 rounded border whitespace-nowrap ${colorClasses[stepIdx % colorClasses.length]}`}>
+                          {step}
+                        </span>
+                        {stepIdx < sol.flow.length - 1 && <span className="text-border">&rarr;</span>}
+                      </span>
+                    );
+                  })}
+                </div>
               </div>
-              <p className="text-muted text-[15px] leading-relaxed mb-4">
-                Ihr Mitarbeiter füllt vor Ort ein einfaches Formular aus — Objektgröße, Reinigungsart,
-                Frequenz. Das System berechnet sofort den Preis, erstellt ein professionelles PDF-Angebot
-                und sendet es direkt an den Kunden. Fertig in unter 5 Minuten.
-              </p>
-              <div className="flex items-center gap-2 text-xs font-mono text-muted overflow-x-auto pb-1">
-                <span className="px-2 py-1 bg-green-500/10 text-green-600 rounded border border-green-500/20 whitespace-nowrap">Formular</span>
-                <span className="text-border">&rarr;</span>
-                <span className="px-2 py-1 bg-accent/10 text-accent rounded border border-accent/20 whitespace-nowrap">Berechnung</span>
-                <span className="text-border">&rarr;</span>
-                <span className="px-2 py-1 bg-purple-500/10 text-purple-600 rounded border border-purple-500/20 whitespace-nowrap">PDF-Angebot</span>
-                <span className="text-border">&rarr;</span>
-                <span className="px-2 py-1 bg-amber-500/10 text-amber-600 rounded border border-amber-500/20 whitespace-nowrap">E-Mail an Kunden</span>
-              </div>
-            </div>
-
-            {/* 2. Nachfassen */}
-            <div className="p-6 sm:p-8 rounded-2xl border border-border bg-surface/60">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="w-10 h-10 rounded-xl bg-accent/10 text-accent-light flex items-center justify-center font-bold">2</span>
-                <h3 className="text-xl font-bold">Automatisches Nachfassen</h3>
-              </div>
-              <p className="text-muted text-[15px] leading-relaxed mb-4">
-                Kein Angebot wird mehr vergessen. Das System verfolgt, ob der Kunde das Angebot
-                geöffnet hat, und schickt automatisch eine Erinnerung nach 3, 7 und 14 Tagen.
-                Sie sehen auf einen Blick, welche Leads heiß sind.
-              </p>
-              <div className="flex items-center gap-2 text-xs font-mono text-muted overflow-x-auto pb-1">
-                <span className="px-2 py-1 bg-green-500/10 text-green-600 rounded border border-green-500/20 whitespace-nowrap">Angebot gesendet</span>
-                <span className="text-border">&rarr;</span>
-                <span className="px-2 py-1 bg-accent/10 text-accent rounded border border-accent/20 whitespace-nowrap">E-Mail-Tracking</span>
-                <span className="text-border">&rarr;</span>
-                <span className="px-2 py-1 bg-purple-500/10 text-purple-600 rounded border border-purple-500/20 whitespace-nowrap">Auto-Erinnerung</span>
-                <span className="text-border">&rarr;</span>
-                <span className="px-2 py-1 bg-amber-500/10 text-amber-600 rounded border border-amber-500/20 whitespace-nowrap">Lead markiert</span>
-              </div>
-            </div>
-
-            {/* 3. Buchhaltung */}
-            <div className="p-6 sm:p-8 rounded-2xl border border-border bg-surface/60">
-              <div className="flex items-center gap-3 mb-4">
-                <span className="w-10 h-10 rounded-xl bg-accent/10 text-accent-light flex items-center justify-center font-bold">3</span>
-                <h3 className="text-xl font-bold">Buchhaltung auf Autopilot</h3>
-              </div>
-              <p className="text-muted text-[15px] leading-relaxed mb-4">
-                Rechnungen werden automatisch erstellt und versendet. Zahlungseingänge geprüft.
-                Überfällige Rechnungen automatisch angemahnt. Ihr Steuerberater bekommt
-                alles fix und fertig — ohne dass Sie einen Finger rühren.
-              </p>
-              <div className="flex items-center gap-2 text-xs font-mono text-muted overflow-x-auto pb-1">
-                <span className="px-2 py-1 bg-green-500/10 text-green-600 rounded border border-green-500/20 whitespace-nowrap">Auftrag erledigt</span>
-                <span className="text-border">&rarr;</span>
-                <span className="px-2 py-1 bg-accent/10 text-accent rounded border border-accent/20 whitespace-nowrap">Rechnung erstellt</span>
-                <span className="text-border">&rarr;</span>
-                <span className="px-2 py-1 bg-purple-500/10 text-purple-600 rounded border border-purple-500/20 whitespace-nowrap">Zahlung geprüft</span>
-                <span className="text-border">&rarr;</span>
-                <span className="px-2 py-1 bg-amber-500/10 text-amber-600 rounded border border-amber-500/20 whitespace-nowrap">Mahnung bei Verzug</span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Flowchart */}
-      <section className="py-20 sm:py-28 relative">
-        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent" />
+      {/* Flowchart — only for Angebote track */}
+      {c.showFlowchart && (
+        <section className="py-20 sm:py-28 relative">
+          <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent" />
 
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <span className="text-xs font-mono text-accent-light uppercase tracking-widest mb-4 block text-center">
-            Fallstudie
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-6 text-center">
-            So funktioniert es in der Praxis
-          </h2>
-          <p className="text-muted text-lg max-w-2xl mx-auto leading-relaxed mb-8 text-center">
-            Dieses System habe ich für ein Gebäudereinigungsunternehmen gebaut.
-            Das Ergebnis: Angebotszeit von 2 Stunden auf unter 5 Minuten reduziert.
-          </p>
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <span className="text-xs font-mono text-accent-light uppercase tracking-widest mb-4 block text-center">
+              Fallstudie
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-6 text-center">
+              So funktioniert es in der Praxis
+            </h2>
+            <p className="text-muted text-lg max-w-2xl mx-auto leading-relaxed mb-8 text-center">
+              Dieses System habe ich für ein Gebäudereinigungsunternehmen gebaut.
+              Das Ergebnis: Angebotszeit von 2 Stunden auf unter 5 Minuten reduziert.
+            </p>
 
-          <ProposalFlowchart forceLocale="de" />
-        </div>
-      </section>
+            <ProposalFlowchart forceLocale="de" />
+          </div>
+        </section>
+      )}
 
       {/* Social Proof / Results */}
       <section className="py-20 sm:py-28 relative">
@@ -227,23 +336,7 @@ function ReinigungContent() {
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
-            {[
-              {
-                value: "5 Min",
-                before: "vorher: 2 Stunden",
-                label: "Angebotszeit pro Kunde",
-              },
-              {
-                value: "2x",
-                before: "vorher: am Limit",
-                label: "Vertriebskapazität verdoppelt",
-              },
-              {
-                value: "0",
-                before: "vorher: regelmäßig",
-                label: "Fehler in Angeboten",
-              },
-            ].map((item, i) => (
+            {c.results.map((item, i) => (
               <div key={i} className="p-6 rounded-2xl border border-border bg-surface/60">
                 <div className="text-4xl font-bold stat-highlight mb-1">{item.value}</div>
                 <div className="text-xs text-muted line-through mb-2">{item.before}</div>
