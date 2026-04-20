@@ -6,8 +6,8 @@
 > immer klar ist, wo wir stehen.
 
 ## Stand
-- **Datum:** 2026-04-20
-- **Branch:** `claude/review-project-status-ZBd2O`
+- **Datum:** 2025-04-20
+- **Branch:** `main`
 - **Working Tree:** clean
 
 ## Projekt-Basics
@@ -22,25 +22,23 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `1294c72` feat(reinigung): add topic chooser (Angebote vs Buchhaltung)
-2. `7b70091` chore: auto-update PROJEKTKONTEXT.md
-3. `47e5457` chore: auto-update PROJEKTKONTEXT.md
-4. `cce762b` chore: update PROJEKTKONTEXT.md
-5. `c978030` chore: update PROJEKTKONTEXT.md via stop hook
-6. `1bdbe92` chore: update PROJEKTKONTEXT.md via stop hook
-7. `60d7e34` feat: refocus /reinigung hero to Buchhaltung + add project context file
-8. `8a03c01` fix: update booking link to new Google Calendar URL
-9. `c58c895` fix: Hero text overflow on mobile (German)
-10. `1284716` fix: force ProposalFlowchart to German on /reinigung page
+1. `97d7405` Merge remote-tracking branch 'origin/main' into claude/review-project-status
+2. `34bb78d` chore: auto-update PROJEKTKONTEXT.md
+3. `1294c72` feat(reinigung): add topic chooser (Angebote vs Buchhaltung)
+4. `7b70091` chore: auto-update PROJEKTKONTEXT.md
+5. `a1e13f1` Reinigung-Hero auf Buchhaltung + Projektkontext-Tracking (#2)
+6. `47e5457` chore: auto-update PROJEKTKONTEXT.md
+7. `cce762b` chore: update PROJEKTKONTEXT.md
+8. `c978030` chore: update PROJEKTKONTEXT.md via stop hook
+9. `1bdbe92` chore: update PROJEKTKONTEXT.md via stop hook
+10. `60d7e34` feat: refocus /reinigung hero to Buchhaltung + add project context file
 
 ## Aktuell in Arbeit
-- Task: Topic-Chooser (Angebote vs Buchhaltung) für `/reinigung` implementiert + gemergt auf `main`.
-- Status: Projekt sauber, PR #3 wartet auf Merge (keine CI-Checks konfiguriert).
-- Next: PR #3 mergen, damit Topic-Chooser live geht.
+- Task: Topic-Chooser (Angebote vs Buchhaltung) für `/reinigung` implementiert und auf `main` gemergt.
+- Status: Working Tree clean; Vercel-Deployment läuft.
 
 ## Offene Punkte / nächste Schritte
-- PR #3 mergen (topic-chooser mit Angebote/Buchhaltung-Split).
-- Vercel-Deployment prüfen nach Merge.
+- Vercel-Deployment prüfen und Topic-Chooser live verifizieren.
 - Ggf. weitere Kampagnen-Varianten oder UI-Optimierungen für `/reinigung`.
 
 ## Wichtige Entscheidungen / Konventionen
