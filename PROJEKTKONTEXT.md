@@ -6,8 +6,8 @@
 > immer klar ist, wo wir stehen.
 
 ## Stand
-- **Datum:** 2025-04-20
-- **Branch:** `main`
+- **Datum:** 2026-04-20
+- **Branch:** `claude/review-project-status-ZBd2O`
 - **Working Tree:** clean
 
 ## Projekt-Basics
@@ -22,24 +22,24 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `97d7405` Merge remote-tracking branch 'origin/main' into claude/review-project-status
-2. `34bb78d` chore: auto-update PROJEKTKONTEXT.md
-3. `1294c72` feat(reinigung): add topic chooser (Angebote vs Buchhaltung)
-4. `7b70091` chore: auto-update PROJEKTKONTEXT.md
-5. `a1e13f1` Reinigung-Hero auf Buchhaltung + Projektkontext-Tracking (#2)
-6. `47e5457` chore: auto-update PROJEKTKONTEXT.md
-7. `cce762b` chore: update PROJEKTKONTEXT.md
-8. `c978030` chore: update PROJEKTKONTEXT.md via stop hook
-9. `1bdbe92` chore: update PROJEKTKONTEXT.md via stop hook
-10. `60d7e34` feat: refocus /reinigung hero to Buchhaltung + add project context file
+1. `3207d3f` chore: auto-update PROJEKTKONTEXT.md
+2. `97d7405` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+3. `34bb78d` chore: auto-update PROJEKTKONTEXT.md
+4. `1294c72` feat(reinigung): add topic chooser (Angebote vs Buchhaltung)
+5. `7b70091` chore: auto-update PROJEKTKONTEXT.md
+6. `a1e13f1` Reinigung-Hero auf Buchhaltung + Projektkontext-Tracking (#2)
+7. `47e5457` chore: auto-update PROJEKTKONTEXT.md
+8. `cce762b` chore: update PROJEKTKONTEXT.md
+9. `c978030` chore: update PROJEKTKONTEXT.md via stop hook
+10. `1bdbe92` chore: update PROJEKTKONTEXT.md via stop hook
 
 ## Aktuell in Arbeit
-- Task: Topic-Chooser (Angebote vs Buchhaltung) für `/reinigung` implementiert und auf `main` gemergt.
-- Status: Working Tree clean; Vercel-Deployment läuft.
+- Task: Topic-Chooser (Angebote vs Buchhaltung) für `/reinigung` ist auf `main` (commit `b4fca82`), Vercel-Deployment läuft.
+- Status: Working Tree clean, Review des Projektstands abgeschlossen auf `claude/review-project-status-ZBd2O`.
 
 ## Offene Punkte / nächste Schritte
-- Vercel-Deployment prüfen und Topic-Chooser live verifizieren.
-- Ggf. weitere Kampagnen-Varianten oder UI-Optimierungen für `/reinigung`.
+- Vercel-Deployment abwarten und Topic-Chooser live verifizieren (Mobile + Desktop, beide Tracks, CTA-Links).
+- Ggf. weitere Kampagnen-Varianten oder UI-Optimierungen für `/reinigung` basierend auf Live-Tests.
 
 ## Wichtige Entscheidungen / Konventionen
 - Hero-Pattern auf `/reinigung`: knappe Headline nach Schema `<Thema> in <Zeit> statt <längere Zeit>`, gefolgt von Subtitle + 3 Stats + CTA
