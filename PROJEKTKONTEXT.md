@@ -22,25 +22,26 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `3f8f976` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-2. `27a2eb7` chore: auto-update PROJEKTKONTEXT.md
-3. `502be80` chore: auto-update PROJEKTKONTEXT.md
-4. `ea94e66` docs: add BRAND.md — design tokens, components, voice & tone
-5. `3dbfd5a` chore: auto-update PROJEKTKONTEXT.md
-6. `3207d3f` chore: auto-update PROJEKTKONTEXT.md
-7. `b4fca82` Reinigung: Topic-Chooser (Angebote vs Buchhaltung) (#3)
-8. `97d7405` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-9. `34bb78d` chore: auto-update PROJEKTKONTEXT.md
-10. `1294c72` feat(reinigung): add topic chooser (Angebote vs Buchhaltung)
+1. `a156f46` chore: auto-update PROJEKTKONTEXT.md
+2. `3f8f976` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+3. `27a2eb7` chore: auto-update PROJEKTKONTEXT.md
+4. `502be80` chore: auto-update PROJEKTKONTEXT.md
+5. `ea94e66` docs: add BRAND.md — design tokens, components, voice & tone
+6. `3dbfd5a` chore: auto-update PROJEKTKONTEXT.md
+7. `3207d3f` chore: auto-update PROJEKTKONTEXT.md
+8. `b4fca82` Reinigung: Topic-Chooser (Angebote vs Buchhaltung) (#3)
+9. `97d7405` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+10. `34bb78d` chore: auto-update PROJEKTKONTEXT.md
 
 ## Aktuell in Arbeit
-- **Task:** BRAND.md auf `main` gemergt (1a211a8); Topic-Chooser + ProposalFlowchart auf `/reinigung` fertiggestellt
-- **Status:** Branch `claude/review-project-status-ZBd2O` mit `main` synchronisiert; Working Tree clean
+- **Task:** BRAND.md-Dokumentation fertiggestellt; Topic-Chooser + ProposalFlowchart auf `/reinigung` live; aktuell: Download-Links für BRAND.md bereitstellen
+- **Status:** Branch synchronisiert, Working Tree clean; nächster Schritt: Verifikation der `/reinigung`-Flows (Mobile/Desktop)
 
 ## Offene Punkte / nächste Schritte
-- Topic-Chooser + ProposalFlowchart live auf `/reinigung` verifizieren (Mobile + Desktop, beide Tracks)
+- Topic-Chooser + ProposalFlowchart auf `/reinigung` verifizieren (Mobile + Desktop, beide Tracks: "Angebote" + "Buchhaltung")
 - Ggf. weitere Kampagnen-Varianten oder UI-Optimierungen basierend auf Live-Tests
 - Repository-Dokumentation (README, Contributing Guide) falls nötig
+- Deploy-Status und Live-Performance der neuen Features überprüfen
 
 ## Wichtige Entscheidungen / Konventionen
 - Hero-Pattern auf `/reinigung`: knappe Headline nach Schema `<Thema> in <Zeit> statt <längere Zeit>`, gefolgt von Subtitle + 3 Stats + CTA
@@ -49,3 +50,4 @@
 - Sprache persistiert über Seitenwechsel via LanguageContext
 - Stop-Hook dokumentiert Projekt-Stand automatisch — committet und pusht PROJEKTKONTEXT.md am Ende jedes Turns
 - BRAND.md zentral für Design-Tokens, Komponenten-Konventionen und Voice & Tone
+- BRAND.md verfügbar via Raw GitHub URL für direktes Herunterladen (Desktop/Downloads/Browser)
