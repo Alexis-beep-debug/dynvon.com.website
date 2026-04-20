@@ -22,24 +22,24 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `a156f46` chore: auto-update PROJEKTKONTEXT.md
-2. `3f8f976` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-3. `27a2eb7` chore: auto-update PROJEKTKONTEXT.md
-4. `502be80` chore: auto-update PROJEKTKONTEXT.md
-5. `ea94e66` docs: add BRAND.md — design tokens, components, voice & tone
-6. `3dbfd5a` chore: auto-update PROJEKTKONTEXT.md
-7. `3207d3f` chore: auto-update PROJEKTKONTEXT.md
-8. `b4fca82` Reinigung: Topic-Chooser (Angebote vs Buchhaltung) (#3)
-9. `97d7405` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-10. `34bb78d` chore: auto-update PROJEKTKONTEXT.md
+1. `7eedf72` docs: add PITCH-BUCHHALTUNG.md — sales deck outline
+2. `1ecdbe8` chore: auto-update PROJEKTKONTEXT.md
+3. `a156f46` chore: auto-update PROJEKTKONTEXT.md
+4. `3f8f976` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+5. `27a2eb7` chore: auto-update PROJEKTKONTEXT.md
+6. `502be80` chore: auto-update PROJEKTKONTEXT.md
+7. `ea94e66` docs: add BRAND.md — design tokens, components, voice & tone
+8. `3dbfd5a` chore: auto-update PROJEKTKONTEXT.md
+9. `3207d3f` chore: auto-update PROJEKTKONTEXT.md
+10. `b4fca82` Reinigung: Topic-Chooser (Angebote vs Buchhaltung) (#3)
 
 ## Aktuell in Arbeit
-- **Task:** BRAND.md-Dokumentation fertiggestellt; Topic-Chooser + ProposalFlowchart auf `/reinigung` live; aktuell: Download-Links für BRAND.md bereitstellen
-- **Status:** Branch synchronisiert, Working Tree clean; nächster Schritt: Verifikation der `/reinigung`-Flows (Mobile/Desktop)
+- **Task:** PITCH-BUCHHALTUNG.md erstellt (17 Folien: Cover → Wer ich bin → Problem → Kosten → Vision → 3 Systeme → Fallstudie → Ergebnisse → Integration → Prozess → Preise → Warum-ich → CTA → FAQ → Demo + 2 Backup-Slides) mit Titel, Inhalt, Speaker Notes pro Folie.
+- **Nächstes:** PITCH-BUCHHALTUNG.md auf `main` mergen für curl-Download-Zugriff.
 
 ## Offene Punkte / nächste Schritte
-- Topic-Chooser + ProposalFlowchart auf `/reinigung` verifizieren (Mobile + Desktop, beide Tracks: "Angebote" + "Buchhaltung")
-- Ggf. weitere Kampagnen-Varianten oder UI-Optimierungen basierend auf Live-Tests
+- PITCH-BUCHHALTUNG.md auf `main` mergen und via Raw GitHub URL bereitstellen
+- Topic-Chooser + ProposalFlowchart auf `/reinigung` verifizieren (Mobile + Desktop)
 - Repository-Dokumentation (README, Contributing Guide) falls nötig
 - Deploy-Status und Live-Performance der neuen Features überprüfen
 
@@ -50,4 +50,4 @@
 - Sprache persistiert über Seitenwechsel via LanguageContext
 - Stop-Hook dokumentiert Projekt-Stand automatisch — committet und pusht PROJEKTKONTEXT.md am Ende jedes Turns
 - BRAND.md zentral für Design-Tokens, Komponenten-Konventionen und Voice & Tone
-- BRAND.md verfügbar via Raw GitHub URL für direktes Herunterladen (Desktop/Downloads/Browser)
+- PITCH-BUCHHALTUNG.md ist zentrale Sales-Deck-Dokumentation (Struktur: Cover → Wer ich bin → Problem → 3 Systeme → Fallstudie → Integration → Preise → CTA → FAQ)
