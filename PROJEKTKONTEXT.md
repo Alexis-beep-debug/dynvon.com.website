@@ -22,25 +22,25 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `502be80` chore: auto-update PROJEKTKONTEXT.md
-2. `ea94e66` docs: add BRAND.md — design tokens, components, voice & tone
-3. `3dbfd5a` chore: auto-update PROJEKTKONTEXT.md
-4. `3207d3f` chore: auto-update PROJEKTKONTEXT.md
-5. `97d7405` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-6. `34bb78d` chore: auto-update PROJEKTKONTEXT.md
-7. `1294c72` feat(reinigung): add topic chooser (Angebote vs Buchhaltung)
-8. `7b70091` chore: auto-update PROJEKTKONTEXT.md
-9. `a1e13f1` Reinigung-Hero auf Buchhaltung + Projektkontext-Tracking (#2)
-10. `47e5457` chore: auto-update PROJEKTKONTEXT.md
+1. `3f8f976` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+2. `27a2eb7` chore: auto-update PROJEKTKONTEXT.md
+3. `502be80` chore: auto-update PROJEKTKONTEXT.md
+4. `ea94e66` docs: add BRAND.md — design tokens, components, voice & tone
+5. `3dbfd5a` chore: auto-update PROJEKTKONTEXT.md
+6. `3207d3f` chore: auto-update PROJEKTKONTEXT.md
+7. `b4fca82` Reinigung: Topic-Chooser (Angebote vs Buchhaltung) (#3)
+8. `97d7405` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+9. `34bb78d` chore: auto-update PROJEKTKONTEXT.md
+10. `1294c72` feat(reinigung): add topic chooser (Angebote vs Buchhaltung)
 
 ## Aktuell in Arbeit
-- **Task:** BRAND.md erstellt + gepusht (`ea94e66`), Stop-Hook in `settings.local.json` konfiguriert; Working Tree clean
-- **Nächster Schritt:** Frage offensichtlich ob BRAND.md auf `main` gemergt werden soll oder weitere Arbeit ansteht
+- **Task:** BRAND.md auf `main` gemergt (1a211a8); Topic-Chooser + ProposalFlowchart auf `/reinigung` fertiggestellt
+- **Status:** Branch `claude/review-project-status-ZBd2O` mit `main` synchronisiert; Working Tree clean
 
 ## Offene Punkte / nächste Schritte
-- BRAND.md auf `main` mergen und Vercel-Deployment triggern (stabilere GitHub-URLs)
-- Topic-Chooser live verifizieren (Mobile + Desktop, beide Tracks, CTA-Links)
-- Ggf. weitere Kampagnen-Varianten oder UI-Optimierungen für `/reinigung` basierend auf Live-Tests
+- Topic-Chooser + ProposalFlowchart live auf `/reinigung` verifizieren (Mobile + Desktop, beide Tracks)
+- Ggf. weitere Kampagnen-Varianten oder UI-Optimierungen basierend auf Live-Tests
+- Repository-Dokumentation (README, Contributing Guide) falls nötig
 
 ## Wichtige Entscheidungen / Konventionen
 - Hero-Pattern auf `/reinigung`: knappe Headline nach Schema `<Thema> in <Zeit> statt <längere Zeit>`, gefolgt von Subtitle + 3 Stats + CTA
@@ -48,3 +48,4 @@
 - ProposalFlowchart auf `/reinigung` immer DE (`forceLocale="de"`)
 - Sprache persistiert über Seitenwechsel via LanguageContext
 - Stop-Hook dokumentiert Projekt-Stand automatisch — committet und pusht PROJEKTKONTEXT.md am Ende jedes Turns
+- BRAND.md zentral für Design-Tokens, Komponenten-Konventionen und Voice & Tone
