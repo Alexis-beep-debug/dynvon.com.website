@@ -20,11 +20,11 @@ function ReinigungContent() {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight leading-[1.1] mb-8">
-            Angebote in <span className="stat-highlight">5 Minuten</span> statt 2 Stunden
+            Buchhaltung in <span className="stat-highlight">Minuten</span> statt Tagen
           </h1>
 
           <p className="text-lg sm:text-xl text-muted max-w-2xl mx-auto mb-12 leading-relaxed">
-            Ich automatisiere die Angebotserstellung, Buchhaltung und Kundenkommunikation
+            Ich automatisiere Rechnungsstellung, Mahnwesen und Zahlungsverfolgung
             für Gebäudereinigungsunternehmen — damit Sie sich auf Aufträge konzentrieren
             können, nicht auf Papierkram.
           </p>
@@ -46,9 +46,9 @@ function ReinigungContent() {
           {/* Stats */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl mx-auto">
             {[
-              { value: "95%", label: "Schnellere Angebotserstellung" },
-              { value: "0", label: "Fehler bei Flächenberechnung" },
-              { value: "2x", label: "Mehr Aufträge pro Monat" },
+              { value: "10h", label: "Gesparte Buchhaltung pro Woche" },
+              { value: "0", label: "Vergessene Mahnungen" },
+              { value: "100%", label: "Pünktliche Rechnungen" },
             ].map((stat, i) => (
               <div key={i} className="p-5 rounded-xl border border-border bg-surface/60 backdrop-blur-sm">
                 <div className="text-3xl font-bold stat-highlight mb-1">{stat.value}</div>
