@@ -22,30 +22,31 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `99f1167` chore: auto-update PROJEKTKONTEXT.md
-2. `ef15cd2` chore: auto-update PROJEKTKONTEXT.md
-3. `298cd14` chore: auto-update PROJEKTKONTEXT.md
-4. `58ad19e` chore: auto-update PROJEKTKONTEXT.md
-5. `a60781c` chore: auto-update PROJEKTKONTEXT.md
-6. `1e297a8` chore: auto-update PROJEKTKONTEXT.md
-7. `104bbc0` chore: auto-update PROJEKTKONTEXT.md
-8. `b4d45e5` chore: auto-update PROJEKTKONTEXT.md
-9. `bfd9a2e` chore: auto-update PROJEKTKONTEXT.md
-10. `54850b0` chore: auto-update PROJEKTKONTEXT.md
+1. `58d8746` chore: auto-update PROJEKTKONTEXT.md
+2. `99f1167` chore: auto-update PROJEKTKONTEXT.md
+3. `ef15cd2` chore: auto-update PROJEKTKONTEXT.md
+4. `298cd14` chore: auto-update PROJEKTKONTEXT.md
+5. `58ad19e` chore: auto-update PROJEKTKONTEXT.md
+6. `a60781c` chore: auto-update PROJEKTKONTEXT.md
+7. `1e297a8` chore: auto-update PROJEKTKONTEXT.md
+8. `104bbc0` chore: auto-update PROJEKTKONTEXT.md
+9. `b4d45e5` chore: auto-update PROJEKTKONTEXT.md
+10. `bfd9a2e` chore: auto-update PROJEKTKONTEXT.md
 
 ## Aktuell in Arbeit
-- **Task:** GBP-Beitrag 4 (Arbeitszeiterfassung-Pflicht) vollständig ausgearbeitet: rechtlich wasserdicht (BAG 13.9.2022, § 17 MiLoG, § 2a SchwarzArbG), mit 3 Hebeln für Gebäudereiniger (Zoll, Bußgeld bis 30k€, Risikoeinstufung). Design-Prompt für Infografik (1200×900px, Flat-Design, B2B-Premium) ebenfalls parat. Nächster: GBP-Beitrag 5 (Einsatzplanung bei 10+ MA).
+- **Task:** Verifizierung SEO-Live-Status nach Deployment (Meta-Tags, JSON-LD live, aber Google-Cache-Lag 1–4 Wo.). GBP-Beiträge 1-4 fertig ausgearbeitet, Beiträge 5-7 in Planung. Nächster: GBP-Infografiken in Canva/Code rendern, LinkedIn-Backlink prüfen.
 - **Uncommitted:** keine.
 
 ## Offene Punkte / nächste Schritte
 1. **GBP-Beiträge posten:** 4 abgeschlossene Beiträge in Google Business Profil-Editor hochladen (1x/Woche für Status-Signal).
 2. **Design-Assets für GBP:** Infografiken rendern (Mahnwesen, E-Rechnungspflicht, Arbeitszeiterfassung) — Canva/Code für garantiert korrekte Umlaute.
 3. **Weitere 3 GBP-Beiträge:** (1) Einsatzplanung 10+ MA, (2) Subunternehmer-Prüfung, (3) Tariftreue & Lohnzuschläge.
-4. **Timeline-Infografik (optional):** E-Rechnungs-Roadmap (2025/2027/2028) als Next.js-Route.
-5. **Mockup-Screenshots:** Angebote-Track + Buchhaltungs-Track für `/reinigung` (PoC).
-6. **Conversion-Tracking:** GA4 + Google Calendar Events (appointment_booked) für Reinigung-Leads.
-7. **Zweite Branchen-Landingpage:** Handwerk, Hausverwaltung oder Arztpraxen (nach `/reinigung`-Schema).
-8. **Longtail-Blog-Posts:** 3–5 fokussierte Posts (z. B. "Zeiterfassung Handwerk", "Rechnungserstellung Büro").
+4. **Domain-Autorität stärken:** LinkedIn-Profil-Backlink prüfen, GSC "Indexierung beantragen" wöchentlich nutzen (beschleunigt Snippet-Update).
+5. **Timeline-Infografik (optional):** E-Rechnungs-Roadmap (2025/2027/2028) als Next.js-Route.
+6. **Mockup-Screenshots:** Angebote-Track + Buchhaltungs-Track für `/reinigung` (PoC).
+7. **Conversion-Tracking:** GA4 + Google Calendar Events (appointment_booked) für Reinigung-Leads.
+8. **Zweite Branchen-Landingpage:** Handwerk, Hausverwaltung oder Arztpraxen (nach `/reinigung`-Schema).
+9. **Longtail-Blog-Posts:** 3–5 fokussierte Posts (z. B. "Zeiterfassung Handwerk", "Rechnungserstellung Büro").
 
 ## Wichtige Entscheidungen / Konventionen
 - Hero-Pattern auf `/reinigung`: knappe Headline nach Schema `<Thema> in <Zeit> statt <längere Zeit>`, gefolgt von Subtitle + 3 Stats + CTA
@@ -63,3 +64,4 @@
 - **Google Business Profil:** 5/5 Sterne, Kategorien + Dienstleistungen für lokale Suche; Beiträge 1x/Wo für Status-Signal
 - **GBP-Beiträge:** Value-First (Problem-Hook, konkrete Zahlen, Roadmap, Fakten-Check), CTA mit Direktlink, Infografiken statt Stockfotos
 - **AI-Bildgenerator-Hinweis:** Text in KI-Bildern oft fehlerhaft (Umlaute, Fachbegriffe) — Canva/Code-Rendering bevorzugt für Garantie
+- **SEO-Realitäten:** Google-Cache-Lag 1–4 Wochen nach Deployment normal; Snippet-Updates hinken Re-Crawls nach; Domain-Autorität über externe Signale (Backlinks, BLP, GBP-Traffic) aufbauen
