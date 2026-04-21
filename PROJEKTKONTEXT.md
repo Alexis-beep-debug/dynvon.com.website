@@ -7,7 +7,7 @@
 
 ## Stand
 - **Datum:** 2026-04-21
-- **Branch:** `main` (clean)
+- **Branch:** `claude/review-project-status-ZBd2O` (dirty, gepusht)
 - **Working Tree:** clean (no uncommitted changes)
 
 ## Projekt-Basics
@@ -22,35 +22,34 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `83a0515` fix: resolve merge conflict markers in IndustryFocus.tsx
-2. `e4a2f48` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-3. `8fe752e` fix(industry-focus): remove explanatory text from placeholder card
-4. `e6cbbd4` chore: auto-update PROJEKTKONTEXT.md
-5. `34eb3b4` fix: Branchen-Vorschläge aus Platzhalter-Card entfernen (#11)
-6. `c16bb12` fix: resolve merge conflict markers in IndustryFocus.tsx
-7. `110fd79` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-8. `0b5eff4` fix: remove konkrete Branchen-Vorschläge aus IndustryFocus-Platzhalter
-9. `d5b5023` chore: auto-update PROJEKTKONTEXT.md
-10. `314f829` chore: auto-update PROJEKTKONTEXT.md
+1. `04462fc` Merge remote-tracking branch 'origin/main' in branch
+2. `1c89e22` feat(industry-focus): Hausverwaltungen als Beispiel-Branche in Placeholder-Card
+3. `cd2162c` chore: auto-update PROJEKTKONTEXT.md
+4. `cf1eb02` fix(industry-focus): remove explanatory text from placeholder card (#12)
+5. `83a0515` fix: resolve merge conflict markers in IndustryFocus.tsx
+6. `e4a2f48` Merge remote-tracking branch 'origin/main' in branch
+7. `8fe752e` fix(industry-focus): remove explanatory text from placeholder card
+8. `e6cbbd4` chore: auto-update PROJEKTKONTEXT.md
+9. `34eb3b4` fix: Branchen-Vorschläge aus Platzhalter-Card entfernen (#11)
+10. `c16bb12` fix: resolve merge conflict markers in IndustryFocus.tsx
 
 ## Aktuell in Arbeit
-- **Letzter Task:** IndustryFocus-Card finale Überarbeitung + Merge in main (`cf1eb02` / `83a0515`). Branch `claude/review-project-status-ZBd2O` gegen main synchronisiert.
+- **Letzter Task:** IndustryFocus-Card Überarbeitung + Hausverwaltungen als Beispiel hinzugefügt. Branch `claude/review-project-status-ZBd2O` gegen main gemergt (`04462fc`). Vercel-Deploy zeigt Card mit „z. B. Hausverwaltungen" unter Headline, vor „Gespräch starten →"-Link.
 - **Uncommitted:** keine (clean working tree).
-- **Kontext:** Diskussion über starke Branchen-Use-Cases (Hausverwaltungen, Steuerberater, Onlineshops) als potenzielle Erweiterungen; noch nicht umgesetzt.
 
 ## Offene Punkte / nächste Schritte
-1. **Vercel-Deploy validieren:** neue IndustryFocus-Sektion live auf dynvon.com überprüfen (PageRank-Transfer zu /reinigung).
+1. **Vercel-Deploy validieren:** neue IndustryFocus-Sektion live auf dynvon.com überprüfen (Hausverwaltungen-Text sichtbar).
 2. **GBP-Beiträge posten:** 4 fertige Beiträge 1x/Woche hochladen (Status-Signal für Google-Cache-Übergang).
 3. **Infografiken:** Mahnwesen, E-Rechnungspflicht, Arbeitszeiterfassung in Canva/Code (Umlaute garantiert).
 4. **GBP-Beiträge 5–7:** (1) Einsatzplanung 10+ MA, (2) Subunternehmer-Prüfung, (3) Tariftreue & Lohnzuschläge.
 5. **Domain-Autorität:** LinkedIn-Profil-URL auf dynvon.com prüfen, wöchentlich GSC "Indexierung beantragen", externe Backlinks.
 6. **Conversion:** GA4 + Google Calendar-Events für `/reinigung`-Leads tracken.
 7. **Blog-Longtails:** 3–5 fokussierte Posts (Zeiterfassung Handwerk, Rechnungserstellung, etc.).
-8. **Weitere Branchen-Use-Cases:** Hausverwaltungen, Steuerberater, Onlineshops evaluieren (hoher Automation-Nutzen, KMU-affin); ggf. `/hausverwaltung` etc. analog `/reinigung` ausbauen.
+8. **Weitere Branchen-Use-Cases:** Steuerberater, Onlineshops evaluieren (hoher Automation-Nutzen, KMU-affin); ggf. `/steuerberater` etc. analog `/reinigung` ausbauen.
 
 ## Wichtige Entscheidungen / Konventionen
 - **"Ich" vs. "Wir":** Solo-Freelancer bleibt "Ich" überall (persönliches Portrait, direkter Draht = USP). Agenturen schreiben alle "wir" — dein "ich" ist Differenzierung.
-- **IndustryFocus-Sektion:** neue Komponente zwischen Services und CaseStudies auf Home, thematisch klar, erweiterbar, SEO-friendly (H2 + strukturierter Content). Card ohne spezifische Branchen-Listenelemente (offene Formulierung).
+- **IndustryFocus-Sektion:** neue Komponente zwischen Services und CaseStudies auf Home, thematisch klar, erweiterbar, SEO-friendly (H2 + strukturierter Content). Card zeigt Beispiel-Branche (Hausverwaltungen) ohne spezifische Listenelemente.
 - **Nav-Strategie:** (aktuell) ein Branche → direkter Link "Reinigung" (nicht Dropdown). Bei 2+ Branchen später zu "Branchen"-Dropdown wechseln.
 - **Hero-Pattern auf /reinigung:** Headline Schema `<Thema> in <Zeit> statt <längere Zeit>`, 3 Stats (10h / 100% / 0), CTA.
 - **Topic-Chooser:** Toggle zwischen "Angebote" (Incoming) und "Buchhaltung" (Outgoing) mit visuellen Unterschieden, immer DE.
@@ -63,4 +62,4 @@
 - **Google Business Profil:** 5/5 Sterne, Beiträge 1x/Wo (Value-First, Infografiken, Direktlink-CTA).
 - **AI-Bilder:** Canva/Code-Rendering bevorzugt (garantierte Umlaute/Fachbegriffe).
 - **Domain-Autorität:** externe Backlinks (Branchenverzeichnisse), BLP, GBP-Traffic — Google-Cache-Lag 1–4 Wochen normal.
-- **Branchen-Roadmap:** Hausverwaltungen, Steuerberater, Onlineshops sind höchstpassend (hoher Admin-Overhead, Python/API-Affinity, KMU-Größe); Zeitarbeit, Fitnessstudios, Immomakler zweite Reihe.
+- **Branchen-Roadmap:** Steuerberater, Onlineshops sind höchstpassend (hoher Admin-Overhead, Python/API-Affinity, KMU-Größe); Zeitarbeit, Fitnessstudios, Immomakler zweite Reihe.
