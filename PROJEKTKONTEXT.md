@@ -22,25 +22,25 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `104bbc0` chore: auto-update PROJEKTKONTEXT.md
-2. `b4d45e5` chore: auto-update PROJEKTKONTEXT.md
-3. `bfd9a2e` chore: auto-update PROJEKTKONTEXT.md
-4. `54850b0` chore: auto-update PROJEKTKONTEXT.md
-5. `b5a016f` chore: auto-update PROJEKTKONTEXT.md
-6. `87fb5e6` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-7. `4fd5fc1` feat(i18n): default locale auf Deutsch umstellen
-8. `2e2c7f5` chore: auto-update PROJEKTKONTEXT.md
-9. `da61152` feat(seo): Keyword-Einbindung im /reinigung-Body (#8)
-10. `eb96378` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+1. `1e297a8` chore: auto-update PROJEKTKONTEXT.md
+2. `104bbc0` chore: auto-update PROJEKTKONTEXT.md
+3. `b4d45e5` chore: auto-update PROJEKTKONTEXT.md
+4. `bfd9a2e` chore: auto-update PROJEKTKONTEXT.md
+5. `54850b0` chore: auto-update PROJEKTKONTEXT.md
+6. `b5a016f` chore: auto-update PROJEKTKONTEXT.md
+7. `87fb5e6` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+8. `4fd5fc1` feat(i18n): default locale auf Deutsch umstellen
+9. `2e2c7f5` chore: auto-update PROJEKTKONTEXT.md
+10. `da61152` feat(seo): Keyword-Einbindung im /reinigung-Body (#8)
 
 ## Aktuell in Arbeit
-- **Task:** Google Business Profil + GBP-Beitrag-Serie für Reinigungsunternehmen — aktuell Focus auf Bildverwendung (Timeline-Infografiken, Mockup-Screenshots).
-- **Letzte Session:** Diskussion über Bild-Strategie für GBP-Posts: wann Bilder helfen (Infografiken, echte Dashboards) vs. schaden (Stockfotos, generische KI). Entscheidung: 3-Schritt-Timeline-PNG generieren (1200×900, Markenfarben) als Mahnablauf-Visualisierung.
+- **Task:** Google Business Profil-Strategie: GBP-Beitrag-Serie für Reinigungsunternehmen mit Fokus auf Bildverwendung (Infografiken vs. Stockfotos).
+- **Letzte Session-Erkenntnis:** Stockfotos schaden der Konvertierung (generisch, Signal für Spam); Infografiken, echte Dashboards/Mockups oder Kundenreferenzen wirken glaubwürdig. Nächster Schritt: 3-Schritt-Timeline-PNG (Mahnablauf: −2/+3/+10 Tage) mit Markenfarben generieren (1200×900).
 - **Uncommitted:** keine (clean tree).
 
 ## Offene Punkte / nächste Schritte
 1. **3-Schritt-Timeline-Infografik:** PNG für Mahnwesen-GBP-Post (−2 / +3 / +10 Tage mit Liquiditäts-Rechnung).
-2. **3 weitere GBP-Beiträge vorbereiten:** Angebotserstellung, Lexoffice-Integration, Fallstudie mit entsprechenden Bildern.
+2. **3 weitere GBP-Beiträge vorbereiten:** Angebotserstellung, Lexoffice-Integration, Fallstudie mit entsprechenden Bildern (Infografiken oder echte Dashboards).
 3. **Mockup-Screenshots des Dashboards:** für `/reinigung`-Seite (Angebote-Track + Buchhaltungs-Track als Proof-of-Concept).
 4. **GBP-Beitrag hochladen:** Alle Varianten in Google Business Profil-Editor posten.
 5. **Conversion-Tracking:** GA4 + Google Calendar-Events (appointment_booked) für Reinigung-Leads.
