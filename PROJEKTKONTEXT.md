@@ -22,28 +22,30 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `bfd9a2e` chore: auto-update PROJEKTKONTEXT.md
-2. `54850b0` chore: auto-update PROJEKTKONTEXT.md
-3. `b5a016f` chore: auto-update PROJEKTKONTEXT.md
-4. `87fb5e6` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-5. `4fd5fc1` feat(i18n): default locale auf Deutsch umstellen
-6. `2e2c7f5` chore: auto-update PROJEKTKONTEXT.md
-7. `da61152` feat(seo): Keyword-Einbindung im /reinigung-Body (#8)
-8. `eb96378` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-9. `7ea80db` feat(seo): gezielte Keyword-Einbindung im sichtbaren /reinigung-Body
-10. `dc26d71` chore: auto-update PROJEKTKONTEXT.md
+1. `b4d45e5` chore: auto-update PROJEKTKONTEXT.md
+2. `bfd9a2e` chore: auto-update PROJEKTKONTEXT.md
+3. `54850b0` chore: auto-update PROJEKTKONTEXT.md
+4. `b5a016f` chore: auto-update PROJEKTKONTEXT.md
+5. `87fb5e6` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+6. `4fd5fc1` feat(i18n): default locale auf Deutsch umstellen
+7. `2e2c7f5` chore: auto-update PROJEKTKONTEXT.md
+8. `da61152` feat(seo): Keyword-Einbindung im /reinigung-Body (#8)
+9. `eb96378` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+10. `7ea80db` feat(seo): gezielte Keyword-Einbindung im sichtbaren /reinigung-Body
 
 ## Aktuell in Arbeit
 - **Task:** Google Business Profil + GBP-Beitrag-Serie für Reinigungsunternehmen (fokus: Rechnungserstellung + Mahnwesen).
-- **Letzte Session:** Value-First GBP-Beitrag-Textvorschlag (dreistufiger Mahnablauf: 2 Tage vor/3 Tage nach/10 Tage Fälligkeit) mit Logo + CTA-Button (`https://www.dynvon.com/reinigung`). Button-Label: "Mehr erfahren". Nächste: 3 weitere Varianten (Angebotserstellung, Lexoffice, Fallstudie) + Bild-Assets.
+- **Letzte Session:** Value-First GBP-Beitrag-Textvorschlag (dreistufiger Mahnablauf: 2 Tage vor/3 Tage nach/10 Tage Fälligkeit) mit konkreten Liquiditäts-Effekten, Logo, CTA-Button (`https://www.dynvon.com/reinigung`) und Umsetzungs-Roadmap. **Uncommitted:** keine (clean tree).
+- **Nächster Schritt:** 3 weitere GBP-Beitrag-Varianten (Angebotserstellung, Lexoffice-Integration, Fallstudie) + Bild-Assets generieren.
 
 ## Offene Punkte / nächste Schritte
-1. **GBP-Beitrag hochladen:** Erste Variante (Mahnwesen) in Google Business Profil-Editor posten (1200×900 Bild, Text, CTA).
-2. **3 weitere GBP-Beiträge vorbereiten:** Angebotserstellung, Lexoffice-Integration, Fallstudie-Fallstudie (Social-Proof).
-3. **Google Business Profil vollständig optimieren:** Kategorien + Dienstleistungen, Geschäftsbeschreibung (Keywords für lokale SEO).
-4. **Conversion-Tracking:** GA4 + Google Calendar-Events (appointment_booked).
-5. **Zweite Branchen-Landingpage:** Handwerk, Hausverwaltung oder Arztpraxen (nach `/reinigung`-Schema).
-6. **Longtail-Blog-Posts:** 3–5 Posts (z. B. "Zeiterfassung Handwerk", "Rechnungserstellung Büro").
+1. **GBP-Beitrag hochladen:** Mahnwesen-Variante in Google Business Profil-Editor posten (1200×900 Bild, Text, CTA).
+2. **3 weitere GBP-Beiträge vorbereiten:** Angebotserstellung, Lexoffice-Integration, Fallstudie (Social-Proof).
+3. **Bild-Assets:** 3-Schritt-Zeitachse PNG für Mahnablauf (−2 / +3 / +10 Tage) + weitere Grafiken für restliche Beiträge.
+4. **Google Business Profil vollständig optimieren:** Kategorien + Dienstleistungen, Geschäftsbeschreibung (Keywords für lokale SEO).
+5. **Conversion-Tracking:** GA4 + Google Calendar-Events (appointment_booked).
+6. **Zweite Branchen-Landingpage:** Handwerk, Hausverwaltung oder Arztpraxen (nach `/reinigung`-Schema).
+7. **Longtail-Blog-Posts:** 3–5 Posts (z. B. "Zeiterfassung Handwerk", "Rechnungserstellung Büro").
 
 ## Wichtige Entscheidungen / Konventionen
 - Hero-Pattern auf `/reinigung`: knappe Headline nach Schema `<Thema> in <Zeit> statt <längere Zeit>`, gefolgt von Subtitle + 3 Stats + CTA
@@ -59,5 +61,6 @@
 - Cloudflare API-Integration für automatisierte DNS-Verwaltung bei GSC-Verifizierung
 - SEO-Title-Länge: 50-60 Zeichen um SERP/Social-Preview-Truncation zu vermeiden
 - **Sprache als Default:** DE-Standard überall, Nutzer können EN hinzuklicken (nicht umgekehrt)
-- **Google Business Profil:** Kostenlos, 5/5 Sterne, Kategorien + Dienstleistungen gezielt für lokale Such-Ranking; Beiträge 1x/Wo für aktualisierten Status-Signal
+- **Google Business Profil:** Kostenlos, 5/5 Sterne, Kategorien + Dienstleistungen gezielt für lokale Such-Ranking; Beiträge 1x/Wo für aktualisiertem Status-Signal
 - **GBP-Beiträge:** Focused Content (3-4 Leistungs-Callouts + Problem-Hook), CTA mit direktem Link, Value-First-Messaging ohne hartes Selling
+- **GBP-Beitrag-Textvorlage:** Dreistufiger Mahnablauf (2 Tage vor / 3 Tage nach / 10 Tage Fälligkeit), konkrete Liquiditäts-Rechnung (z. B. 42→21 Tage = 7.500 € schneller), Umsetzungs-Roadmap (manuell oder Lexoffice-Automatik)
