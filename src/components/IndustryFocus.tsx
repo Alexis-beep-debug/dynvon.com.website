@@ -26,6 +26,22 @@ const INDUSTRIES: Industry[] = [
       { value: "0", label: { de: "vergessene Mahnungen", en: "missed reminders" } },
     ],
   },
+  {
+    href: "#contact",
+    title: {
+      de: "Hausverwaltungen",
+      en: "Property management",
+    },
+    description: {
+      de: "Nebenkostenabrechnungen, Handwerker-Tickets, Mieter-Kommunikation und Monatsabrechnungen automatisiert — für WEG- und Mietverwaltungen.",
+      en: "Service charge statements, contractor tickets, tenant communication and monthly billing — automated for property management firms.",
+    },
+    stats: [
+      { value: "6h", label: { de: "gespart / Woche", en: "saved / week" } },
+      { value: "100%", label: { de: "fristgerechte Abrechnungen", en: "on-time statements" } },
+      { value: "0", label: { de: "verlorene Tickets", en: "missed tickets" } },
+    ],
+  },
 ];
 
 export default function IndustryFocus() {
@@ -94,12 +110,9 @@ export default function IndustryFocus() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
               </svg>
             </div>
-            <h3 className="font-semibold text-base mb-2">
+            <h3 className="font-semibold text-base mb-4">
               {isDe ? "Ihre Branche fehlt?" : "Your industry missing?"}
             </h3>
-            <p className="text-sm text-muted mb-4">
-              {isDe ? "z. B. Hausverwaltungen" : "e.g. property management"}
-            </p>
             <a
               href="#contact"
               className="text-sm font-medium text-accent-light hover:text-accent transition-colors"
