@@ -6,8 +6,8 @@
 > immer klar ist, wo wir stehen.
 
 ## Stand
-- **Datum:** 2026-04-20
-- **Branch:** `claude/review-project-status-ZBd2O`
+- **Datum:** 2026-04-21
+- **Branch:** `claude/review-project-status-ZBd2O` (lokal) / `main` (remote)
 - **Working Tree:** clean
 
 ## Projekt-Basics
@@ -22,26 +22,26 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `7eedf72` docs: add PITCH-BUCHHALTUNG.md — sales deck outline
-2. `1ecdbe8` chore: auto-update PROJEKTKONTEXT.md
-3. `a156f46` chore: auto-update PROJEKTKONTEXT.md
-4. `3f8f976` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-5. `27a2eb7` chore: auto-update PROJEKTKONTEXT.md
-6. `502be80` chore: auto-update PROJEKTKONTEXT.md
-7. `ea94e66` docs: add BRAND.md — design tokens, components, voice & tone
-8. `3dbfd5a` chore: auto-update PROJEKTKONTEXT.md
-9. `3207d3f` chore: auto-update PROJEKTKONTEXT.md
-10. `b4fca82` Reinigung: Topic-Chooser (Angebote vs Buchhaltung) (#3)
+1. `f58e706` chore: auto-update PROJEKTKONTEXT.md
+2. `4a836ee` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+3. `da5adfa` chore: auto-update PROJEKTKONTEXT.md
+4. `7eedf72` docs: add PITCH-BUCHHALTUNG.md — sales deck outline
+5. `1ecdbe8` chore: auto-update PROJEKTKONTEXT.md
+6. `a156f46` chore: auto-update PROJEKTKONTEXT.md
+7. `1a211a8` docs: add BRAND.md (#4)
+8. `3f8f976` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+9. `27a2eb7` chore: auto-update PROJEKTKONTEXT.md
+10. `502be80` chore: auto-update PROJEKTKONTEXT.md
 
 ## Aktuell in Arbeit
-- **Task:** PITCH-BUCHHALTUNG.md erstellt (17 Folien: Cover → Wer ich bin → Problem → Kosten → Vision → 3 Systeme → Fallstudie → Ergebnisse → Integration → Prozess → Preise → Warum-ich → CTA → FAQ → Demo + 2 Backup-Slides) mit Titel, Inhalt, Speaker Notes pro Folie.
-- **Nächstes:** PITCH-BUCHHALTUNG.md auf `main` mergen für curl-Download-Zugriff.
+- **Task:** SEO-Analyse & Google-Preview-Fix für `/reinigung` — identifiziert: `lang="en"`, EN-first Metadata, fehlende `sitemap.ts`, fehlende `robots.ts`, keine JSON-LD
+- **Status:** Konkreter 6-Punkte-Fix-Plan erstellt (lang→de, eigenes `/reinigung/layout.tsx`, sitemap+robots, JSON-LD, OG-Image, Keywords)
 
 ## Offene Punkte / nächste Schritte
-- PITCH-BUCHHALTUNG.md auf `main` mergen und via Raw GitHub URL bereitstellen
-- Topic-Chooser + ProposalFlowchart auf `/reinigung` verifizieren (Mobile + Desktop)
-- Repository-Dokumentation (README, Contributing Guide) falls nötig
-- Deploy-Status und Live-Performance der neuen Features überprüfen
+1. **SEO-Fixes umsetzen (Punkte 1–5):** `lang="de"` in `layout.tsx`, `/reinigung/layout.tsx` mit gezielten Metadaten, `sitemap.ts` + `robots.ts`, JSON-LD (LocalBusiness + Service), OG-Image
+2. **Keyword-Optimierung (Punkt 6):** Body-Text H1/H2, alt-Tags, sichtbare Keywords — koordiniert umsetzen, keine Stopfung
+3. **Topic-Chooser + ProposalFlowchart auf `/reinigung` testen** (Mobile + Desktop)
+4. **Deploy-Status und Live-Performance überprüfen**
 
 ## Wichtige Entscheidungen / Konventionen
 - Hero-Pattern auf `/reinigung`: knappe Headline nach Schema `<Thema> in <Zeit> statt <längere Zeit>`, gefolgt von Subtitle + 3 Stats + CTA
@@ -50,4 +50,6 @@
 - Sprache persistiert über Seitenwechsel via LanguageContext
 - Stop-Hook dokumentiert Projekt-Stand automatisch — committet und pusht PROJEKTKONTEXT.md am Ende jedes Turns
 - BRAND.md zentral für Design-Tokens, Komponenten-Konventionen und Voice & Tone
-- PITCH-BUCHHALTUNG.md ist zentrale Sales-Deck-Dokumentation (Struktur: Cover → Wer ich bin → Problem → 3 Systeme → Fallstudie → Integration → Preise → CTA → FAQ)
+- PITCH-BUCHHALTUNG.md zentrale Sales-Deck-Dokumentation (17 Folien: Cover → Wer ich bin → Problem → Kosten → Vision → 3 Systeme → Fallstudie → Integration → Preise → Warum-ich → CTA → FAQ + Backup-Slides)
+- `<html lang="de">` mit DE-first Metadata in `layout.tsx` für korrekte Google-Preview und SEO
+- Strukturierte Daten (JSON-LD LocalBusiness + Service) für reichhaltigere Google-Kacheln und lokale Suche
