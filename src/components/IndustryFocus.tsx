@@ -97,14 +97,6 @@ export default function IndustryFocus() {
             <h3 className="font-semibold text-base mb-4">
               {isDe ? "Ihre Branche fehlt?" : "Your industry missing?"}
             </h3>
-<<<<<<< HEAD
-=======
-            <p className="text-muted text-sm leading-relaxed mb-4">
-              {isDe
-                ? "Wenn mehrere Betriebe Ihrer Branche ähnliche Prozesse manuell erledigen, lohnt sich oft eine maßgeschneiderte Lösung. Lassen Sie uns sprechen."
-                : "If several businesses in your industry handle similar processes manually, a tailored solution usually pays off. Let's talk."}
-            </p>
->>>>>>> origin/main
             <a
               href="#contact"
               className="text-sm font-medium text-accent-light hover:text-accent transition-colors"
