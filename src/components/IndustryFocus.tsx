@@ -99,8 +99,13 @@ export default function IndustryFocus() {
             </h3>
             <p className="text-muted text-sm leading-relaxed mb-4">
               {isDe
+<<<<<<< HEAD
                 ? "Wenn mehrere Betriebe Ihrer Branche ähnliche Prozesse manuell erledigen, lohnt sich oft eine maßgeschneiderte Lösung. Lassen Sie uns sprechen."
                 : "If several businesses in your industry handle similar processes manually, a tailored solution usually pays off. Let's talk."}
+=======
+                ? "Weitere Branchenlösungen in Vorbereitung — Handwerk, Hausverwaltung, Arztpraxen."
+                : "More industry solutions in the works — trades, property management, medical practices."}
+>>>>>>> origin/main
             </p>
             <a
               href="#contact"
