@@ -22,24 +22,24 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `f144168` chore: auto-update PROJEKTKONTEXT.md
-2. `3f80a29` chore: auto-update PROJEKTKONTEXT.md
-3. `938e1c5` chore: auto-update PROJEKTKONTEXT.md
-4. `e06f5f5` chore: auto-update PROJEKTKONTEXT.md
-5. `6d779a1` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-6. `18b341c` feat(seo): DE-first metadata, /reinigung-spezifische SEO, JSON-LD, sitemap, OG-Images
-7. `25c263f` chore: auto-update PROJEKTKONTEXT.md
-8. `f58e706` chore: auto-update PROJEKTKONTEXT.md
-9. `8368ba6` docs: add PITCH-BUCHHALTUNG.md (#5)
-10. `4a836ee` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+1. `7ab33d3` chore: auto-update PROJEKTKONTEXT.md
+2. `f144168` chore: auto-update PROJEKTKONTEXT.md
+3. `3f80a29` chore: auto-update PROJEKTKONTEXT.md
+4. `938e1c5` chore: auto-update PROJEKTKONTEXT.md
+5. `e06f5f5` chore: auto-update PROJEKTKONTEXT.md
+6. `6d779a1` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+7. `18b341c` feat(seo): DE-first metadata, /reinigung-spezifische SEO, JSON-LD, sitemap, OG-Images
+8. `25c263f` chore: auto-update PROJEKTKONTEXT.md
+9. `f58e706` chore: auto-update PROJEKTKONTEXT.md
+10. `8368ba6` docs: add PITCH-BUCHHALTUNG.md (#5)
 
 ## Aktuell in Arbeit
 - **Task:** Google Search Console Verifizierung & Sitemap-Indexierung durchstarten
-- **Session-Kontext:** Domain über Cloudflare Auto-Flow verifiziert; Cloudflare-Tool blockiert (403), aber echte Erreichbarkeit muss im Browser geprüft werden. Nächster Schritt: Sitemap-URL (https://www.dynvon.com/sitemap.xml) im Browser testen und in GSC einreichen.
+- **Status:** Sitemap-URL (https://www.dynvon.com/sitemap.xml) verifiziert (7 Seiten erkannt); nächster Schritt: Indexierung für `/` und `/reinigung` im GSC anfordern
 
 ## Offene Punkte / nächste Schritte
-1. **Sitemap-Test im Browser:** https://www.dynvon.com/sitemap.xml im neuen Tab öffnen → XML-Text oder Fehler?
-2. **Google Search Console:** Sitemap über GSC-Dashboard einreichen, dann Indexierung für `/` und `/reinigung` anfordern
+1. **Google Search Console:** Startseite (`https://www.dynvon.com`) im GSC-Suchfeld analysieren → Indexierung ggf. anfordern
+2. **GSC für `/reinigung`:** Service-Seite ebenfalls indexieren anfordern
 3. **Rich-Results-Test:** https://search.google.com/test/rich-results → `/reinigung` prüfen (Service + ProfessionalService)
 4. **Social-Preview:** https://www.opengraph.xyz/ → `/reinigung` OG-Image-Rendering testen
 5. **Optional:** Body-Text H1/H2 von `/reinigung` mit Keywords "Gebäudereinigung", "Nürnberg" erweitern
