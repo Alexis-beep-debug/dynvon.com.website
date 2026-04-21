@@ -6,7 +6,7 @@
 > immer klar ist, wo wir stehen.
 
 ## Stand
-- **Datum:** 2025-04-21
+- **Datum:** 2026-04-21
 - **Branch:** `claude/review-project-status-ZBd2O`
 - **Status:** clean (keine uncommitted changes)
 
@@ -22,19 +22,19 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `b3b31cc` fix: remove 'z.B. Hausverwaltungen' from placeholder (now own card)
-2. `ffb7185` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-3. `c8dabb3` feat(industry-focus): Hausverwaltungen als eigene Card hinzufügen
-4. `c6aa440` chore: auto-update PROJEKTKONTEXT.md
-5. `81ebd44` feat(industry-focus): Hausverwaltungen als Beispiel (#13)
-6. `04462fc` Merge remote-tracking branch 'origin/main' in branch
-7. `1c89e22` feat(industry-focus): Hausverwaltungen als Beispiel-Branche in Placeholder-Card
-8. `cd2162c` chore: auto-update PROJEKTKONTEXT.md
-9. `cf1eb02` fix(industry-focus): remove explanatory text from placeholder card (#12)
-10. `83a0515` fix: resolve merge conflict markers in IndustryFocus.tsx
+1. `40f62f5` fix: remove duplicate Hausverwaltungen entry from merge
+2. `5d25b90` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+3. `e617086` fix(industry-focus): remove stats from cards (nicht aussagekräftig)
+4. `df0afcb` chore: auto-update PROJEKTKONTEXT.md
+5. `975ee9b` feat(industry-focus): Hausverwaltungen als eigene Card (#14)
+6. `b3b31cc` fix: remove 'z.B. Hausverwaltungen' from placeholder (now own card)
+7. `ffb7185` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+8. `c8dabb3` feat(industry-focus): Hausverwaltungen als eigene Card hinzufügen
+9. `c6aa440` chore: auto-update PROJEKTKONTEXT.md
+10. `81ebd44` feat(industry-focus): Hausverwaltungen als Beispiel (#13)
 
 ## Aktuell in Arbeit
-- **Letzter Task:** IndustryFocus mit 3 Cards: (1) Gebäudereinigungsunternehmen (10h/100%/0), (2) Hausverwaltungen (6h/100%/0 Platzhalter), (3) Ihre Branche fehlt? Mergebase `ffb7185` gegen main. Vercel-Deploy live.
+- **Letzter Task:** IndustryFocus-Merge abgeschlossen (3 Cards: Gebäudereinigung + Hausverwaltungen + Placeholder, Stats entfernt), Vercel-Deploy live.
 - **Uncommitted:** keine (working tree clean).
 
 ## Offene Punkte / nächste Schritte
@@ -49,7 +49,7 @@
 
 ## Wichtige Entscheidungen / Konventionen
 - **"Ich" vs. "Wir":** Solo-Freelancer bleibt "Ich" überall (persönliches Portrait, direkter Draht = USP). Agenturen schreiben alle "wir" — dein "ich" ist Differenzierung.
-- **IndustryFocus-Sektion:** neue Komponente zwischen Services und CaseStudies auf Home, thematisch klar, erweiterbar, SEO-friendly (H2 + strukturierter Content). 3 Cards: Gebäudereinigung (Live-Stats), Hausverwaltungen (Platzhalter), Placeholder für weitere Branchen.
+- **IndustryFocus-Sektion:** neue Komponente zwischen Services und CaseStudies auf Home, thematisch klar, erweiterbar, SEO-friendly (H2 + strukturierter Content). 3 Cards: Gebäudereinigung (ohne Stats), Hausverwaltungen (ohne Stats), Placeholder für weitere Branchen.
 - **Nav-Strategie:** (aktuell) ein Branche → direkter Link "Reinigung" (nicht Dropdown). Bei 2+ Branchen später zu "Branchen"-Dropdown wechseln.
 - **Hero-Pattern auf /reinigung:** Headline Schema `<Thema> in <Zeit> statt <längere Zeit>`, 3 Stats (10h / 100% / 0), CTA.
 - **Topic-Chooser:** Toggle zwischen "Angebote" (Incoming) und "Buchhaltung" (Outgoing) mit visuellen Unterschieden, immer DE.
