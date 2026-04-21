@@ -6,9 +6,9 @@
 > immer klar ist, wo wir stehen.
 
 ## Stand
-- **Datum:** 2026-04-21
-- **Branch:** `claude/review-project-status-ZBd2O` (dirty, gepusht)
-- **Working Tree:** clean (no uncommitted changes)
+- **Datum:** 2025-04-21
+- **Branch:** `claude/review-project-status-ZBd2O`
+- **Status:** clean (keine uncommitted changes)
 
 ## Projekt-Basics
 - **Stack:** Next.js 16.2.1 + React 19.2 + Tailwind v4, TypeScript
@@ -22,23 +22,23 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `04462fc` Merge remote-tracking branch 'origin/main' in branch
-2. `1c89e22` feat(industry-focus): Hausverwaltungen als Beispiel-Branche in Placeholder-Card
-3. `cd2162c` chore: auto-update PROJEKTKONTEXT.md
-4. `cf1eb02` fix(industry-focus): remove explanatory text from placeholder card (#12)
-5. `83a0515` fix: resolve merge conflict markers in IndustryFocus.tsx
-6. `e4a2f48` Merge remote-tracking branch 'origin/main' in branch
-7. `8fe752e` fix(industry-focus): remove explanatory text from placeholder card
-8. `e6cbbd4` chore: auto-update PROJEKTKONTEXT.md
-9. `34eb3b4` fix: Branchen-Vorschläge aus Platzhalter-Card entfernen (#11)
-10. `c16bb12` fix: resolve merge conflict markers in IndustryFocus.tsx
+1. `b3b31cc` fix: remove 'z.B. Hausverwaltungen' from placeholder (now own card)
+2. `ffb7185` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+3. `c8dabb3` feat(industry-focus): Hausverwaltungen als eigene Card hinzufügen
+4. `c6aa440` chore: auto-update PROJEKTKONTEXT.md
+5. `81ebd44` feat(industry-focus): Hausverwaltungen als Beispiel (#13)
+6. `04462fc` Merge remote-tracking branch 'origin/main' in branch
+7. `1c89e22` feat(industry-focus): Hausverwaltungen als Beispiel-Branche in Placeholder-Card
+8. `cd2162c` chore: auto-update PROJEKTKONTEXT.md
+9. `cf1eb02` fix(industry-focus): remove explanatory text from placeholder card (#12)
+10. `83a0515` fix: resolve merge conflict markers in IndustryFocus.tsx
 
 ## Aktuell in Arbeit
-- **Letzter Task:** IndustryFocus-Card Überarbeitung + Hausverwaltungen als Beispiel hinzugefügt. Branch `claude/review-project-status-ZBd2O` gegen main gemergt (`04462fc`). Vercel-Deploy zeigt Card mit „z. B. Hausverwaltungen" unter Headline, vor „Gespräch starten →"-Link.
-- **Uncommitted:** keine (clean working tree).
+- **Letzter Task:** IndustryFocus mit 3 Cards: (1) Gebäudereinigungsunternehmen (10h/100%/0), (2) Hausverwaltungen (6h/100%/0 Platzhalter), (3) Ihre Branche fehlt? Mergebase `ffb7185` gegen main. Vercel-Deploy live.
+- **Uncommitted:** keine (working tree clean).
 
 ## Offene Punkte / nächste Schritte
-1. **Vercel-Deploy validieren:** neue IndustryFocus-Sektion live auf dynvon.com überprüfen (Hausverwaltungen-Text sichtbar).
+1. **Vercel-Deploy validieren:** 3 Cards im IndustryFocus (Reinigung, Hausverwaltung, Placeholder) live überprüfen.
 2. **GBP-Beiträge posten:** 4 fertige Beiträge 1x/Woche hochladen (Status-Signal für Google-Cache-Übergang).
 3. **Infografiken:** Mahnwesen, E-Rechnungspflicht, Arbeitszeiterfassung in Canva/Code (Umlaute garantiert).
 4. **GBP-Beiträge 5–7:** (1) Einsatzplanung 10+ MA, (2) Subunternehmer-Prüfung, (3) Tariftreue & Lohnzuschläge.
@@ -49,7 +49,7 @@
 
 ## Wichtige Entscheidungen / Konventionen
 - **"Ich" vs. "Wir":** Solo-Freelancer bleibt "Ich" überall (persönliches Portrait, direkter Draht = USP). Agenturen schreiben alle "wir" — dein "ich" ist Differenzierung.
-- **IndustryFocus-Sektion:** neue Komponente zwischen Services und CaseStudies auf Home, thematisch klar, erweiterbar, SEO-friendly (H2 + strukturierter Content). Card zeigt Beispiel-Branche (Hausverwaltungen) ohne spezifische Listenelemente.
+- **IndustryFocus-Sektion:** neue Komponente zwischen Services und CaseStudies auf Home, thematisch klar, erweiterbar, SEO-friendly (H2 + strukturierter Content). 3 Cards: Gebäudereinigung (Live-Stats), Hausverwaltungen (Platzhalter), Placeholder für weitere Branchen.
 - **Nav-Strategie:** (aktuell) ein Branche → direkter Link "Reinigung" (nicht Dropdown). Bei 2+ Branchen später zu "Branchen"-Dropdown wechseln.
 - **Hero-Pattern auf /reinigung:** Headline Schema `<Thema> in <Zeit> statt <längere Zeit>`, 3 Stats (10h / 100% / 0), CTA.
 - **Topic-Chooser:** Toggle zwischen "Angebote" (Incoming) und "Buchhaltung" (Outgoing) mit visuellen Unterschieden, immer DE.
