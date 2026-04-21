@@ -22,26 +22,26 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `87fb5e6` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-2. `4fd5fc1` feat(i18n): default locale auf Deutsch umstellen
-3. `2e2c7f5` chore: auto-update PROJEKTKONTEXT.md
-4. `da61152` feat(seo): Keyword-Einbindung im /reinigung-Body (#8)
-5. `eb96378` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-6. `7ea80db` feat(seo): gezielte Keyword-Einbindung im sichtbaren /reinigung-Body
-7. `dc26d71` chore: auto-update PROJEKTKONTEXT.md
-8. `577239f` fix(seo): shorten titles for SERP/social truncation (#7)
-9. `204f9f9` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-10. `f5cc966` fix(seo): shorten titles to 50-60 chars for SERP/social truncation
+1. `b5a016f` chore: auto-update PROJEKTKONTEXT.md
+2. `87fb5e6` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+3. `4fd5fc1` feat(i18n): default locale auf Deutsch umstellen
+4. `2e2c7f5` chore: auto-update PROJEKTKONTEXT.md
+5. `da61152` feat(seo): Keyword-Einbindung im /reinigung-Body (#8)
+6. `eb96378` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+7. `7ea80db` feat(seo): gezielte Keyword-Einbindung im sichtbaren /reinigung-Body
+8. `dc26d71` chore: auto-update PROJEKTKONTEXT.md
+9. `577239f` fix(seo): shorten titles for SERP/social truncation (#7)
+10. `204f9f9` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
 
 ## Aktuell in Arbeit
-- **Task:** i18n-Refinement: Default-Locale auf Deutsch umgestellt (`4fd5fc1`). Nach Vercel-Deploy sehen neue Besucher **immer Deutsch** — Sprach-Toggle wechselt auf Englisch, Wahl persistiert in localStorage.
-- **Status:** Gemergt und live. Nächste: Google Business Profil, Conversion-Tracking, 2. Branchen-Seite (Handwerk), Longtail-Blogs.
+- **Task:** Google Business Profil Optimierung — Profil verifiziert (dynvon IT Beratung, 5/5 Sterne), jetzt Profiltext, Kategorien und Dienstleistungen ergänzen für bessere lokale SEO (Nürnberg-Fokus).
+- **Status:** Session-Analyse von Search Console + Google Business Profil abgeschlossen. Nächste: Profil-Bearbeitung, dann Conversion-Tracking (GA4), dann 2. Branchen-Seite.
 
 ## Offene Punkte / nächste Schritte
-1. **Google Business Profil:** Kostenlos anlegen für lokale Suche (Nürnberg-Fokus, ~15 Min Setup) — starker lokaler SEO-Hebel.
-2. **Conversion-Tracking:** Google Calendar-Buchungen tracken (GA4 oder ähnlich).
-3. **Zweite Branchen-Landingpage:** Handwerk, Hausverwaltung, Arztpraxen (ähnlich `/reinigung` nach Schema anpassen).
-4. **Longtail-Blog-Posts:** 3–5 gezielte Posts für häufige Suchanfragen (z. B. "Zeiterfassung Handwerk", "Rechnungserstellung Büro").
+1. **Google Business Profil vollständig optimieren:** Name, Kategorien (Softwareentwickler, Unternehmensberater hinzufügen), Dienstleistungen eintragen, Beschreibung mit Keywords, 1x/Wo Beiträge posten (~15 Min). → starker lokaler SEO-Hebel.
+2. **Conversion-Tracking:** Google Calendar-Buchungen via GA4 tracken (Event: "appointment_booked").
+3. **Zweite Branchen-Landingpage:** Handwerk, Hausverwaltung oder Arztpraxen (ähnlich `/reinigung` nach Schema anpassen).
+4. **Longtail-Blog-Posts:** 3–5 gezielte Posts (z. B. "Zeiterfassung Handwerk", "Rechnungserstellung Büro").
 5. **Feature-Branch aufräumen:** `claude/review-project-status-ZBd2O` später lokal löschen (nach finaler Merge mit Main).
 
 ## Wichtige Entscheidungen / Konventionen
@@ -58,3 +58,4 @@
 - Cloudflare API-Integration für automatisierte DNS-Verwaltung bei GSC-Verifizierung
 - SEO-Title-Länge: 50-60 Zeichen um SERP/Social-Preview-Truncation zu vermeiden
 - **Sprache als Default:** DE-Standard überall, Nutzer können EN hinzuklicken (nicht umgekehrt)
+- **Google Business Profil:** Kostenlos, 5/5 Sterne, Kategorien + Dienstleistungen gezielt for lokale Such-Ranking; Beiträge 1x/Wo für aktualisierten Status-Signal
