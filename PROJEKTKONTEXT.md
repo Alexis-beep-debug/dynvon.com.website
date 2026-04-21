@@ -22,25 +22,25 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `a60781c` chore: auto-update PROJEKTKONTEXT.md
-2. `1e297a8` chore: auto-update PROJEKTKONTEXT.md
-3. `104bbc0` chore: auto-update PROJEKTKONTEXT.md
-4. `b4d45e5` chore: auto-update PROJEKTKONTEXT.md
-5. `bfd9a2e` chore: auto-update PROJEKTKONTEXT.md
-6. `54850b0` chore: auto-update PROJEKTKONTEXT.md
-7. `b5a016f` chore: auto-update PROJEKTKONTEXT.md
-8. `87fb5e6` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-9. `4fd5fc1` feat(i18n): default locale auf Deutsch umstellen
-10. `2e2c7f5` chore: auto-update PROJEKTKONTEXT.md
+1. `58ad19e` chore: auto-update PROJEKTKONTEXT.md
+2. `a60781c` chore: auto-update PROJEKTKONTEXT.md
+3. `1e297a8` chore: auto-update PROJEKTKONTEXT.md
+4. `104bbc0` chore: auto-update PROJEKTKONTEXT.md
+5. `b4d45e5` chore: auto-update PROJEKTKONTEXT.md
+6. `bfd9a2e` chore: auto-update PROJEKTKONTEXT.md
+7. `54850b0` chore: auto-update PROJEKTKONTEXT.md
+8. `b5a016f` chore: auto-update PROJEKTKONTEXT.md
+9. `87fb5e6` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+10. `4fd5fc1` feat(i18n): default locale auf Deutsch umstellen
 
 ## Aktuell in Arbeit
-- **Task:** Design-Prompt für 3-Schritt-Timeline-Infografik (Mahnablauf: −2/+3/+10 Tage) für GBP-Beitrag fertiggestellt. Prompt enthält exakte Markenfarben (#4f46e5, #7c3aed etc.) und Layout-Spezifikation für 1200×900 PNG.
-- **Nächster Schritt:** Infografik via AI-Tool (Canva, Figma, Midjourney) generieren oder als Next.js-Route mit Code rendern (Option 2 für garantiert korrekte Typographie).
+- **Task:** E-Rechnungspflicht-GBP-Beitrag ausgearbeitet (2025/2027/2028-Roadmap + Fakten-Check + ZUGFeRD/XRechnung-Erklärung).
+- **Nächster Schritt:** Timeline-Infografiken für E-Rechnungspflicht-Post generieren (optional) + weitere GBP-Beiträge (Angebotserstellung, Lexoffice-Integration, Fallstudien).
 - **Uncommitted:** keine (clean tree).
 
 ## Offene Punkte / nächste Schritte
-1. **3-Schritt-Timeline-Infografik:** PNG für Mahnwesen-GBP-Post generieren (−2 / +3 / +10 Tage mit exakten Markenfarben).
-2. **3 weitere GBP-Beiträge vorbereiten:** Angebotserstellung, Lexoffice-Integration, Fallstudie mit Infografiken/Mockups.
+1. **Weitere GBP-Beiträge vorbereiten:** Angebotserstellung, Lexoffice-Integration, Fallstudie mit Infografiken/Mockups.
+2. **E-Rechnungspflicht-Infografik (optional):** Timeline 2025/2027/2028 mit exakten Markenfarben für Visual-Impact.
 3. **Mockup-Screenshots des Dashboards:** für `/reinigung`-Seite (Angebote-Track + Buchhaltungs-Track als Proof-of-Concept).
 4. **GBP-Beitrag hochladen:** Alle Varianten in Google Business Profil-Editor posten.
 5. **Conversion-Tracking:** GA4 + Google Calendar-Events (appointment_booked) für Reinigung-Leads.
