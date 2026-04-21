@@ -7,7 +7,7 @@
 
 ## Stand
 - **Datum:** 2026-04-21
-- **Branch:** `claude/review-project-status-ZBd2O`
+- **Branch:** `main` (clean merge)
 - **Working Tree:** clean (no uncommitted changes)
 
 ## Projekt-Basics
@@ -22,27 +22,26 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `298cd14` chore: auto-update PROJEKTKONTEXT.md
-2. `58ad19e` chore: auto-update PROJEKTKONTEXT.md
-3. `a60781c` chore: auto-update PROJEKTKONTEXT.md
-4. `1e297a8` chore: auto-update PROJEKTKONTEXT.md
-5. `104bbc0` chore: auto-update PROJEKTKONTEXT.md
-6. `b4d45e5` chore: auto-update PROJEKTKONTEXT.md
-7. `bfd9a2e` chore: auto-update PROJEKTKONTEXT.md
-8. `54850b0` chore: auto-update PROJEKTKONTEXT.md
-9. `b5a016f` chore: auto-update PROJEKTKONTEXT.md
-10. `87fb5e6` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+1. `ef15cd2` chore: auto-update PROJEKTKONTEXT.md
+2. `298cd14` chore: auto-update PROJEKTKONTEXT.md
+3. `58ad19e` chore: auto-update PROJEKTKONTEXT.md
+4. `a60781c` chore: auto-update PROJEKTKONTEXT.md
+5. `1e297a8` chore: auto-update PROJEKTKONTEXT.md
+6. `104bbc0` chore: auto-update PROJEKTKONTEXT.md
+7. `b4d45e5` chore: auto-update PROJEKTKONTEXT.md
+8. `bfd9a2e` chore: auto-update PROJEKTKONTEXT.md
+9. `54850b0` chore: auto-update PROJEKTKONTEXT.md
+10. `b5a016f` chore: auto-update PROJEKTKONTEXT.md
 
 ## Aktuell in Arbeit
-- **Task:** 3 GBP-Beiträge vollständig ausgearbeitet: (1) Dreistufiges Mahnwesen, (2) E-Rechnungspflicht 2025/2027/2028 mit ZUGFeRD/XRechnung, (3) Dauerrechnungen für Monatsverträge (50h/Jahr Zeiteinsparung, 2.500€ Opportunity Cost).
-- **Nächster Schritt:** weitere GBP-Beiträge vorbereiten (Angebotserstellung, Lexoffice-Integration), optionale Timeline-Infografiken generieren, Google Business Profil-Upload.
+- **Task:** 3 GBP-Beiträge vollständig ausgearbeitet: (1) Dreistufiges Mahnwesen, (2) E-Rechnungspflicht 2025/2027/2028, (3) Dauerrechnungen für Monatsverträge. Jetzt: weitere GBP-Beiträge vorbereiten — **Thema 1 (Arbeitszeiterfassung EuGH 2019 + Zoll-Kontrolle)** ist nächster Kandidat (hochaktuell, rechtlich brisant, starke Automatisierungs-Story).
 - **Uncommitted:** keine (clean tree).
 
 ## Offene Punkte / nächste Schritte
-1. **Weitere GBP-Beiträge:** Angebotserstellung, Lexoffice-Integration, Fallstudien mit Infografiken/Mockups.
-2. **Timeline-Infografiken (optional):** E-Rechnungspflicht-Roadmap (2025/2027/2028) oder Dauerrechnungs-Zeiteinsparung als Code-generierte Grafik (Next.js-Route für garantiert korrekte Typographie).
+1. **Weitere 4 GBP-Beiträge schreiben:** (1) Arbeitszeiterfassung-Pflicht (EuGH/BAG/Zoll), (2) Einsatzplanung bei 10+ MA, (3) Subunternehmer-Prüfungspflicht, (4) Tariftreue & Lohnzuschläge (Gebäudereiniger-Tarif).
+2. **Timeline-Infografiken (optional):** E-Rechnungspflicht-Roadmap (2025/2027/2028) oder Dauerrechnungs-Zeiteinsparung als Next.js-Route.
 3. **Mockup-Screenshots des Dashboards:** für `/reinigung`-Seite (Angebote-Track + Buchhaltungs-Track als PoC).
-4. **GBP-Beiträge posten:** Alle 3 Varianten in Google Business Profil-Editor hochladen (1x/Woche für aktualisiertes Status-Signal).
+4. **GBP-Beiträge posten:** Alle 7 Varianten in Google Business Profil-Editor hochladen (1x/Woche für aktualisiertes Status-Signal).
 5. **Conversion-Tracking:** GA4 + Google Calendar-Events (appointment_booked) für Reinigung-Leads.
 6. **Zweite Branchen-Landingpage:** Handwerk, Hausverwaltung oder Arztpraxen (nach `/reinigung`-Schema).
 7. **Longtail-Blog-Posts:** 3–5 thematisch fokussierte Posts (z. B. "Zeiterfassung Handwerk", "Rechnungserstellung Büro").
