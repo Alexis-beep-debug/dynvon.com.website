@@ -7,7 +7,7 @@
 
 ## Stand
 - **Datum:** 2026-04-21
-- **Branch:** `main`
+- **Branch:** `claude/review-project-status-ZBd2O`
 - **Working Tree:** clean
 
 ## Projekt-Basics
@@ -22,28 +22,27 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `7ab33d3` chore: auto-update PROJEKTKONTEXT.md
-2. `f144168` chore: auto-update PROJEKTKONTEXT.md
-3. `3f80a29` chore: auto-update PROJEKTKONTEXT.md
-4. `938e1c5` chore: auto-update PROJEKTKONTEXT.md
-5. `e06f5f5` chore: auto-update PROJEKTKONTEXT.md
-6. `6d779a1` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-7. `18b341c` feat(seo): DE-first metadata, /reinigung-spezifische SEO, JSON-LD, sitemap, OG-Images
-8. `25c263f` chore: auto-update PROJEKTKONTEXT.md
-9. `f58e706` chore: auto-update PROJEKTKONTEXT.md
-10. `8368ba6` docs: add PITCH-BUCHHALTUNG.md (#5)
+1. `41238b6` chore: auto-update PROJEKTKONTEXT.md
+2. `7ab33d3` chore: auto-update PROJEKTKONTEXT.md
+3. `f144168` chore: auto-update PROJEKTKONTEXT.md
+4. `3f80a29` chore: auto-update PROJEKTKONTEXT.md
+5. `938e1c5` chore: auto-update PROJEKTKONTEXT.md
+6. `e06f5f5` chore: auto-update PROJEKTKONTEXT.md
+7. `6d779a1` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+8. `18b341c` feat(seo): DE-first metadata, /reinigung-spezifische SEO, JSON-LD, sitemap, OG-Images
+9. `25c263f` chore: auto-update PROJEKTKONTEXT.md
+10. `f58e706` chore: auto-update PROJEKTKONTEXT.md
 
 ## Aktuell in Arbeit
-- **Task:** Google Search Console Verifizierung & Sitemap-Indexierung durchstarten
-- **Status:** Sitemap-URL (https://www.dynvon.com/sitemap.xml) verifiziert (7 Seiten erkannt); nächster Schritt: Indexierung für `/` und `/reinigung` im GSC anfordern
+- **Task:** Google Search Console Verifizierung & Sitemap-Indexierung für `/` und `/reinigung` durchführen
+- **Status:** Sitemap verifiziert (7 Seiten); Startseite und Reinigungsseite Re-Crawl im GSC anfordern (deutsche Metadaten übernehmen lassen)
 
 ## Offene Punkte / nächste Schritte
-1. **Google Search Console:** Startseite (`https://www.dynvon.com`) im GSC-Suchfeld analysieren → Indexierung ggf. anfordern
-2. **GSC für `/reinigung`:** Service-Seite ebenfalls indexieren anfordern
-3. **Rich-Results-Test:** https://search.google.com/test/rich-results → `/reinigung` prüfen (Service + ProfessionalService)
-4. **Social-Preview:** https://www.opengraph.xyz/ → `/reinigung` OG-Image-Rendering testen
+1. **Google Search Console:** Startseite (`/`) + `/reinigung` im GSC Re-Crawl anfordern (deutsche Titel/Description einlesen lassen)
+2. **Rich-Results-Test:** https://search.google.com/test/rich-results → `/reinigung` prüfen (Service + ProfessionalService)
+3. **Social-Preview:** https://www.opengraph.xyz/ → `/reinigung` OG-Image-Rendering testen
+4. **Topic-Chooser + ProposalFlowchart auf `/reinigung`** nach Deploy testen (Mobile + Desktop)
 5. **Optional:** Body-Text H1/H2 von `/reinigung` mit Keywords "Gebäudereinigung", "Nürnberg" erweitern
-6. **Topic-Chooser + ProposalFlowchart auf `/reinigung`** nach Deploy testen (Mobile + Desktop)
 
 ## Wichtige Entscheidungen / Konventionen
 - Hero-Pattern auf `/reinigung`: knappe Headline nach Schema `<Thema> in <Zeit> statt <längere Zeit>`, gefolgt von Subtitle + 3 Stats + CTA
