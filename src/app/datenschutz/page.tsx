@@ -99,46 +99,152 @@ function DatenschutzContent() {
             </p>
           </section>
 
-          {/* 4. Cookies */}
+          {/* 4. Cookies, Session- & Local Storage */}
           <section>
             <h2 className="text-lg font-semibold text-foreground mb-3">
-              {en ? "4. Cookies" : "4. Cookies"}
+              {en
+                ? "4. Cookies, Session & Local Storage"
+                : "4. Cookies, Session- und Local Storage"}
             </h2>
             <p>
               {en
-                ? "This website does not use cookies for tracking or analytics purposes. The language preference is stored in the browser session and is not persisted."
-                : "Diese Website verwendet keine Cookies zu Tracking- oder Analysezwecken. Die Spracheinstellung wird in der Browser-Session gespeichert und nicht persistent abgelegt."}
+                ? "This website does not set cookies. For the built-in reach measurement (see section 5), a random session ID is stored in the browser's sessionStorage and is automatically deleted when the tab is closed. A notrack flag can be set in localStorage to disable the reach measurement (opt-out, see section 5)."
+                : "Diese Website setzt keine Cookies. Für die eigene Reichweitenmessung (siehe Abschnitt 5) wird im sessionStorage des Browsers eine zufällige Session-ID hinterlegt, die beim Schließen des Browser-Tabs automatisch gelöscht wird. Im localStorage kann ein notrack-Flag gesetzt werden, um die Reichweitenmessung zu deaktivieren (Opt-out, siehe Abschnitt 5)."}
             </p>
           </section>
 
-          {/* 5. Externe Links */}
+          {/* 5. Reichweitenmessung (eigenes Analytics) */}
           <section>
             <h2 className="text-lg font-semibold text-foreground mb-3">
-              {en ? "5. External Services" : "5. Externe Dienste"}
+              {en ? "5. Reach Measurement" : "5. Reichweitenmessung"}
+            </h2>
+            <p>
+              {en
+                ? "We operate our own, self-hosted analytics to understand how visitors use this website — without third-party services like Google Analytics, Matomo or Plausible. The analytics script is loaded from our Railway-hosted backend (https://email-outreach-dynvon-production.up.railway.app)."
+                : "Wir betreiben eine eigene, selbst gehostete Reichweitenmessung, um zu verstehen, wie Besucher diese Website nutzen — ohne Drittanbieter wie Google Analytics, Matomo oder Plausible. Das Analytics-Skript wird von unserem eigenen Backend (https://email-outreach-dynvon-production.up.railway.app) geladen."}
+            </p>
+            <p className="mt-3">
+              <strong className="text-foreground">
+                {en ? "Processed data:" : "Verarbeitete Daten:"}
+              </strong>
+            </p>
+            <ul className="list-disc ml-5 mt-1 space-y-1">
+              <li>
+                {en
+                  ? "Page views (URL, path, referrer, UTM parameters, screen width, device type)"
+                  : "Seitenaufrufe (URL, Pfad, Referrer, UTM-Parameter, Bildschirmbreite, Gerätetyp)"}
+              </li>
+              <li>
+                {en
+                  ? "Clicks on links and buttons (element text, CSS class, ID, href, click position)"
+                  : "Klicks auf Links und Buttons (Element-Text, CSS-Klasse, ID, Linkziel, Klickposition)"}
+              </li>
+              <li>
+                {en
+                  ? "Randomly generated session ID (in sessionStorage, deleted on tab close)"
+                  : "Zufällig generierte Session-ID (in sessionStorage, wird beim Tab-Schließen gelöscht)"}
+              </li>
+              <li>
+                {en
+                  ? "User agent (browser & operating system)"
+                  : "User-Agent (Browser & Betriebssystem)"}
+              </li>
+              <li>
+                {en
+                  ? "IP address, anonymized before storage (last octet set to 0, e.g. 192.168.178.0)"
+                  : "IP-Adresse, anonymisiert vor der Speicherung (letztes Oktett auf 0 gesetzt, z. B. 192.168.178.0)"}
+              </li>
+            </ul>
+            <p className="mt-3">
+              <strong className="text-foreground">
+                {en ? "Not processed:" : "Nicht verarbeitet:"}
+              </strong>{" "}
+              {en
+                ? "No cookies, no cross-site tracking, no dwell time, no scroll tracking, no personal data such as names or email addresses."
+                : "Keine Cookies, kein Cross-Site-Tracking, keine Verweilzeit, kein Scroll-Tracking, keine personenbezogenen Daten wie Namen oder E-Mail-Adressen."}
+            </p>
+            <p className="mt-3">
+              <strong className="text-foreground">
+                {en ? "Legal basis:" : "Rechtsgrundlage:"}
+              </strong>{" "}
+              {en
+                ? "Art. 6 (1) (f) GDPR. We have a legitimate interest in understanding the reach and usage of our website in order to continuously improve it. Due to the IP anonymization and cookie-free implementation, your interests do not outweigh this."
+                : "Art. 6 Abs. 1 lit. f DSGVO. Wir haben ein berechtigtes Interesse daran, die Reichweite und Nutzung unserer Website zu verstehen, um sie kontinuierlich zu verbessern. Aufgrund der IP-Anonymisierung und der cookie-freien Umsetzung überwiegen Ihre Interessen nicht."}
+            </p>
+            <p className="mt-3">
+              <strong className="text-foreground">
+                {en ? "Storage period:" : "Speicherdauer:"}
+              </strong>{" "}
+              {en
+                ? "Aggregated reach data is retained for up to 24 months; raw events are deleted after 90 days."
+                : "Aggregierte Reichweitendaten werden bis zu 24 Monate aufbewahrt; Rohdaten werden nach 90 Tagen gelöscht."}
+            </p>
+
+            <div className="mt-4 p-4 rounded-lg border border-border bg-surface/40">
+              <p className="mb-3">
+                <strong className="text-foreground">
+                  {en ? "Opt-out:" : "Widerspruch (Opt-out):"}
+                </strong>{" "}
+                {en
+                  ? "You can disable the reach measurement for this browser at any time. A notrack flag is stored in localStorage; the analytics script will then not send any data."
+                  : "Sie können die Reichweitenmessung für diesen Browser jederzeit deaktivieren. Dabei wird ein notrack-Flag im localStorage gesetzt; das Analytics-Skript sendet dann keine Daten mehr."}
+              </p>
+              <button
+                type="button"
+                onClick={() => {
+                  if (typeof window === "undefined") return;
+                  const isTracking = localStorage.getItem("notrack") !== "1";
+                  if (isTracking) {
+                    localStorage.setItem("notrack", "1");
+                    alert(
+                      en
+                        ? "Reach measurement disabled for this browser."
+                        : "Reichweitenmessung für diesen Browser deaktiviert."
+                    );
+                  } else {
+                    localStorage.removeItem("notrack");
+                    alert(
+                      en
+                        ? "Reach measurement re-enabled for this browser."
+                        : "Reichweitenmessung für diesen Browser wieder aktiviert."
+                    );
+                  }
+                }}
+                className="inline-flex items-center gap-2 px-4 py-2 bg-accent hover:bg-accent-light text-white text-sm font-semibold rounded-lg transition-all"
+              >
+                {en ? "Toggle tracking opt-out" : "Reichweitenmessung ein-/ausschalten"}
+              </button>
+            </div>
+          </section>
+
+          {/* 6. Externe Dienste */}
+          <section>
+            <h2 className="text-lg font-semibold text-foreground mb-3">
+              {en ? "6. External Services" : "6. Externe Dienste"}
             </h2>
 
             <h3 className="text-base font-medium text-foreground mb-2 mt-4">
-              Calendly
+              Google Calendar
             </h3>
             <p>
               {en
-                ? "This website contains a link to Calendly for booking appointments. When you click this link, you will be redirected to Calendly's website, which has its own privacy policy. Data processing by Calendly is governed by their privacy policy at:"
-                : "Diese Website enthält einen Link zu Calendly zur Terminbuchung. Wenn Sie auf diesen Link klicken, werden Sie auf die Website von Calendly weitergeleitet, die eine eigene Datenschutzerklärung hat. Die Datenverarbeitung durch Calendly unterliegt deren Datenschutzerklärung unter:"}
+                ? "This website contains a link to Google Calendar (operated by Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland) for booking appointments. When you click the booking link, you will be redirected to Google Calendar, where Google processes your data according to their own privacy policy. No data is transmitted to Google before you click the link."
+                : "Diese Website enthält einen Link zu Google Kalender (betrieben von Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland) zur Terminbuchung. Wenn Sie den Buchungslink klicken, werden Sie zu Google Kalender weitergeleitet, wo Google Ihre Daten nach deren eigener Datenschutzerklärung verarbeitet. Vor dem Klick auf den Link werden keine Daten an Google übertragen."}
             </p>
             <a
-              href="https://calendly.com/privacy"
+              href="https://policies.google.com/privacy"
               target="_blank"
               rel="noopener noreferrer"
               className="text-accent-light hover:text-accent transition-colors mt-1 inline-block"
             >
-              https://calendly.com/privacy
+              https://policies.google.com/privacy
             </a>
           </section>
 
-          {/* 6. Hosting */}
+          {/* 7. Hosting */}
           <section>
             <h2 className="text-lg font-semibold text-foreground mb-3">
-              {en ? "6. Hosting" : "6. Hosting"}
+              {en ? "7. Hosting" : "7. Hosting"}
             </h2>
             <p>
               {en
@@ -160,10 +266,10 @@ function DatenschutzContent() {
             </p>
           </section>
 
-          {/* 7. Betroffenenrechte */}
+          {/* 8. Betroffenenrechte */}
           <section>
             <h2 className="text-lg font-semibold text-foreground mb-3">
-              {en ? "7. Your Rights" : "7. Ihre Rechte"}
+              {en ? "8. Your Rights" : "8. Ihre Rechte"}
             </h2>
             <p>
               {en
