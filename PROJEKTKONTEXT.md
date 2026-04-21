@@ -22,26 +22,26 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `6d779a1` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-2. `18b341c` feat(seo): DE-first metadata, /reinigung-spezifische SEO, JSON-LD, sitemap, OG-Images
-3. `25c263f` chore: auto-update PROJEKTKONTEXT.md
-4. `f58e706` chore: auto-update PROJEKTKONTEXT.md
-5. `8368ba6` docs: add PITCH-BUCHHALTUNG.md (#5)
-6. `4a836ee` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-7. `da5adfa` chore: auto-update PROJEKTKONTEXT.md
-8. `7eedf72` docs: add PITCH-BUCHHALTUNG.md — sales deck outline
-9. `1ecdbe8` chore: auto-update PROJEKTKONTEXT.md
-10. `a156f46` chore: auto-update PROJEKTKONTEXT.md
+1. `e06f5f5` chore: auto-update PROJEKTKONTEXT.md
+2. `6d779a1` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+3. `18b341c` feat(seo): DE-first metadata, /reinigung-spezifische SEO, JSON-LD, sitemap, OG-Images
+4. `25c263f` chore: auto-update PROJEKTKONTEXT.md
+5. `f58e706` chore: auto-update PROJEKTKONTEXT.md
+6. `8368ba6` docs: add PITCH-BUCHHALTUNG.md (#5)
+7. `4a836ee` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+8. `da5adfa` chore: auto-update PROJEKTKONTEXT.md
+9. `7eedf72` docs: add PITCH-BUCHHALTUNG.md — sales deck outline
+10. `1ecdbe8` chore: auto-update PROJEKTKONTEXT.md
 
 ## Aktuell in Arbeit
-- **Task:** SEO-Fixes komplett implementiert und gemergt — PR `be09ef5` merged nach `main`. Vercel deployt jetzt. Post-Deploy-Tasks: Google Search Console verifizieren, sitemap.xml einreichen, Rich-Results prüfen
-- **Status:** Warten auf Deploy; danach optional: Keyword-Optimierung (Punkt 6 des Plans — gezielte Keywords wie "Gebäudereinigung", "Nürnberg" im Body-Text von `/reinigung`)
+- **Task:** Google Search Console Verifizierung ausstehend — nächster Schritt: Domain oder URL-Präfix-Verifizierung wählen (Domain empfohlen für vollständigen Scope)
+- **Session-Kontext:** Diskussion über beste Verifikationsmethode für dynvon.com — Domain (TXT-Record) vs. URL-Präfix (HTML-Meta-Tag)
 
 ## Offene Punkte / nächste Schritte
-1. **Google Search Console:** Property verifizieren, `sitemap.xml` einreichen, Neu-Indexierung für `/` und `/reinigung` anfordern
+1. **Google Search Console:** Domain mit TXT-Record oder URL-Präfix verifizieren, dann `sitemap.xml` einreichen
 2. **Rich-Results-Test:** https://search.google.com/test/rich-results → `/reinigung` eingeben, Service + ProfessionalService prüfen
-3. **Social-Preview:** https://www.opengraph.xyz/ → `/reinigung` eingeben, OG-Image muss rendern
-4. **Optional — Punkt 6:** Body-Text H1/H2 von `/reinigung` mit Keywords "Gebäudereinigung", "Nürnberg", konkrete Service-Begriffe erweitern
+3. **Social-Preview:** https://www.opengraph.xyz/ → `/reinigung` eingeben, OG-Image-Rendering prüfen
+4. **Optional — Punkt 6:** Body-Text H1/H2 von `/reinigung` mit Keywords "Gebäudereinigung", "Nürnberg" erweitern
 5. **Topic-Chooser + ProposalFlowchart auf `/reinigung` testen** (Mobile + Desktop nach Deploy)
 
 ## Wichtige Entscheidungen / Konventionen
@@ -54,3 +54,4 @@
 - PITCH-BUCHHALTUNG.md zentrale Sales-Deck-Dokumentation (17 Folien: Cover → Wer ich bin → Problem → Kosten → Vision → 3 Systeme → Fallstudie → Integration → Preise → Warum-ich → CTA → FAQ + Backup-Slides)
 - `<html lang="de">` mit DE-first Metadata in `layout.tsx` für korrekte Google-Preview und SEO
 - Strukturierte Daten (JSON-LD LocalBusiness + Service) für reichhaltigere Google-Kacheln und lokale Suche
+- Google Search Console: Domain-Verifizierung bevorzugt (TXT-Record) für kompletten Scope aller Subdomains/Varianten
