@@ -22,20 +22,20 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `eb96378` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-2. `7ea80db` feat(seo): gezielte Keyword-Einbindung im sichtbaren /reinigung-Body
-3. `dc26d71` chore: auto-update PROJEKTKONTEXT.md
-4. `577239f` fix(seo): shorten titles for SERP/social truncation (#7)
-5. `204f9f9` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-6. `f5cc966` fix(seo): shorten titles to 50-60 chars for SERP/social truncation
-7. `d028d72` chore: auto-update PROJEKTKONTEXT.md
-8. `b755a4f` chore: auto-update PROJEKTKONTEXT.md
-9. `cf3367a` chore: auto-update PROJEKTKONTEXT.md
-10. `43113a0` chore: auto-update PROJEKTKONTEXT.md
+1. `87fb5e6` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+2. `4fd5fc1` feat(i18n): default locale auf Deutsch umstellen
+3. `2e2c7f5` chore: auto-update PROJEKTKONTEXT.md
+4. `da61152` feat(seo): Keyword-Einbindung im /reinigung-Body (#8)
+5. `eb96378` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+6. `7ea80db` feat(seo): gezielte Keyword-Einbindung im sichtbaren /reinigung-Body
+7. `dc26d71` chore: auto-update PROJEKTKONTEXT.md
+8. `577239f` fix(seo): shorten titles for SERP/social truncation (#7)
+9. `204f9f9` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+10. `f5cc966` fix(seo): shorten titles to 50-60 chars for SERP/social truncation
 
 ## Aktuell in Arbeit
-- **Task:** SEO-Optimierung für `/reinigung` — Keywords "Gebäudereinigungsunternehmen", "Reinigungsunternehmen" gezielt in H2s eingebaut; Deploy via Vercel abgeschlossen.
-- **Status:** Vercel-Deploy live. Nächste: Google Business Profil, Conversion-Tracking, Branchen-Seite 2 (Handwerk), Longtail-Blogs.
+- **Task:** i18n-Refinement: Default-Locale auf Deutsch umgestellt (`4fd5fc1`). Nach Vercel-Deploy sehen neue Besucher **immer Deutsch** — Sprach-Toggle wechselt auf Englisch, Wahl persistiert in localStorage.
+- **Status:** Gemergt und live. Nächste: Google Business Profil, Conversion-Tracking, 2. Branchen-Seite (Handwerk), Longtail-Blogs.
 
 ## Offene Punkte / nächste Schritte
 1. **Google Business Profil:** Kostenlos anlegen für lokale Suche (Nürnberg-Fokus, ~15 Min Setup) — starker lokaler SEO-Hebel.
