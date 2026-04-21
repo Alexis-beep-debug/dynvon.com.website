@@ -22,27 +22,28 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `b5a016f` chore: auto-update PROJEKTKONTEXT.md
-2. `87fb5e6` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-3. `4fd5fc1` feat(i18n): default locale auf Deutsch umstellen
-4. `2e2c7f5` chore: auto-update PROJEKTKONTEXT.md
-5. `da61152` feat(seo): Keyword-Einbindung im /reinigung-Body (#8)
-6. `eb96378` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-7. `7ea80db` feat(seo): gezielte Keyword-Einbindung im sichtbaren /reinigung-Body
-8. `dc26d71` chore: auto-update PROJEKTKONTEXT.md
-9. `577239f` fix(seo): shorten titles for SERP/social truncation (#7)
-10. `204f9f9` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+1. `54850b0` chore: auto-update PROJEKTKONTEXT.md
+2. `b5a016f` chore: auto-update PROJEKTKONTEXT.md
+3. `87fb5e6` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+4. `4fd5fc1` feat(i18n): default locale auf Deutsch umstellen
+5. `2e2c7f5` chore: auto-update PROJEKTKONTEXT.md
+6. `da61152` feat(seo): Keyword-Einbindung im /reinigung-Body (#8)
+7. `eb96378` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+8. `7ea80db` feat(seo): gezielte Keyword-Einbindung im sichtbaren /reinigung-Body
+9. `dc26d71` chore: auto-update PROJEKTKONTEXT.md
+10. `577239f` fix(seo): shorten titles for SERP/social truncation (#7)
 
 ## Aktuell in Arbeit
-- **Task:** Google Business Profil Optimierung — Profil verifiziert (dynvon IT Beratung, 5/5 Sterne), jetzt Profiltext, Kategorien und Dienstleistungen ergänzen für bessere lokale SEO (Nürnberg-Fokus).
-- **Status:** Session-Analyse von Search Console + Google Business Profil abgeschlossen. Nächste: Profil-Bearbeitung, dann Conversion-Tracking (GA4), dann 2. Branchen-Seite.
+- **Task:** Google Business Profil + erste GBP-Beitrag-Serie für Reinigungsunternehmen (Buchhaltungs-Fokus).
+- **Letzte Session:** GBP-Beitrag-Textvorschlag fertig — Textblock (>4000 Zeichen), Logo/Hero-Screenshot, CTA-Button (Google Calendar-Link). Rhythmus: 1x/Wo. Nächste: 3 weitere Varianten (Angebotserstellung, Lexoffice, Fallstudie).
 
 ## Offene Punkte / nächste Schritte
-1. **Google Business Profil vollständig optimieren:** Name, Kategorien (Softwareentwickler, Unternehmensberater hinzufügen), Dienstleistungen eintragen, Beschreibung mit Keywords, 1x/Wo Beiträge posten (~15 Min). → starker lokaler SEO-Hebel.
-2. **Conversion-Tracking:** Google Calendar-Buchungen via GA4 tracken (Event: "appointment_booked").
-3. **Zweite Branchen-Landingpage:** Handwerk, Hausverwaltung oder Arztpraxen (ähnlich `/reinigung` nach Schema anpassen).
-4. **Longtail-Blog-Posts:** 3–5 gezielte Posts (z. B. "Zeiterfassung Handwerk", "Rechnungserstellung Büro").
-5. **Feature-Branch aufräumen:** `claude/review-project-status-ZBd2O` später lokal löschen (nach finaler Merge mit Main).
+1. **GBP-Beitrag hochladen:** Erste Variante in Google Business Profil-Editor posten (1200×900 oder 720×720 Bild, Text, CTA).
+2. **3 weitere GBP-Beiträge vorbereiten:** Angebotserstellung, Lexoffice-Integration, Fallstudie (Social-Proof).
+3. **Google Business Profil vollständig optimieren:** Kategorien + Dienstleistungen, Geschäftsbeschreibung (Keywords für lokale SEO).
+4. **Conversion-Tracking:** GA4 + Google Calendar-Events (appointment_booked).
+5. **Zweite Branchen-Landingpage:** Handwerk, Hausverwaltung oder Arztpraxen (nach `/reinigung`-Schema).
+6. **Longtail-Blog-Posts:** 3–5 Posts (z. B. "Zeiterfassung Handwerk", "Rechnungserstellung Büro").
 
 ## Wichtige Entscheidungen / Konventionen
 - Hero-Pattern auf `/reinigung`: knappe Headline nach Schema `<Thema> in <Zeit> statt <längere Zeit>`, gefolgt von Subtitle + 3 Stats + CTA
@@ -58,4 +59,5 @@
 - Cloudflare API-Integration für automatisierte DNS-Verwaltung bei GSC-Verifizierung
 - SEO-Title-Länge: 50-60 Zeichen um SERP/Social-Preview-Truncation zu vermeiden
 - **Sprache als Default:** DE-Standard überall, Nutzer können EN hinzuklicken (nicht umgekehrt)
-- **Google Business Profil:** Kostenlos, 5/5 Sterne, Kategorien + Dienstleistungen gezielt for lokale Such-Ranking; Beiträge 1x/Wo für aktualisierten Status-Signal
+- **Google Business Profil:** Kostenlos, 5/5 Sterne, Kategorien + Dienstleistungen gezielt für lokale Such-Ranking; Beiträge 1x/Wo für aktualisierten Status-Signal
+- **GBP-Beiträge:** Focused Content (3-4 Leistungs-Callouts + Problem-Hook), CTA mit direktem Link (Google Calendar), Bilder 1200×900 oder 720×720
