@@ -8,7 +8,7 @@
 ## Stand
 - **Datum:** 2026-04-21
 - **Branch:** `claude/review-project-status-ZBd2O`
-- **Working Tree:** clean (keine uncommitted changes)
+- **Working Tree:** clean (no uncommitted changes)
 
 ## Projekt-Basics
 - **Stack:** Next.js 16.2.1 + React 19.2 + Tailwind v4, TypeScript
@@ -22,25 +22,25 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `b755a4f` chore: auto-update PROJEKTKONTEXT.md
-2. `cf3367a` chore: auto-update PROJEKTKONTEXT.md
-3. `43113a0` chore: auto-update PROJEKTKONTEXT.md
-4. `76983b8` chore: auto-update PROJEKTKONTEXT.md
-5. `7e920b7` chore: auto-update PROJEKTKONTEXT.md
-6. `41238b6` chore: auto-update PROJEKTKONTEXT.md
-7. `7ab33d3` chore: auto-update PROJEKTKONTEXT.md
-8. `f144168` chore: auto-update PROJEKTKONTEXT.md
-9. `3f80a29` chore: auto-update PROJEKTKONTEXT.md
-10. `938e1c5` chore: auto-update PROJEKTKONTEXT.md
+1. `204f9f9` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+2. `f5cc966` fix(seo): shorten titles to 50-60 chars for SERP/social truncation
+3. `d028d72` chore: auto-update PROJEKTKONTEXT.md
+4. `b755a4f` chore: auto-update PROJEKTKONTEXT.md
+5. `cf3367a` chore: auto-update PROJEKTKONTEXT.md
+6. `43113a0` chore: auto-update PROJEKTKONTEXT.md
+7. `76983b8` chore: auto-update PROJEKTKONTEXT.md
+8. `7e920b7` chore: auto-update PROJEKTKONTEXT.md
+9. `41238b6` chore: auto-update PROJEKTKONTEXT.md
+10. `7ab33d3` chore: auto-update PROJEKTKONTEXT.md
 
 ## Aktuell in Arbeit
-- **Task:** SEO-Fundament für `/reinigung` fertiggestellt + Schema-Validierung abgeschlossen
-- **Status:** Rich-Results validiert (2 grüne Elemente: ProfessionalService + LocalBusiness); nächste Priorität: Social-Preview via opengraph.xyz testen
+- **Task:** SEO-Optimierung für `/reinigung` — Titel gekürzt auf 50-60 Zeichen (kein SERP-Truncation, optimiert für Social-Previews).
+- **Status:** Vercel-Deploy abgeschlossen; nächste: Google Business Profil (3) oder Keyword-Optimierung im Body (4).
 
 ## Offene Punkte / nächste Schritte
-1. **Social-Preview-Validierung:** https://www.opengraph.xyz/ → `/reinigung` testen (OG-Image-Rendering, Meta-Tags, LinkedIn/Twitter-Preview)
+1. **Google Business Profil:** Kostenlos anlegen für lokale Suche (Nürnberg-Fokus, ~15 Min Setup)
 2. **Keyword-Optimierung:** H1/H2 von `/reinigung` mit natürlichen Keywords "Gebäudereinigung", "Nürnberg" erweitern
-3. **Google Business Profil:** Kostenlos anlegen für lokale Suche (Nürnberg-Fokus, ~15 Min Setup)
+3. **Social-Preview-Validierung:** https://www.opengraph.xyz/ → `/reinigung` testen (OG-Image-Rendering, Meta-Tags)
 4. **Conversion-Tracking:** Google Analytics oder Tracking für Calendar-Buchungen (optional, wenn Zeit)
 5. **Feature-Branch aufräumen:** `claude/review-project-status-ZBd2O` später lokal löschen (nach Merge mit Main)
 
@@ -56,3 +56,4 @@
 - Strukturierte Daten (JSON-LD LocalBusiness + Service) für reichhaltigere Google-Kacheln und lokale Suche
 - Google Search Console: Domain-Verifizierung bevorzugt (TXT-Record) für kompletten Scope aller Subdomains/Varianten
 - Cloudflare API-Integration für automatisierte DNS-Verwaltung bei GSC-Verifizierung
+- SEO-Title-Länge: 50-60 Zeichen um SERP/Social-Preview-Truncation zu vermeiden
