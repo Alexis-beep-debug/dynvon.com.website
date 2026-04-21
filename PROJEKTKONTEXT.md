@@ -22,24 +22,24 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `41238b6` chore: auto-update PROJEKTKONTEXT.md
-2. `7ab33d3` chore: auto-update PROJEKTKONTEXT.md
-3. `f144168` chore: auto-update PROJEKTKONTEXT.md
-4. `3f80a29` chore: auto-update PROJEKTKONTEXT.md
-5. `938e1c5` chore: auto-update PROJEKTKONTEXT.md
-6. `e06f5f5` chore: auto-update PROJEKTKONTEXT.md
-7. `6d779a1` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-8. `18b341c` feat(seo): DE-first metadata, /reinigung-spezifische SEO, JSON-LD, sitemap, OG-Images
-9. `25c263f` chore: auto-update PROJEKTKONTEXT.md
-10. `f58e706` chore: auto-update PROJEKTKONTEXT.md
+1. `7e920b7` chore: auto-update PROJEKTKONTEXT.md
+2. `41238b6` chore: auto-update PROJEKTKONTEXT.md
+3. `7ab33d3` chore: auto-update PROJEKTKONTEXT.md
+4. `f144168` chore: auto-update PROJEKTKONTEXT.md
+5. `3f80a29` chore: auto-update PROJEKTKONTEXT.md
+6. `938e1c5` chore: auto-update PROJEKTKONTEXT.md
+7. `e06f5f5` chore: auto-update PROJEKTKONTEXT.md
+8. `6d779a1` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+9. `18b341c` feat(seo): DE-first metadata, /reinigung-spezifische SEO, JSON-LD, sitemap, OG-Images
+10. `25c263f` chore: auto-update PROJEKTKONTEXT.md
 
 ## Aktuell in Arbeit
-- **Task:** Google Search Console Verifizierung & Sitemap-Indexierung für `/` und `/reinigung` durchführen
-- **Status:** Sitemap verifiziert (7 Seiten); Startseite und Reinigungsseite Re-Crawl im GSC anfordern (deutsche Metadaten übernehmen lassen)
+- **Task:** Google Search Console — `/reinigung` URL-Indexierung beantragen (Sitemap bereits verifiziert mit 7 Seiten)
+- **Status:** Sitemap komplett; letzte Aktion: `/reinigung` in GSC URL-Test einreichen → "INDEXIERUNG BEANTRAGEN" klicken; wartet auf Google (1-7 Tage deutsche Preview)
 
 ## Offene Punkte / nächste Schritte
-1. **Google Search Console:** Startseite (`/`) + `/reinigung` im GSC Re-Crawl anfordern (deutsche Titel/Description einlesen lassen)
-2. **Rich-Results-Test:** https://search.google.com/test/rich-results → `/reinigung` prüfen (Service + ProfessionalService)
+1. **Google Search Console:** `/reinigung` URL-Indexierung im GSC beantragen (deutsche Metadaten einlesen lassen)
+2. **Rich-Results-Test:** https://search.google.com/test/rich-results → `/reinigung` prüfen (Service + ProfessionalService Schema)
 3. **Social-Preview:** https://www.opengraph.xyz/ → `/reinigung` OG-Image-Rendering testen
 4. **Topic-Chooser + ProposalFlowchart auf `/reinigung`** nach Deploy testen (Mobile + Desktop)
 5. **Optional:** Body-Text H1/H2 von `/reinigung` mit Keywords "Gebäudereinigung", "Nürnberg" erweitern
