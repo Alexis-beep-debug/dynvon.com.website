@@ -22,20 +22,20 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `76983b8` chore: auto-update PROJEKTKONTEXT.md
-2. `7e920b7` chore: auto-update PROJEKTKONTEXT.md
-3. `41238b6` chore: auto-update PROJEKTKONTEXT.md
-4. `7ab33d3` chore: auto-update PROJEKTKONTEXT.md
-5. `f144168` chore: auto-update PROJEKTKONTEXT.md
-6. `3f80a29` chore: auto-update PROJEKTKONTEXT.md
-7. `938e1c5` chore: auto-update PROJEKTKONTEXT.md
-8. `e06f5f5` chore: auto-update PROJEKTKONTEXT.md
-9. `6d779a1` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-10. `18b341c` feat(seo): DE-first metadata, /reinigung-spezifische SEO, JSON-LD, sitemap, OG-Images
+1. `43113a0` chore: auto-update PROJEKTKONTEXT.md
+2. `76983b8` chore: auto-update PROJEKTKONTEXT.md
+3. `7e920b7` chore: auto-update PROJEKTKONTEXT.md
+4. `41238b6` chore: auto-update PROJEKTKONTEXT.md
+5. `7ab33d3` chore: auto-update PROJEKTKONTEXT.md
+6. `f144168` chore: auto-update PROJEKTKONTEXT.md
+7. `3f80a29` chore: auto-update PROJEKTKONTEXT.md
+8. `938e1c5` chore: auto-update PROJEKTKONTEXT.md
+9. `e06f5f5` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+10. `6d779a1` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
 
 ## Aktuell in Arbeit
-- **Task:** Google Search Console — `/reinigung` URL-Indexierung beantragen (Sitemap bereits verifiziert mit 7 Seiten)
-- **Status:** Sitemap komplett; abwartend auf Google Crawl nach „INDEXIERUNG BEANTRAGEN" im GSC; typisch 1-7 Tage bis zur Indexierung
+- **Task:** Google Search Console — `/reinigung` URL-Indexierung; Sitemap verifiziert mit 7 Seiten
+- **Status:** `/reinigung` in Sitemap enthalten; warten auf GSC-Crawl nach „INDEXIERUNG BEANTRAGEN" (typisch 1-7 Tage)
 
 ## Offene Punkte / nächste Schritte
 1. **Google Search Console:** Warten auf GSC-Crawl der `/reinigung`-URL (nach Beantragung 1-7 Tage)
