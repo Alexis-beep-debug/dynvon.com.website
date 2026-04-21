@@ -16,11 +16,11 @@ function getInitialLocale(): Locale {
     const stored = localStorage.getItem("dynvon-lang");
     if (stored === "de" || stored === "en") return stored;
   }
-  return "en";
+  return "de";
 }
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocale] = useState<Locale>("en");
+  const [locale, setLocale] = useState<Locale>("de");
   const [mounted, setMounted] = useState(false);
 
   // Load saved language on mount
@@ -42,7 +42,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   // Prevent flash of wrong language
   if (!mounted) {
     return (
-      <LanguageContext.Provider value={{ locale: "en", t: translations["en"], toggleLocale }}>
+      <LanguageContext.Provider value={{ locale: "de", t: translations["de"], toggleLocale }}>
         {children}
       </LanguageContext.Provider>
     );

@@ -22,27 +22,27 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `204f9f9` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-2. `f5cc966` fix(seo): shorten titles to 50-60 chars for SERP/social truncation
-3. `d028d72` chore: auto-update PROJEKTKONTEXT.md
-4. `b755a4f` chore: auto-update PROJEKTKONTEXT.md
-5. `cf3367a` chore: auto-update PROJEKTKONTEXT.md
-6. `43113a0` chore: auto-update PROJEKTKONTEXT.md
-7. `76983b8` chore: auto-update PROJEKTKONTEXT.md
-8. `7e920b7` chore: auto-update PROJEKTKONTEXT.md
-9. `41238b6` chore: auto-update PROJEKTKONTEXT.md
-10. `7ab33d3` chore: auto-update PROJEKTKONTEXT.md
+1. `eb96378` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+2. `7ea80db` feat(seo): gezielte Keyword-Einbindung im sichtbaren /reinigung-Body
+3. `dc26d71` chore: auto-update PROJEKTKONTEXT.md
+4. `577239f` fix(seo): shorten titles for SERP/social truncation (#7)
+5. `204f9f9` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+6. `f5cc966` fix(seo): shorten titles to 50-60 chars for SERP/social truncation
+7. `d028d72` chore: auto-update PROJEKTKONTEXT.md
+8. `b755a4f` chore: auto-update PROJEKTKONTEXT.md
+9. `cf3367a` chore: auto-update PROJEKTKONTEXT.md
+10. `43113a0` chore: auto-update PROJEKTKONTEXT.md
 
 ## Aktuell in Arbeit
-- **Task:** SEO-Optimierung für `/reinigung` — Titel gekürzt auf 50-60 Zeichen (kein SERP-Truncation, optimiert für Social-Previews).
-- **Status:** Vercel-Deploy abgeschlossen; nächste: Google Business Profil (3) oder Keyword-Optimierung im Body (4).
+- **Task:** SEO-Optimierung für `/reinigung` — Keywords "Gebäudereinigungsunternehmen", "Reinigungsunternehmen" gezielt in H2s eingebaut; Deploy via Vercel abgeschlossen.
+- **Status:** Vercel-Deploy live. Nächste: Google Business Profil, Conversion-Tracking, Branchen-Seite 2 (Handwerk), Longtail-Blogs.
 
 ## Offene Punkte / nächste Schritte
-1. **Google Business Profil:** Kostenlos anlegen für lokale Suche (Nürnberg-Fokus, ~15 Min Setup)
-2. **Keyword-Optimierung:** H1/H2 von `/reinigung` mit natürlichen Keywords "Gebäudereinigung", "Nürnberg" erweitern
-3. **Social-Preview-Validierung:** https://www.opengraph.xyz/ → `/reinigung` testen (OG-Image-Rendering, Meta-Tags)
-4. **Conversion-Tracking:** Google Analytics oder Tracking für Calendar-Buchungen (optional, wenn Zeit)
-5. **Feature-Branch aufräumen:** `claude/review-project-status-ZBd2O` später lokal löschen (nach Merge mit Main)
+1. **Google Business Profil:** Kostenlos anlegen für lokale Suche (Nürnberg-Fokus, ~15 Min Setup) — starker lokaler SEO-Hebel.
+2. **Conversion-Tracking:** Google Calendar-Buchungen tracken (GA4 oder ähnlich).
+3. **Zweite Branchen-Landingpage:** Handwerk, Hausverwaltung, Arztpraxen (ähnlich `/reinigung` nach Schema anpassen).
+4. **Longtail-Blog-Posts:** 3–5 gezielte Posts für häufige Suchanfragen (z. B. "Zeiterfassung Handwerk", "Rechnungserstellung Büro").
+5. **Feature-Branch aufräumen:** `claude/review-project-status-ZBd2O` später lokal löschen (nach finaler Merge mit Main).
 
 ## Wichtige Entscheidungen / Konventionen
 - Hero-Pattern auf `/reinigung`: knappe Headline nach Schema `<Thema> in <Zeit> statt <längere Zeit>`, gefolgt von Subtitle + 3 Stats + CTA
@@ -57,3 +57,4 @@
 - Google Search Console: Domain-Verifizierung bevorzugt (TXT-Record) für kompletten Scope aller Subdomains/Varianten
 - Cloudflare API-Integration für automatisierte DNS-Verwaltung bei GSC-Verifizierung
 - SEO-Title-Länge: 50-60 Zeichen um SERP/Social-Preview-Truncation zu vermeiden
+- **Sprache als Default:** DE-Standard überall, Nutzer können EN hinzuklicken (nicht umgekehrt)
