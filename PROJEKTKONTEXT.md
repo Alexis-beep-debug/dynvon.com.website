@@ -22,28 +22,28 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `b4d45e5` chore: auto-update PROJEKTKONTEXT.md
-2. `bfd9a2e` chore: auto-update PROJEKTKONTEXT.md
-3. `54850b0` chore: auto-update PROJEKTKONTEXT.md
-4. `b5a016f` chore: auto-update PROJEKTKONTEXT.md
-5. `87fb5e6` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-6. `4fd5fc1` feat(i18n): default locale auf Deutsch umstellen
-7. `2e2c7f5` chore: auto-update PROJEKTKONTEXT.md
-8. `da61152` feat(seo): Keyword-Einbindung im /reinigung-Body (#8)
-9. `eb96378` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-10. `7ea80db` feat(seo): gezielte Keyword-Einbindung im sichtbaren /reinigung-Body
+1. `104bbc0` chore: auto-update PROJEKTKONTEXT.md
+2. `b4d45e5` chore: auto-update PROJEKTKONTEXT.md
+3. `bfd9a2e` chore: auto-update PROJEKTKONTEXT.md
+4. `54850b0` chore: auto-update PROJEKTKONTEXT.md
+5. `b5a016f` chore: auto-update PROJEKTKONTEXT.md
+6. `87fb5e6` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+7. `4fd5fc1` feat(i18n): default locale auf Deutsch umstellen
+8. `2e2c7f5` chore: auto-update PROJEKTKONTEXT.md
+9. `da61152` feat(seo): Keyword-Einbindung im /reinigung-Body (#8)
+10. `eb96378` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
 
 ## Aktuell in Arbeit
-- **Task:** Google Business Profil + GBP-Beitrag-Serie für Reinigungsunternehmen (fokus: Rechnungserstellung + Mahnwesen).
-- **Letzte Session:** Value-First GBP-Beitrag-Textvorschlag (dreistufiger Mahnablauf: 2 Tage vor/3 Tage nach/10 Tage Fälligkeit) mit konkreten Liquiditäts-Effekten, Logo, CTA-Button (`https://www.dynvon.com/reinigung`) und Umsetzungs-Roadmap. **Uncommitted:** keine (clean tree).
-- **Nächster Schritt:** 3 weitere GBP-Beitrag-Varianten (Angebotserstellung, Lexoffice-Integration, Fallstudie) + Bild-Assets generieren.
+- **Task:** Google Business Profil + GBP-Beitrag-Serie für Reinigungsunternehmen — aktuell Focus auf Bildverwendung (Timeline-Infografiken, Mockup-Screenshots).
+- **Letzte Session:** Diskussion über Bild-Strategie für GBP-Posts: wann Bilder helfen (Infografiken, echte Dashboards) vs. schaden (Stockfotos, generische KI). Entscheidung: 3-Schritt-Timeline-PNG generieren (1200×900, Markenfarben) als Mahnablauf-Visualisierung.
+- **Uncommitted:** keine (clean tree).
 
 ## Offene Punkte / nächste Schritte
-1. **GBP-Beitrag hochladen:** Mahnwesen-Variante in Google Business Profil-Editor posten (1200×900 Bild, Text, CTA).
-2. **3 weitere GBP-Beiträge vorbereiten:** Angebotserstellung, Lexoffice-Integration, Fallstudie (Social-Proof).
-3. **Bild-Assets:** 3-Schritt-Zeitachse PNG für Mahnablauf (−2 / +3 / +10 Tage) + weitere Grafiken für restliche Beiträge.
-4. **Google Business Profil vollständig optimieren:** Kategorien + Dienstleistungen, Geschäftsbeschreibung (Keywords für lokale SEO).
-5. **Conversion-Tracking:** GA4 + Google Calendar-Events (appointment_booked).
+1. **3-Schritt-Timeline-Infografik:** PNG für Mahnwesen-GBP-Post (−2 / +3 / +10 Tage mit Liquiditäts-Rechnung).
+2. **3 weitere GBP-Beiträge vorbereiten:** Angebotserstellung, Lexoffice-Integration, Fallstudie mit entsprechenden Bildern.
+3. **Mockup-Screenshots des Dashboards:** für `/reinigung`-Seite (Angebote-Track + Buchhaltungs-Track als Proof-of-Concept).
+4. **GBP-Beitrag hochladen:** Alle Varianten in Google Business Profil-Editor posten.
+5. **Conversion-Tracking:** GA4 + Google Calendar-Events (appointment_booked) für Reinigung-Leads.
 6. **Zweite Branchen-Landingpage:** Handwerk, Hausverwaltung oder Arztpraxen (nach `/reinigung`-Schema).
 7. **Longtail-Blog-Posts:** 3–5 Posts (z. B. "Zeiterfassung Handwerk", "Rechnungserstellung Büro").
 
@@ -64,3 +64,4 @@
 - **Google Business Profil:** Kostenlos, 5/5 Sterne, Kategorien + Dienstleistungen gezielt für lokale Such-Ranking; Beiträge 1x/Wo für aktualisiertem Status-Signal
 - **GBP-Beiträge:** Focused Content (3-4 Leistungs-Callouts + Problem-Hook), CTA mit direktem Link, Value-First-Messaging ohne hartes Selling
 - **GBP-Beitrag-Textvorlage:** Dreistufiger Mahnablauf (2 Tage vor / 3 Tage nach / 10 Tage Fälligkeit), konkrete Liquiditäts-Rechnung (z. B. 42→21 Tage = 7.500 € schneller), Umsetzungs-Roadmap (manuell oder Lexoffice-Automatik)
+- **Bild-Strategie für GBP-Posts:** Infografiken + echte Dashboards/Mockups helfen; Stockfotos/generische Bilder schaden — lieber kein Bild als schlechtes Bild
