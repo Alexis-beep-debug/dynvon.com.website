@@ -94,14 +94,9 @@ export default function IndustryFocus() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
               </svg>
             </div>
-            <h3 className="font-semibold text-base mb-2">
+            <h3 className="font-semibold text-base mb-4">
               {isDe ? "Ihre Branche fehlt?" : "Your industry missing?"}
             </h3>
-            <p className="text-muted text-sm leading-relaxed mb-4">
-              {isDe
-                ? "Wenn mehrere Betriebe Ihrer Branche ähnliche Prozesse manuell erledigen, lohnt sich oft eine maßgeschneiderte Lösung. Lassen Sie uns sprechen."
-                : "If several businesses in your industry handle similar processes manually, a tailored solution usually pays off. Let's talk."}
-            </p>
             <a
               href="#contact"
               className="text-sm font-medium text-accent-light hover:text-accent transition-colors"
