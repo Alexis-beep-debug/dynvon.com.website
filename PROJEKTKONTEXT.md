@@ -22,28 +22,27 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `cf3367a` chore: auto-update PROJEKTKONTEXT.md
-2. `43113a0` chore: auto-update PROJEKTKONTEXT.md
-3. `76983b8` chore: auto-update PROJEKTKONTEXT.md
-4. `7e920b7` chore: auto-update PROJEKTKONTEXT.md
-5. `41238b6` chore: auto-update PROJEKTKONTEXT.md
-6. `7ab33d3` chore: auto-update PROJEKTKONTEXT.md
-7. `f144168` chore: auto-update PROJEKTKONTEXT.md
-8. `3f80a29` chore: auto-update PROJEKTKONTEXT.md
-9. `938e1c5` chore: auto-update PROJEKTKONTEXT.md
-10. `e06f5f5` chore: auto-update PROJEKTKONTEXT.md
+1. `b755a4f` chore: auto-update PROJEKTKONTEXT.md
+2. `cf3367a` chore: auto-update PROJEKTKONTEXT.md
+3. `43113a0` chore: auto-update PROJEKTKONTEXT.md
+4. `76983b8` chore: auto-update PROJEKTKONTEXT.md
+5. `7e920b7` chore: auto-update PROJEKTKONTEXT.md
+6. `41238b6` chore: auto-update PROJEKTKONTEXT.md
+7. `7ab33d3` chore: auto-update PROJEKTKONTEXT.md
+8. `f144168` chore: auto-update PROJEKTKONTEXT.md
+9. `3f80a29` chore: auto-update PROJEKTKONTEXT.md
+10. `938e1c5` chore: auto-update PROJEKTKONTEXT.md
 
 ## Aktuell in Arbeit
-- **Task:** SEO-Fundament für `/reinigung` fertiggestellt — JSON-LD (Service + LocalBusiness), Sitemap, Robots.txt, Google Search Console-Verifizierung
-- **Status:** Ready für nächste Phase — Rich-Results-Test, Social-Preview-Validierung, optional Google Business Profil
+- **Task:** SEO-Fundament für `/reinigung` fertiggestellt + Schema-Validierung abgeschlossen
+- **Status:** Rich-Results validiert (2 grüne Elemente: ProfessionalService + LocalBusiness); nächste Priorität: Social-Preview via opengraph.xyz testen
 
 ## Offene Punkte / nächste Schritte
-1. **Rich-Results-Test:** https://search.google.com/test/rich-results → `/reinigung` prüfen (Service + ProfessionalService Schema validieren)
-2. **Social-Preview:** https://www.opengraph.xyz/ → `/reinigung` OG-Image-Rendering und Meta-Tags testen
+1. **Social-Preview-Validierung:** https://www.opengraph.xyz/ → `/reinigung` testen (OG-Image-Rendering, Meta-Tags, LinkedIn/Twitter-Preview)
+2. **Keyword-Optimierung:** H1/H2 von `/reinigung` mit natürlichen Keywords "Gebäudereinigung", "Nürnberg" erweitern
 3. **Google Business Profil:** Kostenlos anlegen für lokale Suche (Nürnberg-Fokus, ~15 Min Setup)
-4. **Keyword-Optimierung:** H1/H2 von `/reinigung` mit natürlichen Keywords "Gebäudereinigung", "Nürnberg" erweitern (ohne Keyword-Stuffing)
-5. **Conversion-Tracking:** Google Analytics oder Tracking für Calendar-Buchungen (optional, wenn Zeit)
-6. **Feature-Branch aufräumen:** `claude/review-project-status-ZBd2O` lokal löschen (weiterhin auf dieser Branch arbeiten — alles ok)
+4. **Conversion-Tracking:** Google Analytics oder Tracking für Calendar-Buchungen (optional, wenn Zeit)
+5. **Feature-Branch aufräumen:** `claude/review-project-status-ZBd2O` später lokal löschen (nach Merge mit Main)
 
 ## Wichtige Entscheidungen / Konventionen
 - Hero-Pattern auf `/reinigung`: knappe Headline nach Schema `<Thema> in <Zeit> statt <längere Zeit>`, gefolgt von Subtitle + 3 Stats + CTA
