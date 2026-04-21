@@ -4,8 +4,7 @@ const SITE_URL = "https://www.dynvon.com";
 const PAGE_URL = `${SITE_URL}/reinigung`;
 
 export const metadata: Metadata = {
-  title:
-    "Buchhaltung & Angebote automatisieren für Gebäudereinigungsunternehmen",
+  title: "Buchhaltung automatisieren für Reinigungsunternehmen",
   description:
     "Automatische Rechnungsstellung, Mahnwesen, Zahlungsverfolgung und Angebotserstellung für Gebäudereinigungsunternehmen — 10h gespart pro Woche, 0 vergessene Mahnungen, 100% pünktliche Rechnungen. Spezialisierte Python-Automatisierung aus Nürnberg.",
   keywords: [
@@ -27,8 +26,7 @@ export const metadata: Metadata = {
     locale: "de_DE",
     url: PAGE_URL,
     siteName: "dynvon",
-    title:
-      "Buchhaltung & Angebote automatisieren für Gebäudereinigungsunternehmen",
+    title: "Buchhaltung automatisieren für Reinigungsunternehmen",
     description:
       "10h gespart pro Woche, 0 vergessene Mahnungen. Python-Automatisierung für Gebäudereinigungsunternehmen aus Nürnberg.",
     images: [
@@ -42,8 +40,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title:
-      "Buchhaltung & Angebote automatisieren für Gebäudereinigungsunternehmen",
+    title: "Buchhaltung automatisieren für Reinigungsunternehmen",
     description:
       "10h gespart pro Woche, 0 vergessene Mahnungen. Python-Automatisierung aus Nürnberg.",
     images: ["/reinigung/opengraph-image"],
