@@ -6,7 +6,6 @@ type Industry = {
   href: string;
   title: { de: string; en: string };
   description: { de: string; en: string };
-  stats: { value: string; label: { de: string; en: string } }[];
 };
 
 const INDUSTRIES: Industry[] = [
@@ -20,11 +19,6 @@ const INDUSTRIES: Industry[] = [
       de: "Automatisierte Buchhaltung, Angebotserstellung und Mahnwesen — zugeschnitten auf Betriebe mit 1–50 Mitarbeitern.",
       en: "Automated accounting, quoting, and dunning — tailored for cleaning businesses with 1–50 employees.",
     },
-    stats: [
-      { value: "10h", label: { de: "gespart / Woche", en: "saved / week" } },
-      { value: "100%", label: { de: "pünktlich bezahlt", en: "on-time paid" } },
-      { value: "0", label: { de: "vergessene Mahnungen", en: "missed reminders" } },
-    ],
   },
   {
     href: "#contact",
@@ -36,11 +30,6 @@ const INDUSTRIES: Industry[] = [
       de: "Nebenkostenabrechnungen, Handwerker-Tickets, Mieter-Kommunikation und Monatsabrechnungen automatisiert — für WEG- und Mietverwaltungen.",
       en: "Service charge statements, contractor tickets, tenant communication and monthly billing — automated for property management firms.",
     },
-    stats: [
-      { value: "6h", label: { de: "gespart / Woche", en: "saved / week" } },
-      { value: "100%", label: { de: "fristgerechte Abrechnungen", en: "on-time statements" } },
-      { value: "0", label: { de: "verlorene Tickets", en: "missed tickets" } },
-    ],
   },
 ];
 
@@ -85,22 +74,9 @@ export default function IndustryFocus() {
                 </span>
               </div>
 
-              <p className="text-muted text-[15px] leading-relaxed mb-6">
+              <p className="text-muted text-[15px] leading-relaxed">
                 {ind.description[isDe ? "de" : "en"]}
               </p>
-
-              <div className="grid grid-cols-3 gap-3 pt-6 border-t border-border">
-                {ind.stats.map((s, i) => (
-                  <div key={i} className="text-center">
-                    <div className="text-xl sm:text-2xl font-bold stat-highlight mb-0.5">
-                      {s.value}
-                    </div>
-                    <div className="text-[11px] sm:text-xs text-muted leading-tight">
-                      {s.label[isDe ? "de" : "en"]}
-                    </div>
-                  </div>
-                ))}
-              </div>
             </a>
           ))}
 
