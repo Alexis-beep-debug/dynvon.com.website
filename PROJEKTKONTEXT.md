@@ -39,7 +39,7 @@
 - **Uncommitted:** keine (working tree clean).
 
 ## Offene Punkte / nächste Schritte
-1. **Backend IP-Anonymisierung (URGENT):** `anonymize_ip()`-Funktion im Analytics-Endpoint implementieren + bestehende ungehashte IPs aufräumen (SQL-Update). Zieldatum: 24–48h.
+1. **Backend IP-Anonymisierung (URGENT):** Details + Code-Snippets in `HANDOFF-ANALYTICS-IP.md` im Repo-Root. Muss im Backend-Repo `email-outreach-dynvon-production` umgesetzt werden (nicht hier). Zieldatum: 24–48h.
 2. **Vercel-Deploy validieren:** Website live nach Merge überprüfen (3 IndustryFocus-Cards sichtbar).
 3. **GBP-Beiträge:** 4 fertige Beiträge 1x/Woche posten (Status-Signal für Google).
 4. **Infografiken:** Mahnwesen, E-Rechnungspflicht, Arbeitszeiterfassung (Umlaute garantiert).
