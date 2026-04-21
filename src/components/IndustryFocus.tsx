@@ -110,12 +110,9 @@ export default function IndustryFocus() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
               </svg>
             </div>
-            <h3 className="font-semibold text-base mb-2">
+            <h3 className="font-semibold text-base mb-4">
               {isDe ? "Ihre Branche fehlt?" : "Your industry missing?"}
             </h3>
-            <p className="text-sm text-muted mb-4">
-              {isDe ? "z. B. Hausverwaltungen" : "e.g. property management"}
-            </p>
             <a
               href="#contact"
               className="text-sm font-medium text-accent-light hover:text-accent transition-colors"
