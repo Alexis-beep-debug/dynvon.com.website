@@ -7,7 +7,7 @@
 
 ## Stand
 - **Datum:** 2026-04-21
-- **Branch:** `main` (clean)
+- **Branch:** `claude/review-project-status-ZBd2O` (clean)
 - **Working Tree:** clean (no uncommitted changes)
 
 ## Projekt-Basics
@@ -22,28 +22,28 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `9b90b2c` chore: auto-update PROJEKTKONTEXT.md
-2. `58d8746` chore: auto-update PROJEKTKONTEXT.md
-3. `99f1167` chore: auto-update PROJEKTKONTEXT.md
-4. `ef15cd2` chore: auto-update PROJEKTKONTEXT.md
-5. `298cd14` chore: auto-update PROJEKTKONTEXT.md
-6. `58ad19e` chore: auto-update PROJEKTKONTEXT.md
-7. `a60781c` chore: auto-update PROJEKTKONTEXT.md
-8. `1e297a8` chore: auto-update PROJEKTKONTEXT.md
-9. `104bbc0` chore: auto-update PROJEKTKONTEXT.md
-10. `b4d45e5` chore: auto-update PROJEKTKONTEXT.md
+1. `05bc88d` chore: auto-update PROJEKTKONTEXT.md
+2. `9b90b2c` chore: auto-update PROJEKTKONTEXT.md
+3. `58d8746` chore: auto-update PROJEKTKONTEXT.md
+4. `99f1167` chore: auto-update PROJEKTKONTEXT.md
+5. `ef15cd2` chore: auto-update PROJEKTKONTEXT.md
+6. `298cd14` chore: auto-update PROJEKTKONTEXT.md
+7. `58ad19e` chore: auto-update PROJEKTKONTEXT.md
+8. `a60781c` chore: auto-update PROJEKTKONTEXT.md
+9. `1e297a8` chore: auto-update PROJEKTKONTEXT.md
+10. `104bbc0` chore: auto-update PROJEKTKONTEXT.md
 
 ## Aktuell in Arbeit
-- **Task:** SEO-Verifizierung nach Deployment abgeschlossen. Alle Meta-Tags, JSON-LD, og:locale live + korrekt. Google-Cache zeigt noch alte EN-Version (normal 1–4 Wo. Lag). GBP-Beiträge 1–4 ausgearb., posten ab diese Woche. Nächste: LinkedIn-Backlinks checken, GSC "Indexierung beantragen" nutzen, GBP-Infografiken (Mahnwesen, E-Rechnungspflicht, Zeiterfassung).
+- **Task:** BranchenSpezialisierung-Komponente planen: neue `<BranchenSpezialisierung>`-Komponente zwischen `<Services>` und `<CaseStudies>` auf Home. Aktuell 1 Card (Gebäudereinigung → `/reinigung`), vorbereitet auf spätere Branchen (Handwerk, Hausverwaltung, Arztpraxen). SEO-Effekt: interne Links für PageRank, Nutzer-Targeting für Spezialisierung.
 - **Uncommitted:** keine.
 
 ## Offene Punkte / nächste Schritte
-1. **GBP-Beiträge posten:** 4 fertige Beiträge 1x/Woche hochladen (Status-Signal für Google-Cache-Übergang).
-2. **Infografiken:** Mahnwesen, E-Rechnungspflicht, Arbeitszeiterfassung in Canva/Code (Umlaute garantiert).
-3. **GBP-Beiträge 5–7:** (1) Einsatzplanung 10+ MA, (2) Subunternehmer-Prüfung, (3) Tariftreue & Lohnzuschläge.
-4. **Domain-Autorität:** LinkedIn-Profil-URL auf dynvon.com prüfen, wöchentlich GSC "Indexierung beantragen", externe Backlinks (Branchenverzeichnisse).
-5. **Conversion:** GA4 + Google Calendar-Events (appointment_booked) für `/reinigung`-Leads.
-6. **Branchen-Landingpages:** Handwerk, Hausverwaltung, Arztpraxen nach `/reinigung`-Schema.
+1. **BranchenSpezialisierung-Komponente:** bauen, testen, in Home integrieren.
+2. **GBP-Beiträge posten:** 4 fertige Beiträge 1x/Woche hochladen (Status-Signal für Google-Cache-Übergang).
+3. **Infografiken:** Mahnwesen, E-Rechnungspflicht, Arbeitszeiterfassung in Canva/Code (Umlaute garantiert).
+4. **GBP-Beiträge 5–7:** (1) Einsatzplanung 10+ MA, (2) Subunternehmer-Prüfung, (3) Tariftreue & Lohnzuschläge.
+5. **Domain-Autorität:** LinkedIn-Profil-URL auf dynvon.com prüfen, wöchentlich GSC "Indexierung beantragen", externe Backlinks (Branchenverzeichnisse).
+6. **Conversion:** GA4 + Google Calendar-Events (appointment_booked) für `/reinigung`-Leads.
 7. **Blog-Longtails:** 3–5 fokussierte Posts (Zeiterfassung Handwerk, Rechnungserstellung Büro, etc.).
 
 ## Wichtige Entscheidungen / Konventionen
@@ -63,3 +63,4 @@
 - **GBP-Beiträge:** Value-First (Problem-Hook, konkrete Zahlen, Roadmap, Fakten-Check), CTA mit Direktlink, Infografiken statt Stockfotos
 - **AI-Bildgenerator-Hinweis:** Text in KI-Bildern oft fehlerhaft (Umlaute, Fachbegriffe) — Canva/Code-Rendering bevorzugt für Garantie
 - **SEO-Realitäten:** Google-Cache-Lag 1–4 Wochen nach Deployment normal; Snippet-Updates hinken Re-Crawls nach; Domain-Autorität über externe Signale (Backlinks, BLP, GBP-Traffic) aufbauen
+- **BranchenSpezialisierung-Platzierung:** Option 1 (empfohlen) = neue Sektion zwischen Services und CaseStudies, thematisch klar, erweiterbar, SEO-friendly (eigene H2 + strukturierter Content)
