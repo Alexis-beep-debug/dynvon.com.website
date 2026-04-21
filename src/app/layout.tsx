@@ -7,8 +7,7 @@ const SITE_URL = "https://www.dynvon.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default:
-      "dynvon — Prozessautomatisierung für kleine Unternehmen | Python, Buchhaltung, CRM",
+    default: "dynvon — Prozessautomatisierung für kleine Unternehmen",
     template: "%s | dynvon",
   },
   description:
