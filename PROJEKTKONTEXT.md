@@ -22,24 +22,24 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `54850b0` chore: auto-update PROJEKTKONTEXT.md
-2. `b5a016f` chore: auto-update PROJEKTKONTEXT.md
-3. `87fb5e6` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-4. `4fd5fc1` feat(i18n): default locale auf Deutsch umstellen
-5. `2e2c7f5` chore: auto-update PROJEKTKONTEXT.md
-6. `da61152` feat(seo): Keyword-Einbindung im /reinigung-Body (#8)
-7. `eb96378` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-8. `7ea80db` feat(seo): gezielte Keyword-Einbindung im sichtbaren /reinigung-Body
-9. `dc26d71` chore: auto-update PROJEKTKONTEXT.md
-10. `577239f` fix(seo): shorten titles for SERP/social truncation (#7)
+1. `bfd9a2e` chore: auto-update PROJEKTKONTEXT.md
+2. `54850b0` chore: auto-update PROJEKTKONTEXT.md
+3. `b5a016f` chore: auto-update PROJEKTKONTEXT.md
+4. `87fb5e6` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+5. `4fd5fc1` feat(i18n): default locale auf Deutsch umstellen
+6. `2e2c7f5` chore: auto-update PROJEKTKONTEXT.md
+7. `da61152` feat(seo): Keyword-Einbindung im /reinigung-Body (#8)
+8. `eb96378` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+9. `7ea80db` feat(seo): gezielte Keyword-Einbindung im sichtbaren /reinigung-Body
+10. `dc26d71` chore: auto-update PROJEKTKONTEXT.md
 
 ## Aktuell in Arbeit
-- **Task:** Google Business Profil + erste GBP-Beitrag-Serie für Reinigungsunternehmen (Buchhaltungs-Fokus).
-- **Letzte Session:** GBP-Beitrag-Textvorschlag fertig — Textblock (>4000 Zeichen), Logo/Hero-Screenshot, CTA-Button (Google Calendar-Link). Rhythmus: 1x/Wo. Nächste: 3 weitere Varianten (Angebotserstellung, Lexoffice, Fallstudie).
+- **Task:** Google Business Profil + GBP-Beitrag-Serie für Reinigungsunternehmen (fokus: Rechnungserstellung + Mahnwesen).
+- **Letzte Session:** Value-First GBP-Beitrag-Textvorschlag (dreistufiger Mahnablauf: 2 Tage vor/3 Tage nach/10 Tage Fälligkeit) mit Logo + CTA-Button (`https://www.dynvon.com/reinigung`). Button-Label: "Mehr erfahren". Nächste: 3 weitere Varianten (Angebotserstellung, Lexoffice, Fallstudie) + Bild-Assets.
 
 ## Offene Punkte / nächste Schritte
-1. **GBP-Beitrag hochladen:** Erste Variante in Google Business Profil-Editor posten (1200×900 oder 720×720 Bild, Text, CTA).
-2. **3 weitere GBP-Beiträge vorbereiten:** Angebotserstellung, Lexoffice-Integration, Fallstudie (Social-Proof).
+1. **GBP-Beitrag hochladen:** Erste Variante (Mahnwesen) in Google Business Profil-Editor posten (1200×900 Bild, Text, CTA).
+2. **3 weitere GBP-Beiträge vorbereiten:** Angebotserstellung, Lexoffice-Integration, Fallstudie-Fallstudie (Social-Proof).
 3. **Google Business Profil vollständig optimieren:** Kategorien + Dienstleistungen, Geschäftsbeschreibung (Keywords für lokale SEO).
 4. **Conversion-Tracking:** GA4 + Google Calendar-Events (appointment_booked).
 5. **Zweite Branchen-Landingpage:** Handwerk, Hausverwaltung oder Arztpraxen (nach `/reinigung`-Schema).
@@ -60,4 +60,4 @@
 - SEO-Title-Länge: 50-60 Zeichen um SERP/Social-Preview-Truncation zu vermeiden
 - **Sprache als Default:** DE-Standard überall, Nutzer können EN hinzuklicken (nicht umgekehrt)
 - **Google Business Profil:** Kostenlos, 5/5 Sterne, Kategorien + Dienstleistungen gezielt für lokale Such-Ranking; Beiträge 1x/Wo für aktualisierten Status-Signal
-- **GBP-Beiträge:** Focused Content (3-4 Leistungs-Callouts + Problem-Hook), CTA mit direktem Link (Google Calendar), Bilder 1200×900 oder 720×720
+- **GBP-Beiträge:** Focused Content (3-4 Leistungs-Callouts + Problem-Hook), CTA mit direktem Link, Value-First-Messaging ohne hartes Selling
