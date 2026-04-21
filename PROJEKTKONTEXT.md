@@ -22,30 +22,30 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `58ad19e` chore: auto-update PROJEKTKONTEXT.md
-2. `a60781c` chore: auto-update PROJEKTKONTEXT.md
-3. `1e297a8` chore: auto-update PROJEKTKONTEXT.md
-4. `104bbc0` chore: auto-update PROJEKTKONTEXT.md
-5. `b4d45e5` chore: auto-update PROJEKTKONTEXT.md
-6. `bfd9a2e` chore: auto-update PROJEKTKONTEXT.md
-7. `54850b0` chore: auto-update PROJEKTKONTEXT.md
-8. `b5a016f` chore: auto-update PROJEKTKONTEXT.md
-9. `87fb5e6` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-10. `4fd5fc1` feat(i18n): default locale auf Deutsch umstellen
+1. `298cd14` chore: auto-update PROJEKTKONTEXT.md
+2. `58ad19e` chore: auto-update PROJEKTKONTEXT.md
+3. `a60781c` chore: auto-update PROJEKTKONTEXT.md
+4. `1e297a8` chore: auto-update PROJEKTKONTEXT.md
+5. `104bbc0` chore: auto-update PROJEKTKONTEXT.md
+6. `b4d45e5` chore: auto-update PROJEKTKONTEXT.md
+7. `bfd9a2e` chore: auto-update PROJEKTKONTEXT.md
+8. `54850b0` chore: auto-update PROJEKTKONTEXT.md
+9. `b5a016f` chore: auto-update PROJEKTKONTEXT.md
+10. `87fb5e6` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
 
 ## Aktuell in Arbeit
-- **Task:** E-Rechnungspflicht-GBP-Beitrag ausgearbeitet (2025/2027/2028-Roadmap + Fakten-Check + ZUGFeRD/XRechnung-Erklärung).
-- **Nächster Schritt:** Timeline-Infografiken für E-Rechnungspflicht-Post generieren (optional) + weitere GBP-Beiträge (Angebotserstellung, Lexoffice-Integration, Fallstudien).
+- **Task:** 3 GBP-Beiträge vollständig ausgearbeitet: (1) Dreistufiges Mahnwesen, (2) E-Rechnungspflicht 2025/2027/2028 mit ZUGFeRD/XRechnung, (3) Dauerrechnungen für Monatsverträge (50h/Jahr Zeiteinsparung, 2.500€ Opportunity Cost).
+- **Nächster Schritt:** weitere GBP-Beiträge vorbereiten (Angebotserstellung, Lexoffice-Integration), optionale Timeline-Infografiken generieren, Google Business Profil-Upload.
 - **Uncommitted:** keine (clean tree).
 
 ## Offene Punkte / nächste Schritte
-1. **Weitere GBP-Beiträge vorbereiten:** Angebotserstellung, Lexoffice-Integration, Fallstudie mit Infografiken/Mockups.
-2. **E-Rechnungspflicht-Infografik (optional):** Timeline 2025/2027/2028 mit exakten Markenfarben für Visual-Impact.
-3. **Mockup-Screenshots des Dashboards:** für `/reinigung`-Seite (Angebote-Track + Buchhaltungs-Track als Proof-of-Concept).
-4. **GBP-Beitrag hochladen:** Alle Varianten in Google Business Profil-Editor posten.
+1. **Weitere GBP-Beiträge:** Angebotserstellung, Lexoffice-Integration, Fallstudien mit Infografiken/Mockups.
+2. **Timeline-Infografiken (optional):** E-Rechnungspflicht-Roadmap (2025/2027/2028) oder Dauerrechnungs-Zeiteinsparung als Code-generierte Grafik (Next.js-Route für garantiert korrekte Typographie).
+3. **Mockup-Screenshots des Dashboards:** für `/reinigung`-Seite (Angebote-Track + Buchhaltungs-Track als PoC).
+4. **GBP-Beiträge posten:** Alle 3 Varianten in Google Business Profil-Editor hochladen (1x/Woche für aktualisiertes Status-Signal).
 5. **Conversion-Tracking:** GA4 + Google Calendar-Events (appointment_booked) für Reinigung-Leads.
 6. **Zweite Branchen-Landingpage:** Handwerk, Hausverwaltung oder Arztpraxen (nach `/reinigung`-Schema).
-7. **Longtail-Blog-Posts:** 3–5 Posts (z. B. "Zeiterfassung Handwerk", "Rechnungserstellung Büro").
+7. **Longtail-Blog-Posts:** 3–5 thematisch fokussierte Posts (z. B. "Zeiterfassung Handwerk", "Rechnungserstellung Büro").
 
 ## Wichtige Entscheidungen / Konventionen
 - Hero-Pattern auf `/reinigung`: knappe Headline nach Schema `<Thema> in <Zeit> statt <längere Zeit>`, gefolgt von Subtitle + 3 Stats + CTA
@@ -63,6 +63,6 @@
 - **Sprache als Default:** DE-Standard überall, Nutzer können EN hinzuklicken (nicht umgekehrt)
 - **Google Business Profil:** Kostenlos, 5/5 Sterne, Kategorien + Dienstleistungen gezielt für lokale Such-Ranking; Beiträge 1x/Wo für aktualisiertem Status-Signal
 - **GBP-Beiträge:** Focused Content (3-4 Leistungs-Callouts + Problem-Hook), CTA mit direktem Link, Value-First-Messaging ohne hartes Selling
-- **GBP-Beitrag-Textvorlage:** Dreistufiger Mahnablauf (2 Tage vor / 3 Tage nach / 10 Tage Fälligkeit), konkrete Liquiditäts-Rechnung (z. B. 42→21 Tage = 7.500 € schneller), Umsetzungs-Roadmap (manuell oder Lexoffice-Automatik)
+- **GBP-Beitrag-Textvorlage:** Problem-Hook, konkrete Zahlen (Zeit/Euro), Umsetzungs-Roadmap (manuell oder Automatik), Fakten-Check mit Quellen
 - **Bild-Strategie für GBP-Posts:** Infografiken + echte Dashboards/Mockups helfen; Stockfotos/generische Bilder schaden — lieber kein Bild als schlechtes Bild
 - **AI-Bildgenerator-Hinweis:** Text in KI-generierten Bildern oft fehlerhaft (Umlaute, Fachbegriffe). Alternativen: Canva/Figma manuell korrigieren, oder Next.js-Route mit Code rendern für garantiert korrekte Typographie.
