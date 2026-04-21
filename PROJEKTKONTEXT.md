@@ -22,33 +22,35 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `59bbcc7` Merge remote-tracking branch 'origin/main' into claude/review-project-status
-2. `ea8fbea` feat: add IndustryFocus-Sektion auf Startseite mit Link zu /reinigung
-3. `a738042` chore: auto-update PROJEKTKONTEXT.md
-4. `05bc88d` chore: auto-update PROJEKTKONTEXT.md
-5. `9b90b2c` chore: auto-update PROJEKTKONTEXT.md
-6. `58d8746` chore: auto-update PROJEKTKONTEXT.md
-7. `99f1167` chore: auto-update PROJEKTKONTEXT.md
-8. `ef15cd2` chore: auto-update PROJEKTKONTEXT.md
-9. `298cd14` chore: auto-update PROJEKTKONTEXT.md
-10. `58ad19e` chore: auto-update PROJEKTKONTEXT.md
+1. `314f829` chore: auto-update PROJEKTKONTEXT.md
+2. `59bbcc7` Merge remote-tracking branch 'origin/main' into claude/review-project-status
+3. `ea8fbea` feat: add IndustryFocus-Sektion auf Startseite mit Link zu /reinigung
+4. `a738042` chore: auto-update PROJEKTKONTEXT.md
+5. `05bc88d` chore: auto-update PROJEKTKONTEXT.md
+6. `9b90b2c` chore: auto-update PROJEKTKONTEXT.md
+7. `58d8746` chore: auto-update PROJEKTKONTEXT.md
+8. `99f1167` chore: auto-update PROJEKTKONTEXT.md
+9. `ef15cd2` chore: auto-update PROJEKTKONTEXT.md
+10. `298cd14` chore: auto-update PROJEKTKONTEXT.md
 
 ## Aktuell in Arbeit
-- **Zuletzt abgeschlossen:** IndustryFocus-Komponente deployed (Commit `25f01ad`). Neue Sektion zwischen Services und About auf Home mit Gebäudereinigung-Card (Stats 10h/100%/0, Link `/reinigung`) + Platzhalter-Card für künftige Branchen.
+- **Entscheidungen getroffen:** (1) "Ich" statt "Wir" im About beibehalten (Solo-Freelancer USP, Vertrauenssignal). (2) "Reinigung" als direkter Nav-Link (5. Item zw. "Ergebnisse" + "Blog") einbauen statt "Branchen"-Dropdown.
 - **Uncommitted:** keine.
 
 ## Offene Punkte / nächste Schritte
-1. **Vercel-Deploy validieren:** neue IndustryFocus-Sektion live auf dynvon.com überprüfen (PageRank-Transfer zu /reinigung sollte messbar sein).
-2. **GBP-Beiträge posten:** 4 fertige Beiträge 1x/Woche hochladen (Status-Signal für Google-Cache-Übergang).
-3. **Infografiken:** Mahnwesen, E-Rechnungspflicht, Arbeitszeiterfassung in Canva/Code (Umlaute garantiert).
-4. **GBP-Beiträge 5–7:** (1) Einsatzplanung 10+ MA, (2) Subunternehmer-Prüfung, (3) Tariftreue & Lohnzuschläge.
-5. **Domain-Autorität:** LinkedIn-Profil-URL auf dynvon.com prüfen, wöchentlich GSC "Indexierung beantragen", externe Backlinks.
-6. **Conversion:** GA4 + Google Calendar-Events für `/reinigung`-Leads tracken.
-7. **Blog-Longtails:** 3–5 fokussierte Posts (Zeiterfassung Handwerk, Rechnungserstellung, etc.).
-8. **IndustryFocus-Expansion:** weitere Branchen-Cards planen (Handwerk, Hausverwaltung, Arztpraxen) + Subkampagnen.
+1. **Nav-Link "Reinigung" einbauen:** dezent zwischen "Ergebnisse" und "Blog" hinzufügen, keine speziellen Akzente.
+2. **Vercel-Deploy validieren:** neue IndustryFocus-Sektion live auf dynvon.com überprüfen (PageRank-Transfer zu /reinigung).
+3. **GBP-Beiträge posten:** 4 fertige Beiträge 1x/Woche hochladen (Status-Signal für Google-Cache-Übergang).
+4. **Infografiken:** Mahnwesen, E-Rechnungspflicht, Arbeitszeiterfassung in Canva/Code (Umlaute garantiert).
+5. **GBP-Beiträge 5–7:** (1) Einsatzplanung 10+ MA, (2) Subunternehmer-Prüfung, (3) Tariftreue & Lohnzuschläge.
+6. **Domain-Autorität:** LinkedIn-Profil-URL auf dynvon.com prüfen, wöchentlich GSC "Indexierung beantragen", externe Backlinks.
+7. **Conversion:** GA4 + Google Calendar-Events für `/reinigung`-Leads tracken.
+8. **Blog-Longtails:** 3–5 fokussierte Posts (Zeiterfassung Handwerk, Rechnungserstellung, etc.).
 
 ## Wichtige Entscheidungen / Konventionen
+- **"Ich" vs. "Wir":** Solo-Freelancer bleibt "Ich" überall (persönliches Portrait, direkter Draht = USP). Agenturen schreiben alle "wir" — dein "ich" ist Differenzierung.
 - **IndustryFocus-Sektion:** neue Komponente zwischen Services und CaseStudies auf Home, thematisch klar, erweiterbar, SEO-friendly (H2 + strukturierter Content).
+- **Nav-Strategie:** (aktuell) ein Branche → direkter Link "Reinigung" (nicht Dropdown). Bei 2+ Branchen später zu "Branchen"-Dropdown wechseln.
 - **Hero-Pattern auf /reinigung:** Headline Schema `<Thema> in <Zeit> statt <längere Zeit>`, 3 Stats (10h / 100% / 0), CTA.
 - **Topic-Chooser:** Toggle zwischen "Angebote" (Incoming) und "Buchhaltung" (Outgoing) mit visuellen Unterschieden, immer DE.
 - **ProposalFlowchart auf /reinigung:** `forceLocale="de"` (keine Sprachänderung).
