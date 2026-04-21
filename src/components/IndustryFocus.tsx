@@ -31,6 +31,22 @@ const INDUSTRIES: Industry[] = [
       en: "Service charge statements, contractor tickets, tenant communication and monthly billing — automated for property management firms.",
     },
   },
+  {
+    href: "#contact",
+    title: {
+      de: "Hausverwaltungen",
+      en: "Property management",
+    },
+    description: {
+      de: "Nebenkostenabrechnungen, Handwerker-Tickets, Mieter-Kommunikation und Monatsabrechnungen automatisiert — für WEG- und Mietverwaltungen.",
+      en: "Service charge statements, contractor tickets, tenant communication and monthly billing — automated for property management firms.",
+    },
+    stats: [
+      { value: "6h", label: { de: "gespart / Woche", en: "saved / week" } },
+      { value: "100%", label: { de: "fristgerechte Abrechnungen", en: "on-time statements" } },
+      { value: "0", label: { de: "verlorene Tickets", en: "missed tickets" } },
+    ],
+  },
 ];
 
 export default function IndustryFocus() {
