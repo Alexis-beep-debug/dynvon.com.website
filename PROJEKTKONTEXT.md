@@ -22,31 +22,29 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `58d8746` chore: auto-update PROJEKTKONTEXT.md
-2. `99f1167` chore: auto-update PROJEKTKONTEXT.md
-3. `ef15cd2` chore: auto-update PROJEKTKONTEXT.md
-4. `298cd14` chore: auto-update PROJEKTKONTEXT.md
-5. `58ad19e` chore: auto-update PROJEKTKONTEXT.md
-6. `a60781c` chore: auto-update PROJEKTKONTEXT.md
-7. `1e297a8` chore: auto-update PROJEKTKONTEXT.md
-8. `104bbc0` chore: auto-update PROJEKTKONTEXT.md
-9. `b4d45e5` chore: auto-update PROJEKTKONTEXT.md
-10. `bfd9a2e` chore: auto-update PROJEKTKONTEXT.md
+1. `9b90b2c` chore: auto-update PROJEKTKONTEXT.md
+2. `58d8746` chore: auto-update PROJEKTKONTEXT.md
+3. `99f1167` chore: auto-update PROJEKTKONTEXT.md
+4. `ef15cd2` chore: auto-update PROJEKTKONTEXT.md
+5. `298cd14` chore: auto-update PROJEKTKONTEXT.md
+6. `58ad19e` chore: auto-update PROJEKTKONTEXT.md
+7. `a60781c` chore: auto-update PROJEKTKONTEXT.md
+8. `1e297a8` chore: auto-update PROJEKTKONTEXT.md
+9. `104bbc0` chore: auto-update PROJEKTKONTEXT.md
+10. `b4d45e5` chore: auto-update PROJEKTKONTEXT.md
 
 ## Aktuell in Arbeit
-- **Task:** Verifizierung SEO-Live-Status nach Deployment (Meta-Tags, JSON-LD live, aber Google-Cache-Lag 1–4 Wo.). GBP-Beiträge 1-4 fertig ausgearbeitet, Beiträge 5-7 in Planung. Nächster: GBP-Infografiken in Canva/Code rendern, LinkedIn-Backlink prüfen.
+- **Task:** SEO-Verifizierung nach Deployment abgeschlossen. Alle Meta-Tags, JSON-LD, og:locale live + korrekt. Google-Cache zeigt noch alte EN-Version (normal 1–4 Wo. Lag). GBP-Beiträge 1–4 ausgearb., posten ab diese Woche. Nächste: LinkedIn-Backlinks checken, GSC "Indexierung beantragen" nutzen, GBP-Infografiken (Mahnwesen, E-Rechnungspflicht, Zeiterfassung).
 - **Uncommitted:** keine.
 
 ## Offene Punkte / nächste Schritte
-1. **GBP-Beiträge posten:** 4 abgeschlossene Beiträge in Google Business Profil-Editor hochladen (1x/Woche für Status-Signal).
-2. **Design-Assets für GBP:** Infografiken rendern (Mahnwesen, E-Rechnungspflicht, Arbeitszeiterfassung) — Canva/Code für garantiert korrekte Umlaute.
-3. **Weitere 3 GBP-Beiträge:** (1) Einsatzplanung 10+ MA, (2) Subunternehmer-Prüfung, (3) Tariftreue & Lohnzuschläge.
-4. **Domain-Autorität stärken:** LinkedIn-Profil-Backlink prüfen, GSC "Indexierung beantragen" wöchentlich nutzen (beschleunigt Snippet-Update).
-5. **Timeline-Infografik (optional):** E-Rechnungs-Roadmap (2025/2027/2028) als Next.js-Route.
-6. **Mockup-Screenshots:** Angebote-Track + Buchhaltungs-Track für `/reinigung` (PoC).
-7. **Conversion-Tracking:** GA4 + Google Calendar Events (appointment_booked) für Reinigung-Leads.
-8. **Zweite Branchen-Landingpage:** Handwerk, Hausverwaltung oder Arztpraxen (nach `/reinigung`-Schema).
-9. **Longtail-Blog-Posts:** 3–5 fokussierte Posts (z. B. "Zeiterfassung Handwerk", "Rechnungserstellung Büro").
+1. **GBP-Beiträge posten:** 4 fertige Beiträge 1x/Woche hochladen (Status-Signal für Google-Cache-Übergang).
+2. **Infografiken:** Mahnwesen, E-Rechnungspflicht, Arbeitszeiterfassung in Canva/Code (Umlaute garantiert).
+3. **GBP-Beiträge 5–7:** (1) Einsatzplanung 10+ MA, (2) Subunternehmer-Prüfung, (3) Tariftreue & Lohnzuschläge.
+4. **Domain-Autorität:** LinkedIn-Profil-URL auf dynvon.com prüfen, wöchentlich GSC "Indexierung beantragen", externe Backlinks (Branchenverzeichnisse).
+5. **Conversion:** GA4 + Google Calendar-Events (appointment_booked) für `/reinigung`-Leads.
+6. **Branchen-Landingpages:** Handwerk, Hausverwaltung, Arztpraxen nach `/reinigung`-Schema.
+7. **Blog-Longtails:** 3–5 fokussierte Posts (Zeiterfassung Handwerk, Rechnungserstellung Büro, etc.).
 
 ## Wichtige Entscheidungen / Konventionen
 - Hero-Pattern auf `/reinigung`: knappe Headline nach Schema `<Thema> in <Zeit> statt <längere Zeit>`, gefolgt von Subtitle + 3 Stats + CTA
