@@ -7,7 +7,7 @@
 
 ## Stand
 - **Datum:** 2026-04-21
-- **Branch:** `claude/review-project-status-ZBd2O` (lokal) / `main` (remote)
+- **Branch:** `main` (remote merged)
 - **Working Tree:** clean
 
 ## Projekt-Basics
@@ -22,26 +22,27 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `f58e706` chore: auto-update PROJEKTKONTEXT.md
-2. `4a836ee` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-3. `da5adfa` chore: auto-update PROJEKTKONTEXT.md
-4. `7eedf72` docs: add PITCH-BUCHHALTUNG.md — sales deck outline
-5. `1ecdbe8` chore: auto-update PROJEKTKONTEXT.md
-6. `a156f46` chore: auto-update PROJEKTKONTEXT.md
-7. `1a211a8` docs: add BRAND.md (#4)
-8. `3f8f976` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-9. `27a2eb7` chore: auto-update PROJEKTKONTEXT.md
-10. `502be80` chore: auto-update PROJEKTKONTEXT.md
+1. `6d779a1` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+2. `18b341c` feat(seo): DE-first metadata, /reinigung-spezifische SEO, JSON-LD, sitemap, OG-Images
+3. `25c263f` chore: auto-update PROJEKTKONTEXT.md
+4. `f58e706` chore: auto-update PROJEKTKONTEXT.md
+5. `8368ba6` docs: add PITCH-BUCHHALTUNG.md (#5)
+6. `4a836ee` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+7. `da5adfa` chore: auto-update PROJEKTKONTEXT.md
+8. `7eedf72` docs: add PITCH-BUCHHALTUNG.md — sales deck outline
+9. `1ecdbe8` chore: auto-update PROJEKTKONTEXT.md
+10. `a156f46` chore: auto-update PROJEKTKONTEXT.md
 
 ## Aktuell in Arbeit
-- **Task:** SEO-Analyse & Google-Preview-Fix für `/reinigung` — identifiziert: `lang="en"`, EN-first Metadata, fehlende `sitemap.ts`, fehlende `robots.ts`, keine JSON-LD
-- **Status:** Konkreter 6-Punkte-Fix-Plan erstellt (lang→de, eigenes `/reinigung/layout.tsx`, sitemap+robots, JSON-LD, OG-Image, Keywords)
+- **Task:** SEO-Fixes komplett implementiert und gemergt — PR `be09ef5` merged nach `main`. Vercel deployt jetzt. Post-Deploy-Tasks: Google Search Console verifizieren, sitemap.xml einreichen, Rich-Results prüfen
+- **Status:** Warten auf Deploy; danach optional: Keyword-Optimierung (Punkt 6 des Plans — gezielte Keywords wie "Gebäudereinigung", "Nürnberg" im Body-Text von `/reinigung`)
 
 ## Offene Punkte / nächste Schritte
-1. **SEO-Fixes umsetzen (Punkte 1–5):** `lang="de"` in `layout.tsx`, `/reinigung/layout.tsx` mit gezielten Metadaten, `sitemap.ts` + `robots.ts`, JSON-LD (LocalBusiness + Service), OG-Image
-2. **Keyword-Optimierung (Punkt 6):** Body-Text H1/H2, alt-Tags, sichtbare Keywords — koordiniert umsetzen, keine Stopfung
-3. **Topic-Chooser + ProposalFlowchart auf `/reinigung` testen** (Mobile + Desktop)
-4. **Deploy-Status und Live-Performance überprüfen**
+1. **Google Search Console:** Property verifizieren, `sitemap.xml` einreichen, Neu-Indexierung für `/` und `/reinigung` anfordern
+2. **Rich-Results-Test:** https://search.google.com/test/rich-results → `/reinigung` eingeben, Service + ProfessionalService prüfen
+3. **Social-Preview:** https://www.opengraph.xyz/ → `/reinigung` eingeben, OG-Image muss rendern
+4. **Optional — Punkt 6:** Body-Text H1/H2 von `/reinigung` mit Keywords "Gebäudereinigung", "Nürnberg", konkrete Service-Begriffe erweitern
+5. **Topic-Chooser + ProposalFlowchart auf `/reinigung` testen** (Mobile + Desktop nach Deploy)
 
 ## Wichtige Entscheidungen / Konventionen
 - Hero-Pattern auf `/reinigung`: knappe Headline nach Schema `<Thema> in <Zeit> statt <längere Zeit>`, gefolgt von Subtitle + 3 Stats + CTA
