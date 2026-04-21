@@ -22,23 +22,23 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `938e1c5` chore: auto-update PROJEKTKONTEXT.md
-2. `e06f5f5` chore: auto-update PROJEKTKONTEXT.md
-3. `6d779a1` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-4. `18b341c` feat(seo): DE-first metadata, /reinigung-spezifische SEO, JSON-LD, sitemap, OG-Images
-5. `25c263f` chore: auto-update PROJEKTKONTEXT.md
-6. `f58e706` chore: auto-update PROJEKTKONTEXT.md
-7. `8368ba6` docs: add PITCH-BUCHHALTUNG.md (#5)
-8. `4a836ee` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-9. `da5adfa` chore: auto-update PROJEKTKONTEXT.md
-10. `7eedf72` docs: add PITCH-BUCHHALTUNG.md — sales deck outline
+1. `3f80a29` chore: auto-update PROJEKTKONTEXT.md
+2. `938e1c5` chore: auto-update PROJEKTKONTEXT.md
+3. `e06f5f5` chore: auto-update PROJEKTKONTEXT.md
+4. `6d779a1` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+5. `18b341c` feat(seo): DE-first metadata, /reinigung-spezifische SEO, JSON-LD, sitemap, OG-Images
+6. `25c263f` chore: auto-update PROJEKTKONTEXT.md
+7. `f58e706` chore: auto-update PROJEKTKONTEXT.md
+8. `8368ba6` docs: add PITCH-BUCHHALTUNG.md (#5)
+9. `4a836ee` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+10. `da5adfa` chore: auto-update PROJEKTKONTEXT.md
 
 ## Aktuell in Arbeit
-- **Task:** Google Search Console Verifizierung — Cloudflare Auto-Flow für TXT-Record Verifizierung ausstehend (nach GSC-Bestätigung: Sitemap einreichen)
-- **Session-Kontext:** Verifizierungsprozess über Cloudflare-Integration (Domain-Inhaberschaft automatisch bestätigen lassen, dann sitemap.xml einreichen)
+- **Task:** Google Search Console Verifizierung & Sitemap-Indexierung durchstarten
+- **Session-Kontext:** Domain über Cloudflare Auto-Flow verifiziert; nächste Schritte: (1) Sitemap (`sitemap.xml`) einreichen, (2) Startseite indexieren, (3) `/reinigung` indexieren
 
 ## Offene Punkte / nächste Schritte
-1. **Google Search Console:** Domain-Verifizierung abschließen (Cloudflare Auto-Flow), dann `sitemap.xml` einreichen
+1. **Google Search Console:** Sitemap über GSC-Dashboard einreichen (`https://www.dynvon.com/sitemap.xml`), dann Indexierung für `/` und `/reinigung` anfordern
 2. **Rich-Results-Test:** https://search.google.com/test/rich-results → `/reinigung` prüfen (Service + ProfessionalService)
 3. **Social-Preview:** https://www.opengraph.xyz/ → `/reinigung` OG-Image-Rendering testen
 4. **Optional:** Body-Text H1/H2 von `/reinigung` mit Keywords "Gebäudereinigung", "Nürnberg" erweitern
