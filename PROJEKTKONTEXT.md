@@ -22,30 +22,32 @@
 - **Wichtig (AGENTS.md):** Next.js 16 hat Breaking Changes ggü. älteren Versionen — vor Code-Änderungen in `node_modules/next/dist/docs/` nachsehen
 
 ## Letzte Arbeit (neueste 10 Commits)
-1. `40f62f5` fix: remove duplicate Hausverwaltungen entry from merge
-2. `5d25b90` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-3. `e617086` fix(industry-focus): remove stats from cards (nicht aussagekräftig)
-4. `df0afcb` chore: auto-update PROJEKTKONTEXT.md
-5. `975ee9b` feat(industry-focus): Hausverwaltungen als eigene Card (#14)
-6. `b3b31cc` fix: remove 'z.B. Hausverwaltungen' from placeholder (now own card)
-7. `ffb7185` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
-8. `c8dabb3` feat(industry-focus): Hausverwaltungen als eigene Card hinzufügen
-9. `c6aa440` chore: auto-update PROJEKTKONTEXT.md
-10. `81ebd44` feat(industry-focus): Hausverwaltungen als Beispiel (#13)
+1. `93e7d1e` chore: auto-update PROJEKTKONTEXT.md
+2. `40f62f5` fix: remove duplicate Hausverwaltungen entry from merge
+3. `5d25b90` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+4. `e617086` fix(industry-focus): remove stats from cards (nicht aussagekräftig)
+5. `df0afcb` chore: auto-update PROJEKTKONTEXT.md
+6. `975ee9b` feat(industry-focus): Hausverwaltungen als eigene Card (#14)
+7. `b3b31cc` fix: remove 'z.B. Hausverwaltungen' from placeholder (now own card)
+8. `ffb7185` Merge remote-tracking branch 'origin/main' into claude/review-project-status-ZBd2O
+9. `c8dabb3` feat(industry-focus): Hausverwaltungen als eigene Card hinzufügen
+10. `c6aa440` chore: auto-update PROJEKTKONTEXT.md
 
 ## Aktuell in Arbeit
-- **Letzter Task:** IndustryFocus-Merge abgeschlossen (3 Cards: Gebäudereinigung + Hausverwaltungen + Placeholder, Stats entfernt), Vercel-Deploy live.
+- **Letzter Task:** Datenschutz & Analytics-Audit. Tracking-Skript (`https://email-outreach-dynvon-production.up.railway.app/analytics/script.js`) läuft auf jeder Seite; Datenschutzerklärung behauptet "keine Cookies zu Tracking-Zwecken" (möglicherweise falsch/abmahnfähig). Calendly in Datenschutz dokumentiert, aber Google Calendar verwendet.
 - **Uncommitted:** keine (working tree clean).
 
 ## Offene Punkte / nächste Schritte
-1. **Vercel-Deploy validieren:** 3 Cards im IndustryFocus (Reinigung, Hausverwaltung, Placeholder) live überprüfen.
-2. **GBP-Beiträge posten:** 4 fertige Beiträge 1x/Woche hochladen (Status-Signal für Google-Cache-Übergang).
-3. **Infografiken:** Mahnwesen, E-Rechnungspflicht, Arbeitszeiterfassung in Canva/Code (Umlaute garantiert).
-4. **GBP-Beiträge 5–7:** (1) Einsatzplanung 10+ MA, (2) Subunternehmer-Prüfung, (3) Tariftreue & Lohnzuschläge.
-5. **Domain-Autorität:** LinkedIn-Profil-URL auf dynvon.com prüfen, wöchentlich GSC "Indexierung beantragen", externe Backlinks.
-6. **Conversion:** GA4 + Google Calendar-Events für `/reinigung`-Leads tracken.
-7. **Blog-Longtails:** 3–5 fokussierte Posts (Zeiterfassung Handwerk, Rechnungserstellung, etc.).
-8. **Weitere Branchen-Use-Cases:** Steuerberater, Onlineshops evaluieren (hoher Automation-Nutzen, KMU-affin); ggf. `/steuerberater` etc. analog `/reinigung` ausbauen.
+1. **Datenschutz-Rectification (URGENT):** (A) Analytics-Skript rausnehmen (sauberste Option), oder (B) Consent-Banner + Datenschutz erweitern, oder (C) Skript als cookieless/IP-anonymisiert dokumentieren + Abschnitt 4 umformulieren.
+2. **Calendly ↔ Google Calendar:** Datenschutz-Abschnitt 5 aktualisieren (Google Calendar statt Calendly verwenden).
+3. **Vercel-Deploy validieren:** 3 Cards im IndustryFocus (Reinigung, Hausverwaltung, Placeholder) live überprüfen.
+4. **GBP-Beiträge posten:** 4 fertige Beiträge 1x/Woche hochladen (Status-Signal für Google-Cache-Übergang).
+5. **Infografiken:** Mahnwesen, E-Rechnungspflicht, Arbeitszeiterfassung in Canva/Code (Umlaute garantiert).
+6. **GBP-Beiträge 5–7:** (1) Einsatzplanung 10+ MA, (2) Subunternehmer-Prüfung, (3) Tariftreue & Lohnzuschläge.
+7. **Domain-Autorität:** LinkedIn-Profil-URL auf dynvon.com prüfen, wöchentlich GSC "Indexierung beantragen", externe Backlinks.
+8. **Conversion:** GA4 + Google Calendar-Events für `/reinigung`-Leads tracken (nach Datenschutz-Klärung).
+9. **Blog-Longtails:** 3–5 fokussierte Posts (Zeiterfassung Handwerk, Rechnungserstellung, etc.).
+10. **Weitere Branchen-Use-Cases:** Steuerberater, Onlineshops evaluieren (hoher Automation-Nutzen, KMU-affin); ggf. `/steuerberater` etc. analog `/reinigung` ausbauen.
 
 ## Wichtige Entscheidungen / Konventionen
 - **"Ich" vs. "Wir":** Solo-Freelancer bleibt "Ich" überall (persönliches Portrait, direkter Draht = USP). Agenturen schreiben alle "wir" — dein "ich" ist Differenzierung.
@@ -55,6 +57,7 @@
 - **Topic-Chooser:** Toggle zwischen "Angebote" (Incoming) und "Buchhaltung" (Outgoing) mit visuellen Unterschieden, immer DE.
 - **ProposalFlowchart auf /reinigung:** `forceLocale="de"` (keine Sprachänderung).
 - **Sprache:** persistiert via LanguageContext, DE-first Standard überall, EN hinzuklickbar.
+- **Datenschutz-Anforderung:** Alle Tracking-Scripts müssen in Datenschutzerklärung korrekt dokumentiert sein (Consent oder ausdrückliche Rezension erforderlich); fehlende/falsche Dokumentation ist abmahnfähig.
 - **Stop-Hook:** dokumentiert Projektstand automatisch, committet + pusht PROJEKTKONTEXT.md am Ende jedes Turns (nur diese Datei).
 - **BRAND.md:** zentral für Design-Tokens, Komponenten-Konventionen, Voice & Tone.
 - **PITCH-BUCHHALTUNG.md:** Sales-Deck-Dokumentation (17 Folien: Cover → Problem → Kosten → Vision → 3 Systeme → Fallstudie → Integration → Preise → CTA → FAQ).
