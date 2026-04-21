@@ -51,7 +51,8 @@ const CONTENT: Record<Topic, TopicContent> = {
         desc: "Welches Angebot steht noch offen? Wer hat schon zugesagt? Ohne zentrale Übersicht verlieren Sie den Überblick — und Umsatz.",
       },
     ],
-    solutionIntro: "Drei Systeme, die Ihren Vertrieb komplett verändern:",
+    solutionIntro:
+      "Drei Systeme, die den Vertrieb in Ihrem Reinigungsunternehmen komplett verändern:",
     solutions: [
       {
         title: "Automatische Angebotserstellung",
@@ -107,7 +108,8 @@ const CONTENT: Record<Topic, TopicContent> = {
         desc: "Belege sortieren, Exports erstellen, Chaos zusammentragen. Der Steuerberater bekommt alles verspätet — und Sie zahlen für seine Mehrarbeit.",
       },
     ],
-    solutionIntro: "Drei Systeme, die Ihre Buchhaltung komplett übernehmen:",
+    solutionIntro:
+      "Drei Systeme, die die Buchhaltung in Ihrem Gebäudereinigungsunternehmen komplett übernehmen:",
     solutions: [
       {
         title: "Automatische Rechnungsstellung",
@@ -225,9 +227,12 @@ function ReinigungContent() {
           <span className="text-xs font-mono text-accent-light uppercase tracking-widest mb-4 block text-center">
             Das Problem
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-12 text-center">
-            Kennen Sie das?
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4 text-center">
+            Kennen Sie das aus Ihrem Reinigungsunternehmen?
           </h2>
+          <p className="text-muted text-lg max-w-2xl mx-auto leading-relaxed mb-12 text-center">
+            Typische Herausforderungen in der Gebäudereinigungsbranche, die täglich Zeit und Geld kosten:
+          </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             {c.problems.map((item, i) => (
@@ -261,7 +266,7 @@ function ReinigungContent() {
             Die Lösung
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-6 text-center">
-            Was ich für Sie automatisiere
+            Was ich für Gebäudereinigungsunternehmen automatisiere
           </h2>
           <p className="text-muted text-lg max-w-2xl mx-auto leading-relaxed mb-12 text-center">
             {c.solutionIntro}
@@ -332,7 +337,7 @@ function ReinigungContent() {
             Ergebnisse
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-12">
-            Was meine Kunden erreicht haben
+            Was Reinigungsunternehmen mit dynvon erreichen
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
@@ -364,9 +369,11 @@ function ReinigungContent() {
               <h3 className="text-xl font-bold mb-2">Alexis Bethke-Pittadakis</h3>
               <p className="text-sm text-accent-light mb-3">Automation Engineer — Nürnberg</p>
               <p className="text-muted text-[15px] leading-relaxed">
-                Ich helfe Reinigungsunternehmen, ihre Verwaltungsarbeit zu automatisieren.
-                Meine Systeme laufen 24/7, machen keine Fehler und wachsen mit Ihrem
-                Unternehmen mit. Über 15 Automatisierungsprojekte erfolgreich umgesetzt.
+                Aus Nürnberg arbeite ich mit Gebäudereinigungsunternehmen in ganz Deutschland,
+                Österreich und der Schweiz zusammen und automatisiere ihre Buchhaltung,
+                Angebotserstellung und Kundenkommunikation. Meine Python-Systeme laufen 24/7,
+                machen keine Fehler und wachsen mit Ihrem Betrieb mit — über 15 erfolgreich
+                umgesetzte Automatisierungsprojekte.
               </p>
             </div>
           </div>
@@ -380,12 +387,12 @@ function ReinigungContent() {
 
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-6">
-            Bereit, Ihren Verwaltungsaufwand zu halbieren?
+            Bereit, Ihr Reinigungsunternehmen zu entlasten?
           </h2>
           <p className="text-muted text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-            In einem kostenlosen 30-Minuten-Gespräch zeige ich Ihnen genau, welche
-            Prozesse in Ihrem Reinigungsunternehmen automatisiert werden können — und
-            wie viel Zeit Sie damit pro Woche zurückgewinnen.
+            In einem kostenlosen 30-Minuten-Gespräch zeige ich Ihnen konkret, welche
+            Prozesse in Ihrem Gebäudereinigungsunternehmen automatisiert werden können —
+            und wie viel Zeit und Geld Sie damit pro Woche zurückgewinnen.
           </p>
 
           <a
