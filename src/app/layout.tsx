@@ -120,6 +120,8 @@ const jsonLd = {
         addressLocality: "Nürnberg",
         addressCountry: "DE",
       },
+      telephone: "+4917675726791",
+      email: "support@dynvon.com",
       founder: { "@id": `${SITE_URL}/#person` },
       makesOffer: [
         {

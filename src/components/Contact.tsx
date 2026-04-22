@@ -47,6 +47,17 @@ export default function Contact() {
             />
           </svg>
         </a>
+
+        {/* Email */}
+        <p className="mt-6 text-muted text-sm">
+          {t.contact.email}:{" "}
+          <a
+            href="mailto:support@dynvon.com"
+            className="text-accent-light hover:text-accent transition-colors"
+          >
+            support@dynvon.com
+          </a>
+        </p>
       </div>
     </section>
   );

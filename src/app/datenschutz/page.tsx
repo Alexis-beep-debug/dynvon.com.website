@@ -310,8 +310,8 @@ function DatenschutzContent() {
             </ul>
             <p className="mt-3">
               {en
-                ? "To exercise these rights, please contact us at: 0176 75726791"
-                : "Zur Ausübung dieser Rechte kontaktieren Sie uns bitte unter: 0176 75726791"}
+                ? "To exercise these rights, please contact us at: support@dynvon.com or 0176 75726791"
+                : "Zur Ausübung dieser Rechte kontaktieren Sie uns bitte unter: support@dynvon.com oder 0176 75726791"}
             </p>
             <p className="mt-2">
               {en

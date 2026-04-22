@@ -49,6 +49,8 @@ function ImpressumContent() {
             </h2>
             <p>
               {locale === "en" ? "Phone" : "Telefon"}: 0176 75726791
+              <br />
+              E-Mail: support@dynvon.com
             </p>
           </section>
 
