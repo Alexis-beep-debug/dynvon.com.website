@@ -220,7 +220,8 @@ function FaqAccordion() {
                 <button
                   type="button"
                   onClick={() => setOpenIndex(isOpen ? null : i)}
-                  className="w-full flex items-center justify-between gap-4 p-6 text-left"
+                  aria-expanded={isOpen}
+                  className="w-full flex items-center justify-between gap-4 p-6 text-left cursor-pointer"
                 >
                   <span className="font-bold text-[15px]">{item.q}</span>
                   <svg
@@ -415,7 +416,7 @@ function ReinigungContent() {
                         <span className={`px-2 py-1 rounded border whitespace-nowrap ${colorClasses[stepIdx % colorClasses.length]}`}>
                           {step}
                         </span>
-                        {stepIdx < sol.flow.length - 1 && <span className="text-border">&rarr;</span>}
+                        {stepIdx < sol.flow.length - 1 && <span className="text-border" aria-hidden="true">&rarr;</span>}
                       </span>
                     );
                   })}
@@ -500,6 +501,7 @@ function ReinigungContent() {
                   <span className="text-sm text-muted">laufend</span>
                 </div>
                 <p className="text-muted text-[15px] leading-relaxed">{card.features}</p>
+                <a href="https://calendar.app.google/qJnC2hS15NJ1XxVcA" target="_blank" rel="noopener noreferrer" className="mt-6 block w-full text-center py-3 px-4 bg-accent hover:bg-accent-light text-white font-semibold rounded-xl transition-all text-sm">Demo vereinbaren</a>
               </div>
             ))}
           </div>
@@ -521,6 +523,9 @@ function ReinigungContent() {
               <img
                 src="/alexis-opt.webp"
                 alt="Alexis Bethke-Pittadakis"
+                width={144}
+                height={144}
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -549,7 +554,7 @@ function ReinigungContent() {
             Bereit, Ihr Reinigungsunternehmen zu entlasten?
           </h2>
           <p className="text-muted text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-            In einem kostenlosen 15-Minuten-Gespräch zeigen wir Ihnen live, welche
+            In einem kostenlosen 15-Minuten-Gespräch zeige ich Ihnen live, welche
             Prozesse in Ihrem Betrieb automatisiert werden können.
           </p>
 

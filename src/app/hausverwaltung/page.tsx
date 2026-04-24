@@ -67,7 +67,7 @@ const pricingPlans = [
     features: "Rechnungsverarbeitung, DATEV-Export, Zahlungsverfolgung, Mahnwesen",
   },
   {
-    name: "Über 10 Mitarbeiter",
+    name: "Wachstum (10-50 MA)",
     setup: "3.500 €",
     monthly: "600 €/Monat",
     features: "Alles aus Paket 1 + Nebenkostenabrechnung, Eigentümer-Reporting, Priority Support",
@@ -119,7 +119,7 @@ function HausverwaltungContent() {
           </h1>
 
           <p className="text-lg sm:text-xl text-muted max-w-2xl mx-auto mb-12 leading-relaxed">
-            Wir automatisieren Ihre Rechnungsverarbeitung,
+            Ich automatisiere Ihre Rechnungsverarbeitung,
             Nebenkostenabrechnungen und DATEV-Übergabe. Sie sparen 15+ Stunden
             pro Woche.
           </p>
@@ -302,6 +302,7 @@ function HausverwaltungContent() {
                     {plan.features}
                   </p>
                 </div>
+                <a href="https://calendar.app.google/qJnC2hS15NJ1XxVcA" target="_blank" rel="noopener noreferrer" className="mt-6 block w-full text-center py-3 px-4 bg-accent hover:bg-accent-light text-white font-semibold rounded-xl transition-all text-sm">Demo vereinbaren</a>
               </div>
             ))}
           </div>
@@ -334,6 +335,7 @@ function HausverwaltungContent() {
                 >
                   <button
                     onClick={() => setOpenFaq(isOpen ? null : i)}
+                    aria-expanded={isOpen}
                     className="w-full flex items-center justify-between gap-4 p-6 text-left cursor-pointer"
                   >
                     <span className="font-bold text-[15px] sm:text-base">
@@ -379,6 +381,9 @@ function HausverwaltungContent() {
               <img
                 src="/alexis-opt.webp"
                 alt="Alexis Bethke-Pittadakis"
+                width={144}
+                height={144}
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -406,7 +411,7 @@ function HausverwaltungContent() {
             Kostenlose 15-Min Demo
           </h2>
           <p className="text-muted text-lg max-w-xl mx-auto mb-10 leading-relaxed">
-            Wir zeigen Ihnen live, wie die Automatisierung für Ihre Verwaltung
+            Ich zeige Ihnen live, wie die Automatisierung für Ihre Verwaltung
             aussieht — mit Ihren echten Prozessen, nicht mit Slides.
           </p>
 
