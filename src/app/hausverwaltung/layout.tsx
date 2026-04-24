@@ -50,6 +50,45 @@ export const metadata: Metadata = {
   },
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Funktioniert das mit meiner Hausverwaltungssoftware?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Das System integriert sich mit gängiger Software wie Haufe PowerHaus, DOMUS, Immoware, Karthago und anderen. Falls Ihre Software eine API oder Export-Funktion hat, können wir anbinden.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "Was passiert mit Sonderfällen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Das System lernt Ihre wiederkehrenden Muster. Sonderfälle werden markiert und Ihnen zur manuellen Prüfung vorgelegt.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "Wie läuft die Einrichtung ab?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Woche 1: Analyse. Woche 2-3: Einrichtung. Woche 4: Testlauf. Danach Livegang mit Begleitung. Alles cloud-basiert.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "Sind meine Daten sicher?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Deutsche/EU-Server, DSGVO-konform, AV-Vertrag, verschlüsselte Übertragung.",
+      },
+    },
+  ],
+};
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -100,6 +139,10 @@ export default function HausverwaltungLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       {children}
     </>

@@ -68,7 +68,7 @@ export default function IndustryFocus() {
                   {ind.title[isDe ? "de" : "en"]}
                 </h3>
                 <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-accent/10 text-accent-light group-hover:bg-accent/20 transition-colors shrink-0">
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </span>
@@ -82,7 +82,7 @@ export default function IndustryFocus() {
 
           <div className="p-6 sm:p-8 rounded-2xl border border-dashed border-border bg-surface/20 flex flex-col items-center justify-center text-center">
             <div className="w-10 h-10 rounded-xl bg-accent/5 text-muted flex items-center justify-center mb-3">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v16m8-8H4" />
               </svg>
             </div>

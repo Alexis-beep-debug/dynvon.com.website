@@ -98,7 +98,7 @@ export default function Navigation() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="block text-base text-muted hover:text-foreground transition-colors py-2"
+                className="block text-base text-muted hover:text-foreground transition-colors py-3"
               >
                 {link.label}
               </a>

@@ -5,6 +5,7 @@ import { useEffect, useRef } from "react";
 export default function InteractiveGrid() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const mouseRef = useRef({ x: -1000, y: -1000 });
+  const needsRedrawRef = useRef(true);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -108,29 +109,48 @@ export default function InteractiveGrid() {
         }
       }
 
-      animationId = requestAnimationFrame(draw);
+      if (needsRedrawRef.current) {
+        needsRedrawRef.current = false;
+        animationId = requestAnimationFrame(draw);
+      }
+    }
+
+    function scheduleRedraw() {
+      if (!needsRedrawRef.current) {
+        needsRedrawRef.current = true;
+        animationId = requestAnimationFrame(draw);
+      }
     }
 
     // Track mouse globally on window, not on canvas
     function handleMouseMove(e: MouseEvent) {
       mouseRef.current = { x: e.clientX, y: e.clientY };
+      scheduleRedraw();
     }
 
     function handleTouchMove(e: TouchEvent) {
       const touch = e.touches[0];
       if (touch) {
         mouseRef.current = { x: touch.clientX, y: touch.clientY };
+        scheduleRedraw();
       }
     }
 
     function handleMouseLeave() {
       mouseRef.current = { x: -1000, y: -1000 };
+      scheduleRedraw();
     }
 
-    resize();
+    function handleResize() {
+      resize();
+      scheduleRedraw();
+    }
+
+    handleResize();
+    needsRedrawRef.current = true;
     draw();
 
-    window.addEventListener("resize", resize);
+    window.addEventListener("resize", handleResize);
     window.addEventListener("mousemove", handleMouseMove);
     window.addEventListener("touchmove", handleTouchMove, { passive: true });
     window.addEventListener("touchend", handleMouseLeave);
@@ -138,7 +158,7 @@ export default function InteractiveGrid() {
 
     return () => {
       cancelAnimationFrame(animationId);
-      window.removeEventListener("resize", resize);
+      window.removeEventListener("resize", handleResize);
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("touchmove", handleTouchMove);
       window.removeEventListener("touchend", handleMouseLeave);

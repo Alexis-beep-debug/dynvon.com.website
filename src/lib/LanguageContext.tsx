@@ -29,6 +29,11 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     setMounted(true);
   }, []);
 
+  // Keep <html lang> in sync with the current locale
+  useEffect(() => {
+    document.documentElement.lang = locale;
+  }, [locale]);
+
   const toggleLocale = useCallback(() => {
     setLocale((prev) => {
       const next = prev === "en" ? "de" : "en";

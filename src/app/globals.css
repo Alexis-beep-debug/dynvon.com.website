@@ -39,26 +39,6 @@ html {
   color: white;
 }
 
-/* Subtle grid background */
-.grid-bg {
-  background-image:
-    linear-gradient(rgba(79, 70, 229, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(79, 70, 229, 0.05) 1px, transparent 1px);
-  background-size: 60px 60px;
-}
-
-/* Animated gradient border */
-@keyframes gradient-shift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
-
-.gradient-border {
-  background: linear-gradient(135deg, var(--accent), #a855f7, var(--accent));
-  background-size: 200% 200%;
-  animation: gradient-shift 6s ease infinite;
-}
-
 /* Stat counter highlight */
 .stat-highlight {
   background: linear-gradient(135deg, var(--accent), #7c3aed);

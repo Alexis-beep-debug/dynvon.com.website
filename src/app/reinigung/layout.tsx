@@ -50,6 +50,45 @@ export const metadata: Metadata = {
   },
 };
 
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Funktioniert das mit meiner bestehenden Software?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Das System integriert sich mit Lexoffice, sevDesk, DATEV und den gängigen Buchhaltungstools. Falls Sie Excel oder Word nutzen — umso besser, dann ist der Umstieg noch einfacher.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "Was passiert mit Sonderfällen?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Das System deckt die 80% Standardfälle komplett ab. Sonderfälle werden markiert und Ihnen zur kurzen Prüfung vorgelegt. Mit der Zeit lernt das System auch diese Muster.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "Wie läuft die Einrichtung ab?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Woche 1: Analyse Ihrer Prozesse. Woche 2: Einrichtung. Woche 3: Testlauf mit echten Daten. Danach Livegang. Alles cloud-basiert — Sie müssen nichts installieren.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "Sind meine Daten sicher?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Deutsche/EU-Server, DSGVO-konform, AV-Vertrag, verschlüsselte Übertragung. Ihre Finanzdaten sind bei uns genauso sicher wie bei Ihrem Steuerberater.",
+      },
+    },
+  ],
+};
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Service",
@@ -106,6 +145,10 @@ export default function ReinigungLayout({
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       {children}
     </>

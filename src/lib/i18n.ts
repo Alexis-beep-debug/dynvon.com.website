@@ -92,7 +92,7 @@ export const translations: Record<Locale, Translations> = {
     contact: {
       title: "Let's Talk About Your Time-Wasters",
       subtitle:
-        "Book a free 30-minute call. Tell me what tasks eat up your week — I'll show you exactly what can be automated and how much time you'll get back.",
+        "Book a free 15-minute call. Tell me what tasks eat up your week — I'll show you exactly what can be automated and how much time you'll get back.",
       cta: "Book a Free Call",
       email: "Or email me directly",
     },
@@ -193,7 +193,7 @@ export const translations: Record<Locale, Translations> = {
     contact: {
       title: "Erzählen Sie mir von Ihren Zeitfressern",
       subtitle:
-        "Buchen Sie ein kostenloses 30-Minuten-Gespräch. Erzählen Sie mir, welche Aufgaben Ihre Woche auffressen — ich zeige Ihnen genau, was automatisiert werden kann und wie viel Zeit Sie zurückgewinnen.",
+        "Buchen Sie ein kostenloses 15-Minuten-Gespräch. Erzählen Sie mir, welche Aufgaben Ihre Woche auffressen — ich zeige Ihnen genau, was automatisiert werden kann und wie viel Zeit Sie zurückgewinnen.",
       cta: "Kostenloses Gespräch buchen",
       email: "Oder schreiben Sie mir direkt",
     },

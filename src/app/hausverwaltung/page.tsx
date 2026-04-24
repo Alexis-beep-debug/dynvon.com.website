@@ -78,7 +78,7 @@ const faqItems = [
   {
     question: "Funktioniert das mit meiner Hausverwaltungssoftware?",
     answer:
-      "Ja. Wir integrieren uns mit gängiger Software wie Haufe PowerHaus, DOMUS, Immoware, Karthago und anderen. Falls Ihre Software eine API oder Export-Funktion hat, können wir anbinden. Im Erstgespräch klären wir die Kompatibilität.",
+      "Ja. Das System integriert sich mit gängiger Software wie Haufe PowerHaus, DOMUS, Immoware, Karthago und anderen. Falls Ihre Software eine API oder Export-Funktion hat, können wir anbinden. Im Erstgespräch klären wir die Kompatibilität.",
   },
   {
     question: "Was passiert mit Sonderfällen?",
@@ -93,7 +93,7 @@ const faqItems = [
   {
     question: "Sind meine Daten sicher?",
     answer:
-      "Ja. Alle Daten werden ausschließlich auf deutschen/EU-Servern verarbeitet und gespeichert. Wir sind DSGVO-konform, schließen einen AV-Vertrag ab und verschlüsseln alle Daten in Transit und at Rest.",
+      "Ja. Alle Daten werden ausschließlich auf deutschen/EU-Servern verarbeitet und gespeichert. Ich bin DSGVO-konform, schließe einen AV-Vertrag ab und verschlüsseln alle Daten in Transit und at Rest.",
   },
 ];
 
@@ -196,7 +196,7 @@ function HausverwaltungContent() {
             Die Lösung
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-6 text-center">
-            Was wir automatisieren
+            Was ich automatisiere
           </h2>
           <p className="text-muted text-lg max-w-2xl mx-auto leading-relaxed mb-12 text-center">
             Vier Systeme, die den Verwaltungsalltag in Ihrer Hausverwaltung
@@ -302,7 +302,7 @@ function HausverwaltungContent() {
                     {plan.features}
                   </p>
                 </div>
-                <a href="https://calendar.app.google/qJnC2hS15NJ1XxVcA" target="_blank" rel="noopener noreferrer" className="mt-6 block w-full text-center py-3 px-4 bg-accent hover:bg-accent-light text-white font-semibold rounded-xl transition-all text-sm">Demo vereinbaren</a>
+                <a href="https://calendar.app.google/qJnC2hS15NJ1XxVcA" target="_blank" rel="noopener noreferrer" className="mt-6 block w-full text-center py-3 px-4 bg-accent hover:bg-accent-light text-white font-semibold rounded-xl transition-all text-sm min-h-[44px]">Demo vereinbaren</a>
               </div>
             ))}
           </div>

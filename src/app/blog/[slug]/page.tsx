@@ -131,10 +131,12 @@ function BlogContent({ slug }: { slug: string }) {
             if (trimmed.startsWith("[")) {
               const match = trimmed.match(/\[(.+?)\]\((.+?)\)/);
               if (match) {
+                const isExternal = match[2].startsWith("http");
                 return (
                   <p key={i} className="mt-6">
                     <a
                       href={match[2]}
+                      {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                       className="inline-flex items-center gap-2 px-6 py-3 bg-accent hover:bg-accent-light text-white font-semibold rounded-lg transition-all"
                     >
                       {match[1]}
@@ -190,8 +192,8 @@ function BlogContent({ slug }: { slug: string }) {
           </h3>
           <p className="text-muted mb-6 text-sm">
             {locale === "en"
-              ? "Book a free 30-minute discovery call and find out how much time you could save."
-              : "Buchen Sie ein kostenloses 30-minütiges Kennenlerngespräch und erfahren Sie, wie viel Zeit Sie sparen könnten."}
+              ? "Book a free 15-minute discovery call and find out how much time you could save."
+              : "Buchen Sie ein kostenloses 15-minütiges Kennenlerngespräch und erfahren Sie, wie viel Zeit Sie sparen könnten."}
           </p>
           <a
             href="/#contact"

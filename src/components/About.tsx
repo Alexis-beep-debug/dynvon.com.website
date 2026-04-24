@@ -52,6 +52,9 @@ export default function About() {
               <img
                 src="/alexis-opt.webp"
                 alt="Alexis Bethke-Pittadakis"
+                width={224}
+                height={224}
+                loading="lazy"
                 className="w-full h-full object-cover"
               />
             </div>

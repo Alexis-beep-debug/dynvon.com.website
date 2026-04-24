@@ -31,7 +31,7 @@ type TopicContent = {
 const FAQ_ITEMS = [
   {
     q: "Funktioniert das mit meiner bestehenden Software?",
-    a: "Ja. Wir integrieren uns mit Lexoffice, sevDesk, DATEV und den gängigen Buchhaltungstools. Falls Sie Excel oder Word nutzen — umso besser, dann ist der Umstieg noch einfacher.",
+    a: "Ja. Das System integriert sich mit Lexoffice, sevDesk, DATEV und den gängigen Buchhaltungstools. Falls Sie Excel oder Word nutzen — umso besser, dann ist der Umstieg noch einfacher.",
   },
   {
     q: "Was passiert mit Sonderfällen?",
@@ -501,7 +501,7 @@ function ReinigungContent() {
                   <span className="text-sm text-muted">laufend</span>
                 </div>
                 <p className="text-muted text-[15px] leading-relaxed">{card.features}</p>
-                <a href="https://calendar.app.google/qJnC2hS15NJ1XxVcA" target="_blank" rel="noopener noreferrer" className="mt-6 block w-full text-center py-3 px-4 bg-accent hover:bg-accent-light text-white font-semibold rounded-xl transition-all text-sm">Demo vereinbaren</a>
+                <a href="https://calendar.app.google/qJnC2hS15NJ1XxVcA" target="_blank" rel="noopener noreferrer" className="mt-6 block w-full text-center py-3 px-4 bg-accent hover:bg-accent-light text-white font-semibold rounded-xl transition-all text-sm min-h-[44px]">Demo vereinbaren</a>
               </div>
             ))}
           </div>
