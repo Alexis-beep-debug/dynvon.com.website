@@ -21,14 +21,14 @@ const INDUSTRIES: Industry[] = [
     },
   },
   {
-    href: "#contact",
+    href: "/hausverwaltung",
     title: {
       de: "Hausverwaltungen",
       en: "Property management",
     },
     description: {
-      de: "Nebenkostenabrechnungen, Handwerker-Tickets, Mieter-Kommunikation und Monatsabrechnungen automatisiert — für WEG- und Mietverwaltungen.",
-      en: "Service charge statements, contractor tickets, tenant communication and monthly billing — automated for property management firms.",
+      de: "Rechnungsverarbeitung, Nebenkostenabrechnungen, DATEV-Export und Hausgeld-Mahnwesen automatisiert — für WEG- und Mietverwaltungen.",
+      en: "Invoice processing, service charge statements, DATEV export and dunning — automated for property management firms.",
     },
   },
 ];
