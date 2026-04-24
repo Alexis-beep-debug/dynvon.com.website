@@ -8,13 +8,6 @@ import ProposalFlowchart from "@/components/ProposalFlowchart";
 
 type Topic = "angebote" | "buchhaltung";
 
-type PricingCard = {
-  name: string;
-  setup: string;
-  monthly: string;
-  features: string;
-};
-
 type TopicContent = {
   heroHeadline: ReactNode;
   heroSubtitle: string;
@@ -24,8 +17,6 @@ type TopicContent = {
   solutions: { title: string; desc: string; flow: string[] }[];
   showFlowchart: boolean;
   results: { value: string; before: string; label: string }[];
-  pricing: PricingCard[];
-  pricingNote: string;
 };
 
 const FAQ_ITEMS = [
@@ -105,15 +96,6 @@ const CONTENT: Record<Topic, TopicContent> = {
       { value: "0", before: "vorher: regelmäßig", label: "Kalkulationsfehler" },
       { value: "2x", before: "vorher: am Limit", label: "Abschlussrate" },
     ],
-    pricing: [
-      {
-        name: "Angebotsautomatisierung",
-        setup: "1.500 €",
-        monthly: "200 €/Monat",
-        features: "Formular, Kalkulation, PDF-Erstellung, automatisches Nachfassen",
-      },
-    ],
-    pricingNote: "Amortisiert sich nach dem ersten gewonnenen Auftrag.",
   },
   buchhaltung: {
     heroHeadline: (
@@ -176,21 +158,6 @@ const CONTENT: Record<Topic, TopicContent> = {
       { value: "0", before: "vorher: regelmäßig", label: "Vergessene Mahnungen" },
       { value: "100%", before: "vorher: 60-70%", label: "Pünktliche Rechnungen" },
     ],
-    pricing: [
-      {
-        name: "Starter (5-10 MA)",
-        setup: "1.800 €",
-        monthly: "300 €/Monat",
-        features: "Rechnungserstellung, Belegerfassung, DATEV-Export",
-      },
-      {
-        name: "Wachstum (10-50 MA)",
-        setup: "2.500 €",
-        monthly: "450 €/Monat",
-        features: "Alles aus Starter + Mahnwesen, Bankabgleich, Priority Support",
-      },
-    ],
-    pricingNote: "Amortisiert sich in unter 2 Monaten.",
   },
 };
 
@@ -470,43 +437,6 @@ function ReinigungContent() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Pricing */}
-      <section className="py-20 sm:py-28 relative">
-        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent" />
-
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-xs font-mono text-accent-light uppercase tracking-widest mb-4 block">
-            Preise
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-12">
-            Transparente Preise, schneller ROI
-          </h2>
-
-          <div className={`grid gap-6 max-w-3xl mx-auto ${c.pricing.length === 1 ? "grid-cols-1 max-w-md" : "grid-cols-1 sm:grid-cols-2"}`}>
-            {c.pricing.map((card, i) => (
-              <div
-                key={i}
-                className="p-6 sm:p-8 rounded-2xl border border-border bg-surface/60 text-left"
-              >
-                <h3 className="text-lg font-bold mb-4">{card.name}</h3>
-                <div className="flex items-baseline gap-2 mb-1">
-                  <span className="text-3xl font-bold stat-highlight">{card.setup}</span>
-                  <span className="text-sm text-muted">Setup</span>
-                </div>
-                <div className="flex items-baseline gap-2 mb-4">
-                  <span className="text-xl font-semibold">{card.monthly}</span>
-                  <span className="text-sm text-muted">laufend</span>
-                </div>
-                <p className="text-muted text-[15px] leading-relaxed">{card.features}</p>
-                <a href="https://calendar.app.google/qJnC2hS15NJ1XxVcA" target="_blank" rel="noopener noreferrer" className="mt-6 block w-full text-center py-3 px-4 bg-accent hover:bg-accent-light text-white font-semibold rounded-xl transition-all text-sm min-h-[44px]">Demo vereinbaren</a>
-              </div>
-            ))}
-          </div>
-
-          <p className="mt-8 text-muted text-sm">{c.pricingNote}</p>
         </div>
       </section>
 

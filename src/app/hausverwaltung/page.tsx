@@ -59,21 +59,6 @@ const results = [
   { value: "< 3 Monate", before: "", label: "Amortisationszeit" },
 ];
 
-const pricingPlans = [
-  {
-    name: "Bis 10 Mitarbeiter",
-    setup: "2.500 €",
-    monthly: "400 €/Monat",
-    features: "Rechnungsverarbeitung, DATEV-Export, Zahlungsverfolgung, Mahnwesen",
-  },
-  {
-    name: "Wachstum (10-50 MA)",
-    setup: "3.500 €",
-    monthly: "600 €/Monat",
-    features: "Alles aus Paket 1 + Nebenkostenabrechnung, Eigentümer-Reporting, Priority Support",
-  },
-];
-
 const faqItems = [
   {
     question: "Funktioniert das mit meiner Hausverwaltungssoftware?",
@@ -261,55 +246,6 @@ function HausverwaltungContent() {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Pricing */}
-      <section className="py-20 sm:py-28 relative">
-        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent" />
-
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-xs font-mono text-accent-light uppercase tracking-widest mb-4 block">
-            Preise
-          </span>
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
-            Transparente Preise
-          </h2>
-          <p className="text-muted text-lg max-w-2xl mx-auto leading-relaxed mb-12">
-            Keine versteckten Kosten. Setup einmalig, danach monatliche
-            Pauschale.
-          </p>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
-            {pricingPlans.map((plan, i) => (
-              <div
-                key={i}
-                className="p-6 sm:p-8 rounded-2xl border border-border bg-surface/60 text-left"
-              >
-                <h3 className="text-lg font-bold mb-6">{plan.name}</h3>
-
-                <div className="mb-2">
-                  <span className="text-3xl font-bold stat-highlight">{plan.setup}</span>
-                  <span className="text-sm text-muted ml-2">Setup (einmalig)</span>
-                </div>
-
-                <div className="mb-6">
-                  <span className="text-2xl font-bold stat-highlight">{plan.monthly}</span>
-                </div>
-
-                <div className="border-t border-border pt-4">
-                  <p className="text-muted text-[15px] leading-relaxed">
-                    {plan.features}
-                  </p>
-                </div>
-                <a href="https://calendar.app.google/qJnC2hS15NJ1XxVcA" target="_blank" rel="noopener noreferrer" className="mt-6 block w-full text-center py-3 px-4 bg-accent hover:bg-accent-light text-white font-semibold rounded-xl transition-all text-sm min-h-[44px]">Demo vereinbaren</a>
-              </div>
-            ))}
-          </div>
-
-          <p className="text-sm text-muted mt-8">
-            Amortisiert sich in unter 3 Monaten.
-          </p>
         </div>
       </section>
 
