@@ -14,8 +14,9 @@ const LOGOS: Logo[] = [
     alt: "Ruiz Gebäudereinigung Hamburg",
   },
   {
-    src: "https://marketing-gruender.de/images/logos/logo-dark.svg",
+    src: "https://www.marketing-gruender.de/images/logos/logo-dark.svg",
     alt: "Gründer Marketing",
+    fallbackText: "Gründer Marketing",
   },
   {
     src: "https://kanzlei-lotsen.de/logo.svg",
