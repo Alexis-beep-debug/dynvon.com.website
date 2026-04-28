@@ -126,24 +126,83 @@ function CaseStudyContent() {
           <span className="text-xs font-mono text-accent-light uppercase tracking-widest mb-4 block text-center">
             Der Kunde
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-6 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-10 text-center">
             <a {...RUIZ_LINK_PROPS} className="hover:underline">
               Ruiz Gebäudereinigung Hamburg
             </a>
           </h2>
 
           <div className="max-w-3xl mx-auto">
-            <p className="text-muted text-lg leading-relaxed text-center">
-              <a {...RUIZ_LINK_PROPS} className="text-accent-light hover:underline">
-                Ruiz Gebäudereinigung
-              </a>{" "}
-              wird von Jonathan Ruiz als Inhaber &amp; Geschäftsführer geführt. Das Unternehmen
-              beschäftigt über 20 festangestellte Mitarbeiter — keine Subunternehmer. Spezialisiert
-              auf professionelle Büroreinigung in Hamburg, betreut das Team Kanzleien,
-              Steuerberatungen, IT-Unternehmen und Coworking Spaces. Mit über 50 betreuten
-              Objekten, mehr als 30 Kunden und einer 5.0-Sterne-Bewertung auf Google (29 Bewertungen)
-              gehört Ruiz Gebäudereinigung zu den führenden Reinigungsunternehmen in Hamburg.
-            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center mb-8">
+              {/* Team photo */}
+              <div className="rounded-2xl overflow-hidden border border-border">
+                <img
+                  src="https://xn--broreinigung-ruiz-22b.de/wp-content/uploads/2026/02/Ruiz-Gebaeudereinigung-Hamburg-3.jpeg"
+                  alt="Reinigungskraft der Ruiz Gebäudereinigung Hamburg bei der professionellen Büroreinigung"
+                  width={600}
+                  height={400}
+                  loading="lazy"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+
+              {/* Company info */}
+              <div>
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 rounded-xl overflow-hidden shrink-0 bg-white flex items-center justify-center p-1.5 border border-border">
+                    <img
+                      src="https://xn--broreinigung-ruiz-22b.de/wp-content/uploads/2021/03/Ruiz-Gebaeudereinigung-Hamburg-Logo-1.webp"
+                      alt="Ruiz Gebäudereinigung Logo"
+                      width={52}
+                      height={52}
+                      loading="lazy"
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-lg">
+                      <a {...RUIZ_LINK_PROPS} className="hover:underline">
+                        Ruiz Gebäudereinigung
+                      </a>
+                    </h3>
+                    <p className="text-sm text-muted">Hamburg · Seit 2019</p>
+                  </div>
+                </div>
+
+                <ul className="space-y-2 text-[15px] text-muted">
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent-light mt-0.5">•</span>
+                    <span><strong className="text-foreground">Jonathan Ruiz</strong> — Inhaber &amp; Geschäftsführer</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent-light mt-0.5">•</span>
+                    <span><strong className="text-foreground">20+ festangestellte</strong> Mitarbeiter — keine Subunternehmer</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent-light mt-0.5">•</span>
+                    <span><strong className="text-foreground">50+ Objekte</strong> in ganz Hamburg</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent-light mt-0.5">•</span>
+                    <span><strong className="text-foreground">5.0★</strong> auf Google (29 Bewertungen)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-accent-light mt-0.5">•</span>
+                    <span>Kanzleien, Steuerberatungen, IT, Coworking Spaces</span>
+                  </li>
+                </ul>
+
+                <a
+                  {...RUIZ_LINK_PROPS}
+                  className="inline-flex items-center gap-2 mt-4 text-accent-light hover:underline text-sm font-medium"
+                >
+                  Website besuchen
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -289,50 +348,6 @@ function CaseStudyContent() {
                 </div>
               </footer>
             </blockquote>
-          </div>
-        </div>
-      </section>
-
-      {/* About Ruiz */}
-      <section className="py-20 sm:py-28 relative">
-        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent" />
-
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="p-8 sm:p-10 rounded-2xl border border-border bg-surface/60">
-            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
-              <div className="w-24 h-24 rounded-xl overflow-hidden shrink-0 bg-white flex items-center justify-center p-2 border border-border">
-                <img
-                  src="https://xn--broreinigung-ruiz-22b.de/wp-content/uploads/2021/03/Ruiz-Gebaeudereinigung-Hamburg-Logo-1.webp"
-                  alt="Ruiz Gebäudereinigung Hamburg Logo"
-                  width={80}
-                  height={80}
-                  loading="lazy"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-2">
-                  <a {...RUIZ_LINK_PROPS} className="hover:underline">
-                    Ruiz Gebäudereinigung Hamburg
-                  </a>
-                </h3>
-                <p className="text-muted text-[15px] leading-relaxed mb-4">
-                  Ruiz Gebäudereinigung ist spezialisiert auf professionelle Büroreinigung in
-                  Hamburg — für Kanzleien, Steuerberatungen, IT-Unternehmen und Coworking Spaces.
-                  Mit über 20 festangestellten Mitarbeitern, monatlich kündbaren Verträgen und
-                  digitalisierten Prozessen setzt das Unternehmen Maßstäbe in der Branche.
-                </p>
-                <a
-                  {...RUIZ_LINK_PROPS}
-                  className="inline-flex items-center gap-2 text-accent-light hover:underline text-sm font-medium"
-                >
-                  Mehr über Ruiz Gebäudereinigung
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </section>
