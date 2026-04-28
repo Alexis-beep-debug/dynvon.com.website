@@ -352,6 +352,51 @@ function CaseStudyContent() {
         </div>
       </section>
 
+      {/* About Ruiz — dofollow backlink section */}
+      <section className="py-20 sm:py-28 relative">
+        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent" />
+
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="p-8 sm:p-10 rounded-2xl border border-border bg-surface/60">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6">
+              <div className="w-24 h-24 rounded-xl overflow-hidden shrink-0 bg-white flex items-center justify-center p-2 border border-border">
+                <img
+                  src="https://xn--broreinigung-ruiz-22b.de/wp-content/uploads/2021/03/Ruiz-Gebaeudereinigung-Hamburg-Logo-1.webp"
+                  alt="Ruiz Gebäudereinigung Hamburg Logo"
+                  width={80}
+                  height={80}
+                  loading="lazy"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold mb-2">
+                  <a {...RUIZ_LINK_PROPS} className="hover:underline">
+                    Ruiz Gebäudereinigung Hamburg
+                  </a>
+                </h3>
+                <p className="text-muted text-[15px] leading-relaxed mb-4">
+                  <a {...RUIZ_LINK_PROPS} className="text-accent-light hover:underline">
+                    Ruiz Gebäudereinigung
+                  </a>{" "}
+                  ist spezialisiert auf professionelle Büroreinigung in Hamburg — für Kanzleien,
+                  Steuerberatungen, IT-Unternehmen und Coworking Spaces. Mit über 20 festangestellten
+                  Mitarbeitern, monatlich kündbaren Verträgen und digitalisierten Prozessen setzt
+                  das Unternehmen seit 2019 Maßstäbe in der Branche. Alle Reinigungskräfte sind
+                  fest angestellt — keine Subunternehmer, keine Leiharbeit.
+                </p>
+                <a
+                  {...RUIZ_LINK_PROPS}
+                  className="inline-flex items-center gap-2 text-accent-light hover:underline text-sm font-medium"
+                >
+                  Mehr über Ruiz Gebäudereinigung →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 sm:py-28 relative">
         <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent" />
