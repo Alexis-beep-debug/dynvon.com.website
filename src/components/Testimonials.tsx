@@ -81,15 +81,7 @@ export default function Testimonials() {
                       <div>
                         <div className="font-bold">{t.name}</div>
                         <div className="text-sm text-muted">
-                          {t.title},{" "}
-                          <a
-                            href={t.companyUrl}
-                            target="_blank"
-                            rel="noopener"
-                            className="text-accent-light hover:underline"
-                          >
-                            {t.company}
-                          </a>
+                          {t.title}, {t.company}
                         </div>
                       </div>
                     </div>

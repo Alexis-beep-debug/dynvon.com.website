@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import { LanguageProvider } from "@/lib/LanguageContext";
 import ProposalFlowchart from "@/components/ProposalFlowchart";
 import Testimonials from "@/components/Testimonials";
+import LogoMarquee from "@/components/LogoMarquee";
 
 type Topic = "angebote" | "buchhaltung";
 
@@ -309,6 +310,9 @@ function ReinigungContent() {
           </div>
         </div>
       </section>
+
+      {/* Partner logos */}
+      <LogoMarquee />
 
       {/* Problem */}
       <section className="py-20 sm:py-28">

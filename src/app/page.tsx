@@ -3,6 +3,7 @@
 import { LanguageProvider } from "@/lib/LanguageContext";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
+import LogoMarquee from "@/components/LogoMarquee";
 import Services from "@/components/Services";
 import IndustryFocus from "@/components/IndustryFocus";
 import About from "@/components/About";
@@ -18,6 +19,7 @@ export default function Home() {
       <Navigation />
       <main>
         <Hero />
+        <LogoMarquee />
         <Services />
         <IndustryFocus />
         <About />
