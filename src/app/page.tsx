@@ -7,6 +7,7 @@ import Services from "@/components/Services";
 import IndustryFocus from "@/components/IndustryFocus";
 import About from "@/components/About";
 import CaseStudies from "@/components/CaseStudies";
+import Testimonials from "@/components/Testimonials";
 import BlogTeaser from "@/components/BlogTeaser";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -21,6 +22,7 @@ export default function Home() {
         <IndustryFocus />
         <About />
         <CaseStudies />
+        <Testimonials />
         <BlogTeaser />
         <Contact />
       </main>

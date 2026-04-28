@@ -127,6 +127,33 @@ export default function CaseStudies() {
                 {/* Interactive Flowchart for Case 2 */}
                 {hasFlowchart[index] && <ProposalFlowchart />}
 
+                {/* Full case study link for first card */}
+                {index === 0 && (
+                  <div className="mt-6 pt-6 border-t border-border">
+                    <a
+                      href="/fallstudie/ruiz"
+                      className="inline-flex items-center gap-2 text-accent-light hover:underline text-sm font-medium"
+                    >
+                      {locale === "en"
+                        ? "Read the full case study"
+                        : "Vollständige Fallstudie lesen"}
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M17 8l4 4m0 0l-4 4m4-4H3"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                )}
+
                 {/* Tool Logos + Tech Tags */}
                 <div className="mt-6 pt-6 border-t border-border">
                   <span className="text-xs font-mono text-muted uppercase tracking-wider mb-3 block">

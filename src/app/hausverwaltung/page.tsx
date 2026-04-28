@@ -4,6 +4,7 @@ import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { LanguageProvider } from "@/lib/LanguageContext";
+import Testimonials from "@/components/Testimonials";
 
 const heroStats = [
   { value: "15h+", label: "Zeitersparnis pro Woche" },
@@ -306,6 +307,9 @@ function HausverwaltungContent() {
           </div>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <Testimonials />
 
       {/* About */}
       <section className="py-20 sm:py-28 relative">

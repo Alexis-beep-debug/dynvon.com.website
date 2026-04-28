@@ -5,6 +5,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { LanguageProvider } from "@/lib/LanguageContext";
 import ProposalFlowchart from "@/components/ProposalFlowchart";
+import Testimonials from "@/components/Testimonials";
 
 type Topic = "angebote" | "buchhaltung";
 
@@ -442,6 +443,9 @@ function ReinigungContent() {
 
       {/* FAQ */}
       <FaqAccordion />
+
+      {/* Testimonials */}
+      <Testimonials />
 
       {/* About */}
       <section className="py-20 sm:py-28 relative">
