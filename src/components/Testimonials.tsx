@@ -44,7 +44,7 @@ export default function Testimonials() {
             Kundenstimmen
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            Das sagen unsere Kunden
+            Das sagen meine Kunden
           </h2>
         </div>
 
