@@ -19,9 +19,8 @@ const LOGOS: Logo[] = [
     fallbackText: "Gründer Marketing",
   },
   {
-    src: "https://kanzlei-lotsen.de/logo.svg",
+    src: "/partner/kanzlei-lotsen.png",
     alt: "Kanzlei Lotsen",
-    fallbackText: "Kanzlei Lotsen",
   },
 ];
 
