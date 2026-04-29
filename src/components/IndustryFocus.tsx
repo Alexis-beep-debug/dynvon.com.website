@@ -63,11 +63,11 @@ export default function IndustryFocus() {
               href={ind.href}
               className="group relative p-6 sm:p-8 rounded-2xl border border-border bg-surface/60 hover:bg-surface-light hover:border-accent/40 transition-all duration-300"
             >
-              <div className="flex items-start justify-between gap-4 mb-4">
-                <h3 className="text-xl sm:text-2xl font-bold group-hover:text-accent-light transition-colors">
+              <div className="flex items-start justify-between gap-3 mb-4">
+                <h3 className="text-lg sm:text-2xl font-bold group-hover:text-accent-light transition-colors break-words min-w-0">
                   {ind.title[isDe ? "de" : "en"]}
                 </h3>
-                <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-accent/10 text-accent-light group-hover:bg-accent/20 transition-colors shrink-0">
+                <span className="inline-flex items-center justify-center w-10 h-10 min-w-[40px] rounded-xl bg-accent/10 text-accent-light group-hover:bg-accent/20 transition-colors shrink-0">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
