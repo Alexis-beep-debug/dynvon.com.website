@@ -22,6 +22,10 @@ const LOGOS: Logo[] = [
     src: "/partner/kanzlei-lotsen.png",
     alt: "Kanzlei Lotsen",
   },
+  {
+    src: "https://gc-facility.de/wp-content/uploads/2026/02/Group-2-4.png",
+    alt: "GC Facility GmbH",
+  },
 ];
 
 function LogoItem({ logo }: { logo: Logo }) {

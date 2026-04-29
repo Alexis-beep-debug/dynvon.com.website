@@ -14,6 +14,17 @@ const testimonials = [
     stars: 5,
     googleRating: true,
   },
+  {
+    quote:
+      "Wir haben vorher ewig an Angeboten gesessen, locker 2 Stunden pro Stück. Und unser CRM und das E-Mail-Tool waren nicht verbunden — da ist immer wieder was untergegangen. Alexis hat beides gelöst. Angebote gehen jetzt mit einem Klick raus, und die Systeme reden miteinander. Spart uns jede Woche richtig Zeit.",
+    name: "Ewgeni Jussufov",
+    title: "Geschäftsführer",
+    company: "GC Facility GmbH",
+    companyUrl: "https://gc-facility.de/",
+    initials: "EJ",
+    stars: 5,
+    googleRating: true,
+  },
 ];
 
 function StarRating({ count }: { count: number }) {
