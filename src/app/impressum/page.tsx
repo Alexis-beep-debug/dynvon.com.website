@@ -71,10 +71,6 @@ function ImpressumContent() {
               {locale === "en"
                 ? "Freelance IT Consultant / Automation Engineer"
                 : "Freiberuflicher IT-Berater / Automation Engineer"}
-              <br />
-              {locale === "en"
-                ? "Awarded in: Germany"
-                : "Verliehen in: Deutschland"}
             </p>
           </section>
 
