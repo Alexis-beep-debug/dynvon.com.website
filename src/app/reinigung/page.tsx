@@ -466,15 +466,20 @@ function ReinigungContent() {
             ))}
           </div>
 
-          <a
-            href="/fallstudie/ruiz"
-            className="inline-flex items-center gap-2 mt-10 text-accent-light hover:text-accent transition-colors text-sm font-medium"
-          >
-            Fallstudie lesen: Ruiz Gebäudereinigung Hamburg — 10h/Woche eingespart
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mt-10">
+            <a
+              href="/fallstudie/ruiz"
+              className="inline-flex items-center gap-2 text-accent-light hover:text-accent transition-colors text-sm font-medium"
+            >
+              Fallstudie: Ruiz Gebäudereinigung — 10h/Woche eingespart →
+            </a>
+            <a
+              href="/fallstudie/gc-facility"
+              className="inline-flex items-center gap-2 text-accent-light hover:text-accent transition-colors text-sm font-medium"
+            >
+              Fallstudie: GC Facility — Angebote per Klick →
+            </a>
+          </div>
         </div>
       </section>
 
