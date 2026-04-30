@@ -137,15 +137,15 @@ function CaseStudyContent() {
 
           <div className="max-w-3xl mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-center mb-8">
-              {/* Logo */}
-              <div className="rounded-2xl overflow-hidden border border-border bg-white flex items-center justify-center p-8">
+              {/* Team photo */}
+              <div className="rounded-2xl overflow-hidden border border-border">
                 <img
-                  src="https://gc-facility.de/wp-content/uploads/2026/02/Group-2-4.png"
-                  alt="GC Facility GmbH Logo — Professionelle Gebäudereinigung Berlin"
-                  width={600}
-                  height={400}
+                  src="https://gc-facility.de/wp-content/uploads/2026/02/Visual-768x773.png"
+                  alt="Team von GC Facility GmbH — professionelle Gebäudereinigung"
+                  width={768}
+                  height={773}
                   loading="lazy"
-                  className="w-full h-auto object-contain"
+                  className="w-full h-auto object-cover"
                 />
               </div>
 
